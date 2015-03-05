@@ -1,0 +1,1471 @@
+﻿    
+/*********左侧导航控件**********/
+#uc-nav-wrap
+{
+    height: 569px;
+    width: 206px;
+    float: left;
+}
+.uc-nav-l
+{
+    width: 8px;
+    float: left;
+}
+
+.uc-nav-m
+{
+    width: 198px;
+    height: 569px;
+    float: left;
+    background-image: url('../Images/UserCenter/uc-nav-m.png');
+    background-repeat: repeat-x;
+    position:relative;
+}
+.uc-nav-item
+{
+    display: block;
+    background-position: -8px;
+    width: 198px;
+    height: 53px;
+    background-image: url('../Images/UserCenter/leftNavItemBg.png');
+    background-repeat: no-repeat;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    color: #FFFFFF;
+    margin-bottom: 1px;
+    line-height: 53px;
+    position: relative;
+}
+.uc-nav-item:hover,.hover
+{
+    background-position: -8px;
+    background-image: url('../Images/UserCenter/leftNavItemBg-sel.png');
+    background-repeat: no-repeat;
+    color: #0a5db0;
+}
+
+.uc-nav-item img
+{
+    position: absolute;
+    left: 36px;
+    top: 11.5px;
+}
+.uc-nav-item span
+{
+    position: absolute;
+    left: 70px;
+}
+.linkToUs
+{
+    height: 135px;
+    position:absolute;
+      bottom:0;
+}
+.linkToUs-item, .linkToUs-item a
+{
+    line-height: 45px;
+    height: 45px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: relative;
+}
+.linkToUs-phone
+{
+    color: #f15e05;
+}
+.linkToUs-item img
+{
+    position: relative;
+    top: 2px;
+}
+
+#uc-userinfo-wrap
+{
+    width: 1000px;
+}
+.uc-userinfo-l, .uc-userinfo-r
+{
+    width: 8px;
+    float: left;
+}
+.uc-userinfo-m
+{
+    width: 984px;
+    height: 171px;
+    float: left;
+    background-image: url('../Images/UserCenter/uc-userinfo-m.png');
+    background-repeat: repeat-x;
+    position: relative;
+}
+.uc-headimg
+{
+    border: 1px solid #000000;
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: 22px;
+    top: 26px;
+}
+.uc-role
+{
+        position: absolute;
+    left: 86px;
+    top: 80px;
+    
+    }
+.uc-updatelinkbtn
+{
+    color: #FFFFFF;
+    background-image: url('../Images/UserCenter/linkupdateuserinfobtn.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 33px;
+    width: 74px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 22px;
+    top: 128px;
+    font-size: 14px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+}
+.userCity
+{
+    font-size: 14px;
+    font-family: 黑体;
+    color: #FFFFFF;
+    position: absolute;
+    left: 22px;
+    top: 106px;
+    text-align:center;
+    width:74px;
+}
+.uc-linkbtn
+{
+    color: #FFFFFF;
+    background-image: url('../Images/UserCenter/linkupdateuserinfobtn.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 33px;
+    width: 74px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+/*.uc-updatelinkbtn:hover,.uc-linkbtn:hover
+{
+    background-image: url('../Images/UserCenter/linkupdateuserinfobtn-hover.png');
+    background-repeat: no-repeat;
+}*/
+.lblNickName
+{
+    display: block;
+    width: 168px;
+    height: 20px;
+    line-height: 20px;
+    font-family: 黑体;
+    font-size: 20px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 104px;
+    top: 26px;
+}
+.img-gender
+{
+    position: absolute;
+    left: 254px;
+    top: 30px;
+}
+.accountName
+{
+    font-size: 18px;
+    font-family: 黑体;
+    color: #709fb9;
+    position: absolute;
+    left: 104px;
+}
+.accountRank, .lblRankValue
+{
+    top: 65px;
+}
+.accountValue
+{
+    font-size: 18px;
+    font-family: 黑体;
+    color: #FFFFFF;
+    position: absolute;
+    left: 154px;
+}
+.rank-img-r
+{
+    width: 69px;
+    height: 12px;
+    top: 67px;
+
+}
+
+.rankBar
+{
+    background-image: url('../Images/UserCenter/rank-img-l.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+        z-index:10;
+    width: 0px;
+    height: 12px;
+        position: absolute;
+        left:200px;
+    top: 67px;
+}
+
+.accountYB, .lblYBValue, .charge-link
+{
+    top: 93px;
+}
+.uc-link-btn
+{
+    font-size: 12px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    color: #6e2b02;
+    display: block;
+    width: 34px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background-image: url('../Images/UserCenter/uc-linkbtn.png');
+    background-repeat: no-repeat;
+}
+.uc-link-btn:hover
+{
+    background-image: url('../Images/UserCenter/uc-linkbtn-hover.png');
+    background-repeat: no-repeat;
+}
+.account-r
+{
+    position: absolute;
+    right: 716px;
+}
+.accountGold, .lblGoldValue, .exchange-link, .Spread-link
+{
+    top: 120px;
+}
+
+.uc-userinfo-split
+{
+    width: 2px;
+    height: 157px;
+    position: absolute;
+    left: 300px;
+    top: 7px;
+}
+.dataDetect-top-lefttext, .dataDetect-top-righttext
+{
+    position: absolute;
+    top: 40px;
+    font-family: 黑体;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.dataDetect-top-lefttext
+{
+    width: 135px;
+    position: absolute;
+    left: 335px;
+}
+.dataDetect-top-righttext
+{
+    left: 770px;
+}
+.dataDetect-img-wrap
+{
+    width: 284px;
+    height: 19px;
+    position: absolute;
+    top: 44px;
+    left: 480px;
+}
+.dataDetect-img
+{
+    display: block;
+    float: left;
+}
+.dataDetect-img-m
+{
+    width: 258px;
+    height: 19px;
+    background-image: url('../Images/UserCenter/dataDetect-m.png');
+    background-repeat: repeat-x;
+}
+.dataDetect-img-exists
+{
+    display:block;
+     z-index:2;
+    position: absolute;
+    top: 44px;
+    left: 480px;
+    }
+.dataDetectBtn
+{
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    display: block;
+    width: 107px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-image: url('../Images/UserCenter/DataDetectSbtn.png');
+    background-repeat: no-repeat;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0f5ba1;
+}
+.dataDetectBtn:hover
+{
+    background-image: url('../Images/UserCenter/DataDetectSbtn-hover.png');
+    background-repeat: no-repeat;
+}
+.dataDetect-middle
+{
+    width: 136;
+    position: absolute;
+    top: 93px;
+    left: 335px;
+}
+.dataDetect-middle span
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.dataDetect-bottom
+{
+    width: 430px;
+     display:none;
+}
+.dataDetect-bottom div
+{
+    position: absolute;
+    top: 120px;
+    left: 335px;
+}
+.dataDetect-bottom span
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.bindPhoneBtn
+{
+    position: absolute;
+    top: 115px;
+    right: 147px;
+    display: block;
+    width: 107px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-image: url('../Images/UserCenter/DataDetectSbtn.png');
+    background-repeat: no-repeat;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0f5ba1;
+}
+.bindPhoneBtn:hover
+{
+    background-image: url('../Images/UserCenter/DataDetectSbtn-hover.png');
+    background-repeat: no-repeat;
+}
+/***********************/
+
+
+/**********实名认证***********/
+.uc-content-wrap
+{
+    width: 784px;
+    min-height:568px;
+    float: left;
+    margin-bottom:20px;
+    background-color: #FFFFFF;
+}
+.uc-content-r
+{
+     float:left;
+    }
+.uc-content-title
+{
+    width: 110px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 44px;
+    margin-left: 50px;
+    font-family: 黑体;
+    font-size: 18px;
+    color: #348b00;
+}
+.uc-content-realnameauthentication
+{
+    width: 545px;
+    margin-left: 150px;
+    margin-top: 60px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #005cab;
+}
+.changeBindm
+{
+    font-weight: normal;
+    text-decoration: underline;
+    color: #0000FF;
+}
+.uc-content-realnameauthentication input[type=text], .uc-content-realnameauthentication input[type=password]
+{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #88bdf4;
+    color: #000000;
+    width: 230px;
+}
+.uc-text
+{
+        border: 1px solid #88bdf4;
+    color: #000000;
+    width: 230px;
+    }
+.letterspace
+{
+    visibility: hidden;
+}
+
+.savebtn
+{
+    display: block;
+    width: 74px;
+    height: 33px;
+    text-align: center;
+    line-height: 30px;
+    background-image: url('../Images/UserCenter/linkupdateuserinfobtn.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+/*.savebtn:hover
+{
+    background-image: url('../Images/UserCenter/linkupdateuserinfobtn-hover.png');
+    background-repeat: no-repeat;
+}*/
+.uc-input-lefttext
+{
+    display:inline-block;
+     margin-bottom:5px;
+}
+
+/*********账单***********/
+.reckoing-wrap
+{
+    width:704px;
+    margin:0 auto;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    margin-top:30px;
+}
+.table_Reckoing
+{
+    width: 704px;
+    margin:0 auto;
+    border-collapse: collapse;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-color: #C0C0C0;
+    border-right-color: #C0C0C0;
+    border-left-color: #C0C0C0;
+    background-color: #B3E1BC;
+}
+.table_Reckoing th
+{
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    width: 72px;
+    border-collapse: collapse;
+    font-weight: normal;
+}
+.table_Reckoing_Th1
+{
+    width: 72px;
+    height: 28px;
+    font-size: 12px;
+    color: #353535;
+}
+.table_Reckoing_Th2
+{
+    width: 216px;
+    height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #353535;
+}
+.table_Reckoing_Th3
+{
+    width: 72px;
+    height: 28px;
+    font-size: 12px;
+    color: #353535;
+}
+.table_Reckoing_Th4
+{
+    width: 150px;
+    height: 28px;
+    font-size: 12px;
+    color: #353535;
+}
+.gridview_Reckoing_Head
+{
+    color: #353535;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-color: #C0C0C0;
+    border-right-color: #C0C0C0;
+    border-left-color: #C0C0C0;
+    line-height: 28px;
+}
+.gridview_Reckoing_Head1
+{
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C0C0C0;
+    height: 28px;
+    width: 320px;
+    display: inline-block;
+    text-align: center;
+}
+.gridview_Reckoing_Head1
+{
+    *display:inline;
+}
+.gridview_Reckoing_Head2
+{
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C0C0C0;
+    height: 28px;
+    width: 313px;
+    _width: 320px;
+    display: inline-block;
+    text-align: center;
+}
+.gridview_Reckoing_Head2
+{
+    *display:inline;
+}
+.gridview_Reckoing_Head3
+{
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    padding-left: 35px;
+    _padding-left: 40px;
+}
+.gridview_Reckoing_Head3
+{
+    *display:inline;
+}
+.gridview_Reckoing
+{
+        margin:0 auto;
+    border: 1px solid #C0C0C0;
+    color: #353535;
+    font-size: 12px;
+    width:704px;
+}
+.gridview_Reckoing th
+{
+    border: 1px solid #C0C0C0;
+}
+.Reckoning_Link
+{
+     text-decoration:underline;
+    }
+.gridview_Reckoing td
+{
+    border: 1px solid #C0C0C0;
+    text-align: center;
+}
+.gridview_Reckoing_TD
+{
+    width: 66px;
+    height: 35px;
+}
+/***********************/
+
+
+/*****账单 zws 2013-7-24 15:12:55*****/
+.gridview
+{
+    width: 704px;
+    margin:0 auto;
+    text-align: center;
+    color: #333333;
+    border: 1px solid #C0C0C0;
+    font-size:12px;
+}
+.gridview th
+{
+    background-color: #B3E1BC;
+    border: 1px solid #C0C0C0;
+    height: 50px;
+    line-height: 40px;
+}
+.gridview td
+{
+    border: 1px solid #C0C0C0;
+    height: 30px;
+    line-height: 30px;
+}
+/************/
+
+
+/*******账单详细********/
+.ReckoningAmply
+{
+    width: 704px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #C0C0C0;
+    margin-top: -1px;
+    color:#3d3d3d;
+    height: 40px;
+    line-height: 40px;
+}
+.ReckoningAmply_Left
+{
+    display: inline-block;
+    width: 95px;
+    text-align: center;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C0C0C0;
+    font-weight: bold;
+    height: 40px;
+    font-size: 13px;
+}
+.ReckoningAmply_Left
+{
+    *display: inline;
+}
+.ReckoningAmply_Right
+{
+    width: 480px;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.ReckoningAmply_Right
+{
+    *display: inline;
+}
+
+/************/
+
+/******注册*******/
+#uc-reg-wrap
+{
+   height:505px;
+   width:942px;
+   margin:0 auto;
+    color:#3d3d3d;
+    position:relative;
+    margin-bottom:20px;
+    }
+    .uc-reg-l,.uc-reg-m,.uc-reg-r
+    {
+         float:left;
+        }
+        .uc-reg-l,.uc-reg-r
+        {
+             width:10px;
+             height:505px;
+            }
+            .uc-reg-m
+{
+    width: 922px;
+    height: 505px;
+    background-image: url('../Images/UserCenter/uc-reg-m.png');
+    background-repeat: repeat-x;
+}
+.uc-reg-title
+{
+    width:215px;
+     margin-left:383px;
+    margin-top:45px;
+    font-family: 黑体;
+    font-size: 30px;
+}
+.uc-reg-linkToLogin, .uc-reg-linkToFindPwd
+{
+    position: absolute;
+    right: 17px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.uc-reg-linkToLogin a, .uc-reg-linkToFindPwd a
+{
+    color: #0c00ff;
+    text-decoration: underline;
+}
+  .uc-reg-linkToLogin
+  {
+       top:45px;
+      }  
+       .uc-reg-linkToFindPwd
+       {
+           top:65px;
+           }   
+           .uc-input-wrap
+           {
+               position:absolute;
+               left:294px; 
+                top:108px;
+               }   
+.RowInfo
+{
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+.textReg
+{
+    border: 1px solid #929292;
+    width: 231px;
+    height: 20px;
+    line-height: 20px;
+}    
+.textRegSel
+{
+    background-color: #d1fbff;
+    border-color:#61a5dc;
+}
+.D_Prompt
+{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    font-size: 12px;
+}
+.D_Prompt
+{
+    *display:inline;
+}
+.D_Prompt_Finish
+{
+    width: 13px;
+    height: 13px;
+    background-image: url('../Images/UserCenter/PromptFinish.jpg');
+    background-repeat: no-repeat;
+    display: none;
+}
+.D_Prompt_Error
+{
+    width: 13px;
+    height: 13px;
+    background-image: url('../Images/UserCenter/PromptError.jpg');
+    background-repeat: no-repeat;
+    display: none;
+}
+.D_Clew
+{ 
+    display: inline-block;  
+        font-weight: normal;
+}
+.D_Clew
+{ 
+    *display: inline; 
+    
+}
+.D_Clew_Inner
+{
+    width: 250px;
+    height: 22px;
+    color: #FF0000;
+    line-height: 20px;
+    padding-left: 2px;
+    display: none;
+
+}  
+#imgCode
+{
+         position:relative;
+         top:3px;
+          left:8px;
+    }
+    
+    .uc-reg-userinf-title
+{
+    font-family: 微软雅黑;
+    font-size: 18px;
+}
+.Fold
+{
+   cursor:pointer;  
+   display:inline;
+  }
+.ddlArea
+{
+        border: 1px solid #929292;
+        width:110px;
+    }
+    .D_ServiceInfo
+    {
+         font-size:12px;
+          margin-bottom:18px;
+    }
+        .D_ServiceInfo a
+    {
+         color:#0c00ff;
+         text-decoration:underline;
+         
+    }
+    .uc-linkto-bind
+{
+    margin-left: 65px;
+    font-family: 微软雅黑;
+    font-size: 18px;
+}
+/*************/
+
+/*******我的物品********/
+.goodsItemContainer
+{
+    width:88px;
+    margin-left:35px;
+    margin-top:44px;    
+  margin-right:5px;
+    float:left;
+}
+.backImg
+{
+    width: 63px;
+    height:79px;
+    margin: 0 auto;
+    background-image: url('../Images/UserCenter/mygoods.png');
+    background-repeat: no-repeat;
+    text-align:center;
+    position:relative;
+}
+.backImg img
+{
+    margin-top:5px;
+     width:50px;
+     height:50px;
+}
+.goodsAmount
+{
+   color:White;
+   width:63px;
+   position:absolute;
+   bottom:0px;
+}
+.goodsName
+{
+   text-align:center;
+   font-size:12px;
+}
+.pageBar
+{
+     width:170px;
+     height:22px;
+     line-height:22px;
+     position:absolute;
+     bottom:20px; 
+     left:307px; 
+}
+.mygood-wrap
+{
+     position:relative;
+     width:784px;
+     height:568px;
+}
+.pageCount
+{
+    display:inline-block;
+     width:64px;
+     height:22px;
+     vertical-align:middle;
+     text-align:center;
+}
+.pageBar div
+{
+  float:left;
+}
+.pageItem
+{
+    display:none;
+     width:784px;
+     height:528px;
+}
+.goodRemark
+{
+    border: 1px solid #474747;
+    line-height:18px;
+    width:250px;
+    font-size: 12px;
+    color: #353535;
+    display:none;
+    text-align:center;
+     vertical-align:middle;
+     position:absolute;
+     top:-40px;
+     left:-88px;
+}
+/**************/
+/******头像认证****/
+.IdentifyDiv,.FirstStep
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #3d3d3d;
+    line-height:24px;
+}
+.IdentifyDiv A:hover   ,.IdentifyDiv A:link, .IdentifyDiv A:visited   ,.IdentifyDiv A:active   
+{
+     color:blue;    
+}
+/***********头像验证************/
+.FirstStep
+{
+    margin-top:20px;
+    width: 680px;
+}
+.FirstStep-Left, .FirstStep-Right
+{
+    width: 295px;
+    float: left;
+    margin-left: 30px;
+    padding: 10px 10px 10px 20px;
+    background-color: #D5EAFD;
+    margin-bottom: 32px;
+    margin-top: 20px;
+}
+.FirstStep-Left
+{
+     text-align:center;
+}
+.FirstStep-RedText
+{
+    color: Red;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.IDCardBtn
+{
+    display:block;
+       width: 158px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.IDCardBtn2
+{
+ text-align:left;
+}
+.SecondStep-IDCard
+{
+     margin-top:20px;
+    font-size:12px;
+}
+.UpLoad
+{
+    width: 500px;
+    height:428px;
+    position:relative;
+}
+.imgPreview
+{
+    width: 322px;
+    height: 198px;
+    float: left;
+    margin-left: 165px;
+    margin-bottom: 15px;
+}
+.inputFile
+{
+    float: left;
+    margin-left: 165px;
+    margin-bottom: 15px;
+    width: 322px;
+}
+.btnUpload,.lblUploadMessages
+{
+    float: left;
+    margin-left: 165px;
+    margin-top:10px;
+    clear:left;
+}
+.lblUploadMessages, .btnSubmit
+{
+        float: left;
+    margin-left: 289px;
+    margin-top:10px;
+    clear:left;
+    }
+
+.UploadWarning
+{
+    width: 322px;
+    text-align:center;
+    display: block;
+    color: Red;
+    font-size: 12px;
+    float: left;
+    margin-left: 165px;
+    margin-bottom: 15px;
+}
+.lblUploadMessage
+{
+    float: left;
+    margin-left: 165px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: Red;
+}
+.SecondStep-Video
+{
+     margin-top:20px;
+    font-size:12px;
+}
+.lblMsg
+{
+    float: left;
+    margin-top: 20px;
+    font-size: 14px;
+    color: Red;
+}
+.Video-info
+{
+    margin-left:165px;    
+    height:220px;
+    position:relative;
+}
+.video-text
+{
+    border: 1px solid #999999;
+}
+.video-promt
+{
+    color:Red;
+    line-height:24px;    
+}
+/**********************/
+
+
+/******登录*********/
+#uc-login-wrap
+{
+      width:550px;
+       margin-left:552px;
+      position:relative;
+      height:450px;
+      margin-bottom:20px;
+      margin-top:20px;
+      color:#FFFFFF;
+}
+.bigFont
+{
+    font-family: 黑体;
+    font-size: 24px;
+    margin-bottom:16px;
+     color:#FFFFFF;
+}
+.uc-login-input
+{
+    background-image: url('../Images/UserCenter/LoginInput.jpg');
+    background-repeat: no-repeat;
+    width: 219px;
+    height: 116px;
+    position:absolute;
+    top:50px;
+   left:90px;
+}
+.uc-login-input-left
+{
+      
+     height: 116px;
+     position:absolute;
+         top:55px;
+         left:0;
+}
+.findpwd
+{
+    color: #64FAFB;
+    font-size: 12px;
+    text-decoration: underline;
+    position:absolute;
+    left:252px;
+    top:174px;
+}
+.CheckRememberMe
+{
+     position:absolute;
+      left:95px;
+      top:174px;
+      font-size:12px;    
+      color:#64fafb;
+}
+#ctl00_ContentPlaceHolder1_RememberMe
+{
+    position:relative;
+     top:3px;
+    }
+.LoginBtn
+{
+    display: block;
+    width: 117px;
+    height: 35px;
+
+    cursor: default;
+    text-decoration: none;
+     position:absolute;
+     left:95px;
+     top:200px;
+}
+.LoginBtn:hover
+{
+    background-image: url('../Images/UserCenter/btnLogin-2.png');
+    background-repeat: no-repeat;
+}
+.LinkToReg
+{
+    display: block;
+    width: 92px;
+    height: 35px;
+    background-image: url('../Images/UserCenter/LinkToReg-1.png');
+    background-repeat: no-repeat;
+    cursor: default;
+    text-decoration: none;
+    position:absolute;
+    left:215px;
+    top:200px;
+}
+.LinkToReg:hover
+{
+    background-image: url('../Images/UserCenter/LinkToReg-2.png');
+    background-repeat: no-repeat;
+}
+.txtCode
+{
+    position:absolute;
+     width:60px;
+    }
+    .TextBox
+{
+    border-style: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    line-height:23px;
+}
+.logintxtUserName
+{
+     position:absolute;
+     left:36px; top:7px;
+}
+.logintxtPsw
+{
+position:absolute;
+     left:36px; top:47.5px;
+}
+ .logintxtVli
+{
+position:absolute;
+     left:6px; top:86px;
+}
+.LoginMsg
+{
+    position:absolute;
+    left:315px;
+}
+#ctl00_ContentPlaceHolder1_Label1
+{
+     top:60px;    
+}
+#ctl00_ContentPlaceHolder1_Label2
+{
+     top:98px;    
+}
+#ctl00_ContentPlaceHolder1_Label3
+{
+     top:140px;    
+}
+
+/*************/
+
+/*****短消息*****/
+#uc-message-wrap
+{
+     width:675px;
+     height:375px;
+     margin:0 auto;
+     font-size:12px;
+     margin-top:40px;
+}
+.msgitem
+{
+    height: 70px;
+    position: relative;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ACCCE5;
+    margin-bottom: 25px;
+}
+.msgitem-top
+{
+         position:absolute;
+         left:0;
+         top:0;
+         width:675px;
+}
+.msgsys
+{
+    width:60px;
+     color:#FB6317;
+     font-weight:bold;
+}
+.msgtitle
+{
+   width:500px;
+   position:absolute;
+   top:0;
+   left:70px;
+}
+.msgTime
+{
+     width:100px;
+     position:absolute;
+     top:0;
+     right:0;
+    }
+.msgitem-content
+{
+      width:602px;
+      height:46px;
+      position:absolute;
+      left:70px;
+      top:23px;
+      line-height:21px;
+     
+}
+
+/**********/
+
+/*****找回密码******/
+#uc-findpwd-wrap
+{
+    width:600px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.findpwdText
+{
+    font-family: 黑体;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.findpwd-stepImg-wrap
+{
+     width:600px;
+     height:42px;
+      margin-top:21px;    
+}
+.findpwd-input-wrap
+{
+    margin-top:92px;
+    margin-left:118px;
+    margin-bottom:30px;
+     position:relative;    
+}
+.findpwdUserNameBg
+{
+    width: 117px;
+    height: 35px;
+    line-height:35px;
+    text-align:center;
+    background-image: url('../Images/UserCenter/findpwdbtn1.png');
+    background-repeat: no-repeat;
+    color:White;
+    font-weight:bold;
+    cursor:pointer;
+}
+.findpwd-txtUserName
+{
+    border-style: none;
+    background-color: transparent;
+    background-image: url('../Images/UserCenter/findpwd-username.png');
+    background-repeat: no-repeat;
+    width:212px;
+    height:30px;
+    line-height:30px;
+    padding-left:34px;
+    color:#ffffff;
+}
+.findpwdUserNameBg:hover
+{
+    background-image: url('../Images/UserCenter/findpwdbtn2.png');
+    background-repeat: no-repeat;
+}
+.findpwdsplit
+{
+    width: 600px;
+    height: 3px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    text-align:center;
+}
+.findpwdtext
+{
+    font-size: 12px;
+    color: #92F8FA;
+    font-weight: bold;
+    margin-bottom:15px;
+}
+.findpwd-username
+{
+    color: #FF9522;
+}
+.Answer
+{
+    border-style: none;
+    width: 290px;
+    background-color: transparent;
+    color: #ffffff;
+    background-image: url('../Images/UserCenter/questioninput.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.findpwdway
+{
+ width:476px;
+ height:67px;
+ margin:0 auto;  
+ margin-top:10px;  
+}
+.findsuccess
+{
+     height:69px;
+      line-height:69px;
+      color:#95F7F6;
+       font-weight:bold;
+       width:320px;
+       position:absolute;
+       top:0;
+       left:100px;
+       
+}
+.findokimg
+{
+     position:absolute;    
+     top:0;
+     left:0;
+}
+.div-findpwd-step4
+{
+  width:380px;
+  height:74px;
+  margin:0 auto; 
+  margin-bottom:160px;  
+  margin-top:100px;
+  position:relative;
+ }
+.FindOK
+{
+    width: 117px;
+    height: 35px;
+    background-image: url('../Images/UserCenter/findpwdbtn1.png');
+    background-repeat: no-repeat;
+    cursor:pointer;
+    color:White;
+    text-align:center;
+    line-height:35px;
+    font-weight:bold;
+    margin-left:134px;
+}
+.FindOK:hover
+{
+    background-image: url('../Images/UserCenter/findpwdbtn2.png');
+    background-repeat: no-repeat;
+}
+.div-findinput
+{
+    width:620px;
+   margin-left:104px;   
+ }
+.FindPwdError
+{
+     color:Red;
+}
+.findpwdway a
+{
+ display:block;
+  float:left;
+  margin-left:20px;    
+}
+.findpwdphonenum
+{
+    width: 350px;
+    height: 31px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.findpwdQQ
+{ 
+ display:block;
+ margin-top: 6px; margin-bottom: 6px;
+  width:222px;
+  }
+/**********/
+
+/*********/
+.getcheckNum
+{
+    border: 1px solid #808080;
+    width: 100px;
+    height: 30px;
+    background-color: #C0C0C0;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight:normal;
+    position:absolute;
+    left:182px;
+    top:44px;
+}
+
+/*************/

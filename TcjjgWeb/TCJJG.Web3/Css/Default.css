@@ -1,0 +1,527 @@
+﻿body
+{
+}
+.D_Mid_Container
+{
+    width: 928px;
+    margin: 0 auto;
+}
+.D_Mid_Top
+{
+    width:921px;
+    border: 3px solid #000000;
+    height: 303px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.D_Mid_Top_Left
+{
+    width: 207px;
+    height: 303px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-right-color: #3a4d92;
+    border-right-style: solid;
+    border-right-width: 1px;
+    font-family:微软雅黑;
+}
+
+.BtnRegister
+{
+    display: block;
+    margin: 8px auto 8px auto;
+    width: 132px;
+    height: 38px;
+}
+.D_Login
+{
+    width: 207px;
+    height: 65px;
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+}
+.Avatar
+{
+    width: 63px;
+    height: 63px;
+    margin-bottom: 13px;
+    _margin-bottom: -5px;
+    margin-left: 68.5px;
+}
+.HeadSize
+{
+    width: 70px;
+    height: 88px;
+    margin-bottom:10px;
+}
+.MyGoods
+{
+    margin-left:36px;
+    margin-right:10px;  
+}
+
+.D_LoginInfo
+{
+
+    width: 150px;
+  
+     margin-left:auto;
+     margin-right:auto;
+    
+     line-height:15px;
+}
+
+.D_LoginInfoSpace
+{
+    visibility: hidden;
+}
+#ctl00_ContentPlaceHolder1_lblNickName
+{
+    position:absolute;
+    left:81px;
+     _margin-top:-3px;
+}
+.D_LoginInfo span
+{
+    display: inline;
+    color: rgb(57,56,56);
+}
+.AgencyLink
+{
+    width: 85px;
+    height: 19px;
+    line-height:19px;
+    display: block;
+    background-image: url('../Images/Default/tcjjg_2012__agency.jpg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom:5px;
+}
+.D_BtnList
+{
+    width: 190px;
+    height: 20px;
+    margin-left: 8.5px;
+     position:absolute;
+     bottom:57px;
+}
+.D_BtnList a
+{
+   
+     float:left;
+     display:block;
+     margin-left:6px;
+     _margin-left:4px;
+  
+    }
+.D_BtnList div
+{
+    width:0px;
+     _width:11px;
+     height:8px;
+     float:left;
+    }
+
+.TxtLogin
+{
+    border: 1px solid #9bacc7;
+    width: 110px;
+    height: 20px;
+    float: left;
+    margin-bottom: 4px;
+    line-height:20px;
+}
+
+.BtnLogin
+{
+    width: 68px;
+    height: 60px;
+    background-image: url('../Images/Default/tcjjg_2012_8.jpg');
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 4px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+.lblMsg
+{
+    width: 90px;
+    height: 20px;
+    margin-left: 10.5px;
+    _margin-left: 19px;
+    *margin-left: 19px;
+}
+.ValiCode
+{
+    width: 186px;
+    height: 27px;
+    margin: 0 auto;
+    color: rgb(111,120,125);
+     _margin-left:19px;
+      *margin-left:19px;
+}
+.txtCode
+{
+    
+        border: 1px solid #9bacc7;
+    }
+.imgCode
+{
+    width: 46px;
+    height: 20px;
+     margin-left:43px;
+}
+.FindPwd,.FindPwd1
+{
+    color: rgb(111,120,125);
+    width: 64px;
+    height: 15px;
+    float:  right;
+    margin-right: 5px;
+
+}
+.FindPwd1
+{
+    width:56px;
+    margin-right:16px;
+    _margin-right:5px; 
+    *margin-right:5px;  
+    _margin-top:-18px;
+    *margin-top:-18px;
+}
+.LoginLoading
+{
+    color: rgb(111,120,125);
+    margin-left:41px;
+    display:none;
+    width: 102px;
+    height: 17px;
+}
+
+.D_Contact,.D_Contact2
+{
+    width: 207px;
+    height: 68px;
+    clear:right;
+    margin-top:22px;
+}
+.D_Contact2
+{
+   margin-top:0px;
+ }
+.D_Contact a ,.D_Contact2 a
+{
+    color: rgb(81,80,76);
+}
+.D_Contact div,.D_Contact2 div
+{
+    width: 150px;
+    overflow:hidden;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+#ctl00_ContentPlaceHolder1_LogOut
+{
+    _margin-left: -7px;
+}
+.DownLoad
+{
+    display: block;
+    width: 128px;
+    height: 38px;
+    position: absolute;
+    bottom: 12px;
+    left:38px;
+    cursor:pointer;
+}
+.DownLoad3
+{
+    display: block;
+    width: 128px;
+    height: 38px;
+    position: absolute;
+    bottom: 10px;
+    left:38px;
+    cursor:pointer;
+}
+/*zhangsw-2012年6月26日 11:15:56*/
+.D_Mid_Top_Right
+{
+    position:relative;
+    width: 713px;
+    height: 303px;
+    float:left;
+    overflow:hidden;
+}
+.D_Mid_Top_Minicomkvm
+{
+    position: absolute;
+    width: 713px;
+    height: 303px;
+}
+.D_Mid_Top_Minicomkvm img
+{
+    width: 713px;
+    height: 303px;
+}
+.D_BtnSwitchContainer
+{
+    width: 135px;
+    height: 33px;
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    top: 265px;
+    left: 582px;
+}
+/*图片上面的按钮*/
+
+.SwitchBtn
+{
+    font-family:微软雅黑;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    _font-size: 15px;
+    color: #7e7e7e; /*00c1f8蓝   7e7e7e灰*/
+    text-align: center;
+    margin: 3px;
+    cursor: pointer;
+}
+/*赛事*/
+.D_Mid_Mid
+{
+    width: 927px;
+    height: 278px;
+    margin-bottom: 40px;
+}
+.D_Match, .D_News
+{
+    width: 455px;
+    height: 278px;
+    float: left;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #b2b1b1;
+    border-bottom-color: #b2b1b1;
+    border-left-color: #b2b1b1;
+}
+.D_News
+{
+    margin-left: 13px;
+    -margin-left: 9px;
+}
+.D_Match_Menu, .D_News_Menu
+{
+    height: 33px;
+    font-size: 14px;
+    background-image: url('../Images/Default/tcjjg_2012_14.jpg');
+    background-repeat: repeat-x;
+    overflow:hidden;
+}
+
+.Match_Report, .Match_Intro
+{
+    border-style: none solid none none;
+    border-width: 1px;
+    width: 84px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border-right-color: #b2b1b1;
+    border-bottom-color:#b2b1b1;
+    font-size: 14px;
+    cursor: pointer;
+    color: #565555;
+    float: left;
+}
+.C_Match_Report, .C_Match_Intro
+{
+    background-color: White;
+    color: rgb(6,6,6);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #b2b1b1;
+}
+.More
+{
+    width: 40px;
+    height: 13px;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    color: #353535;
+    margin-left: 235px;
+    margin-top:8px;
+}
+.D_Match_ContentContainer
+{
+    width: 458px;
+    height: 246px;
+}
+.D_Match_Report
+{
+    /*height:246px;      width:456px;*/
+    width: 420px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 31px;
+}
+.PlayerImg
+{
+     display:block;
+     width:74px;
+     height:75px;
+    }
+.PlayerImg, .PlayerInfo
+{
+    float: left;
+    padding-left: 14px;
+}
+.PlayerInfo
+{
+    text-align: center;
+    font-size: 12px;
+
+    line-height: 16px;
+}
+.PlayerInfo a
+{
+        color: rgb(75,75,75);
+    }
+.PlayerInfo span
+{ 
+     display:inline-block;
+     width:102px;
+     overflow:hidden;
+    }
+.ClearF
+{
+    height: 30px;
+    clear: both;
+}
+.D_Match_Intro
+{
+    width: 437px;
+    height: 196px;
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:25px;
+}
+.D_Match_Intro img
+{
+     width:143px;
+     height:85px;
+}
+.D_Match_Intro_img
+{
+    width: 143px;
+    height: 85px;
+    margin-top: 35px;
+}
+
+.D_News_Title
+{
+    width: 84px;
+    height: 33px;
+    display: inline-block;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    color: rgb(6,6,6);
+    float: left;
+}
+.NewsMore
+{
+    width: 40px;
+    height: 13px;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    color:#353535;
+    margin-left: 320px;
+    margin-top:8px;
+}
+.D_News_Container
+{
+    width: 456px;
+    height: 245px;
+    line-height:20px;
+}
+
+.D_News_Container1
+{
+    width: 420px;
+    height: 18px;
+    font-size: 12px;
+    margin-left: 18px;
+    background-color: #e8e6e6;
+    overflow:hidden;
+}
+.D_News_Container1 a
+{
+    line-height: 18px;
+    color: rgb(75,75,75);
+}
+.NewTitle
+{
+}
+.NewsDate
+{
+    color: rgb(75,75,75);
+    display: inline-block;
+    width: 70px;
+    height: 18px;
+    float: right;
+    _margin-top: -18px;
+    *margin-top: -18px;
+}
+
+
+/*合作媒体*/
+
+.D_Mid_Cooperate_img
+{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #FFFFFF;
+    /*position:relative;
+    bottom:-2px;
+     _bottom:-4px;
+      *bottom:-4px;*/
+}
+.Cooperate_BottomBar
+{
+    margin-top:-2px;
+    _margin-top:-6px;
+    *margin-top:-6px;
+    margin-bottom:14px;
+    width: 928px;
+    height: 9px;
+    background-image: url('../Images/Default/tcjjg_2012_21.jpg');
+    background-repeat: repeat-x;
+}
+.Coopertate_ImgList
+{
+    text-align: center;
+    height:32px;
+    position:relative;
+}
+.Coopertate_ImgList span
+{
+    display: inline-block;
+    width: 26.285714px;
+    height: 32px;
+}
+
+
+
+

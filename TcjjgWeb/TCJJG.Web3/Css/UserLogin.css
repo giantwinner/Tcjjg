@@ -1,0 +1,70 @@
+﻿body
+{
+}
+
+
+.D_UserLoginContainer
+{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #333333;
+}
+.D_UserLoginTitle
+{
+    width: 444px;
+    height: 70px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #E0E0E0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    margin:0 auto;
+}
+.TextBox
+{
+    border: 1px solid #484747;
+    width: 214px;
+    height: 23px;
+    line-height:23px;
+
+}
+.InsertContainer
+{
+    width: 600px;
+    height: 27px;
+
+    margin-bottom: 15px;
+    line-height:27px;
+    vertical-align:middle;
+    margin-left:147px;
+}
+.txtCode
+{
+      height:23px;
+      cursor:pointer;
+      vertical-align:bottom;
+    }
+.FindPwd, .RegUrl
+{
+    color: #FF0101;
+    font-size: 12px;
+}
+.CheckRememberMe
+{
+     margin-left:217px;
+    }
+.RememberMe
+{
+    font-size: 12px;
+    color: #6E6E6E;
+}
+.RegUrl
+{
+    width: 54px;
+    position: relative;
+    bottom: 7px;
+}
+

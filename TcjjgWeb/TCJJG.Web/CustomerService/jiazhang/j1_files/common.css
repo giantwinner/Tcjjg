@@ -1,0 +1,450 @@
+BODY
+{
+    text-align: center;
+    padding-bottom: 0px;
+    line-height: 23px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: ËÎÌו, Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #000000;
+    font-size: 14px;
+    padding-top: 0px;
+}
+A
+{
+}
+AREA
+{
+}
+#wrap
+{
+    width: 1003px;
+    background: #fff;
+    margin-left: auto;
+    overflow: hidden;
+    margin-right: auto;
+}
+.img
+{
+    float: left;
+}
+.imgborder
+{
+    border-bottom: #b5b5b5 1px solid;
+    border-left: #b5b5b5 1px solid;
+    border-top: #b5b5b5 1px solid;
+    border-right: #b5b5b5 1px solid;
+}
+.font01
+{
+    color: #585858;
+}
+.font02
+{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.font03
+{
+    color: #a6a6a6;
+    font-size: 14px;
+}
+.font12
+{
+    color: #585858;
+    font-weight: bold;
+}
+.font13
+{
+    line-height: 24px;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: bold;
+}
+.font16
+{
+    line-height: 35px;
+    color: #3c3c3c;
+    font-size: 14px;
+}
+.font15
+{
+    color: #5f5d5f;
+    font-size: 14px;
+}
+.font14
+{
+    color: #585858;
+    font-size: 14px;
+}
+.font07
+{
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.font08
+{
+    color: #a6a6a6;
+    font-size: 11px;
+}
+.font09
+{
+    line-height: 24px;
+}
+.font11
+{
+    line-height: 20px;
+    color: #717171;
+    font-size: 12px;
+}
+.font04
+{
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+}
+.font05
+{
+    text-align: left;
+    color: #fc5c04;
+    font-size: 14px;
+}
+.font06
+{
+    text-align: left;
+    color: #555;
+    font-size: 14px;
+}
+.font17
+{
+    color: #555;
+    font-weight: bold;
+}
+.font18
+{
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: bold;
+}
+.font_1
+{
+    color: #990099;
+    font-size: 14px;
+}
+.font_2
+{
+    color: #ff0000;
+    font-size: 14px;
+}
+.font_3
+{
+    color: #1b1b1b;
+    font-size: 14px;
+}
+.font_4
+{
+    color: #ff0000;
+    font-size: 22px;
+}
+.font_5
+{
+    color: #006600;
+    font-size: 14px;
+}
+.font_6
+{
+    color: #ff0000;
+    font-size: 14px;
+}
+.font_7
+{
+    color: #006600;
+    font-size: 16px;
+}
+.font_8
+{
+    color: #00479d;
+    font-size: 14px;
+}
+.font_9
+{
+    line-height: 24px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.font_12
+{
+    color: #000;
+    font-size: 14px;
+}
+.font_11
+{
+    color: #fff;
+    font-size: 14px;
+}
+.font_13
+{
+    color: #000000;
+    font-size: 14px;
+}
+.font_14
+{
+    color: #ff0000;
+    font-size: 14px;
+}
+A
+{
+    text-decoration: underline;
+}
+A:link
+{
+    color: #000;
+    text-decoration: none;
+}
+A:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+A:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+A.font_12
+{
+    text-decoration: underline;
+}
+A.font_12:link
+{
+    color: #000;
+    text-decoration: none;
+}
+A.font_12:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+A.font06
+{
+    text-decoration: underline;
+}
+A.font06:link
+{
+    color: #535353;
+    text-decoration: none;
+}
+A.font06:visited
+{
+    color: #fc5c04;
+    text-decoration: none;
+}
+A.nav_link
+{
+    color: #555555;
+    text-decoration: none;
+}
+A.nav_link:visited
+{
+    color: #555555;
+    text-decoration: none;
+}
+A.nav_link:hover
+{
+    color: #777777;
+    text-decoration: none;
+}
+A.font_13
+{
+    text-decoration: underline;
+}
+A.font_13:link
+{
+    color: #000;
+    text-decoration: underline;
+}
+A.font_13:visited
+{
+    color: #000;
+    text-decoration: underline;
+}
+A.font_14
+{
+    text-decoration: underline;
+}
+A.font_14:link
+{
+    color: #000;
+    text-decoration: underline;
+}
+A.font_14:visited
+{
+    color: #000;
+    text-decoration: underline;
+}
+A.font_email
+{
+    text-decoration: underline;
+}
+A.font_email:link
+{
+    color: #000000;
+    text-decoration: none;
+}
+A.font_email:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+A.font_email:hover
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+A.font_2:link
+{
+    color: #ff0000;
+}
+A.font_2:visited
+{
+    color: #ff0000;
+}
+A.font_2:hover
+{
+    color: #ff0000;
+}
+.fcm_down_btn
+{
+    text-align: center;
+    line-height: 26px;
+    margin-top: 10px;
+    width: 144px;
+    display: block;
+    background-image:url('images/fcm_btn_down.jpg');
+    background-repeat:no-repeat;
+    height: 26px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.fcm_down_btn:link
+{
+    color: #000;
+    text-decoration: underline;
+}
+.fcm_down_btn:visited
+{
+    color: #000;
+    text-decoration: underline;
+}
+.fcm_down_btn:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+.btn_back A:link
+{
+    color: #f00;
+    text-decoration: underline;
+}
+.btn_back A:visited
+{
+    color: #f00;
+    text-decoration: underline;
+}
+.btn_back A:hover
+{
+    color: #f00;
+    text-decoration: underline;
+}
+.btn_back A:active
+{
+    color: #f00;
+    text-decoration: underline;
+}
+A.fubiao_link:link
+{
+    color: #f00;
+}
+A.fubiao_link:visited
+{
+    color: #f00;
+}
+A.fubiao_link:hover
+{
+    color: #f00;
+    text-decoration: underline;
+}
+.tab_bg_on
+{
+    line-height: 29px;
+    width: 168px;
+    display: block;
+    background: url(images/tab_on_bg.jpg) no-repeat center 50%;
+    float: left;
+    height: 29px;
+}
+.tab_bg
+{
+    line-height: 29px;
+    width: 168px;
+    display: block;
+    background: url(images/tab_bg.jpg) no-repeat center 50%;
+    float: left;
+    height: 29px;
+}
+.newstab
+{
+    margin-left: 78px;
+    overflow: hidden;
+}
+.newstab SPAN
+{
+    cursor: pointer;
+    margin-right: 12px;
+}
+.newscon TABLE
+{
+    border-bottom: #000 1px solid;
+    border-left: #000 1px solid;
+    margin-top: 10px;
+    border-collapse: collapse;
+    border-top: #000 1px solid;
+    border-right: #000 1px solid;
+}
+.newscon TABLE TD
+{
+    border-bottom: #000 1px solid;
+    border-left: #000 1px solid;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: #000 1px solid;
+    border-right: #000 1px solid;
+    padding-top: 5px;
+}
+.newscon
+{
+    text-align: left;
+}
+.newscon P
+{
+    padding-bottom: 10px;
+    text-indent: 2em;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+.red
+{
+    color: #f00;
+    font-size: 12px;
+}
+.blue
+{
+    color: blue;
+    font-size: 12px;
+    text-decoration: underline;
+}

@@ -1,0 +1,95 @@
+﻿.Middle-right-bottom
+{
+    /*  顶部  */
+    width: 243px;
+    height: 448px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+.rowsRidio
+{
+    width: 243px;
+    height: 30px;
+    position: relative;
+}
+.rowsRidio_right
+{
+    height: 30px;
+    line-height: 25px;
+    width: 160px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+.rowsRidio_right_txtVli
+{
+    height: 30px;
+    line-height: 25px;
+    width: 160px;
+    position: absolute;
+    top: 0px;
+    left: 74px;
+}
+.txtCode
+{
+    border: 1px solid #484747;
+    height: 18px;
+    line-height: 17px;
+    width: 40px;
+    vertical-align: middle;
+}
+.txtCode1
+{
+    border: 1px solid #484747;
+    width: 40px;
+    vertical-align: middle;
+    margin-left: 1px;
+    height: 19px;
+}
+.clos_two
+{
+    width: 243px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: #501908;
+}
+.salesConfig_right_Name_top
+{
+    top: -25px;
+}
+.rowsText
+{
+    width: 243px;
+    height: 23px;
+    position: relative;
+    padding-top:18px;
+}
+.rowsText_right1
+{
+    width: 70px;
+    height: 33px;
+    position: relative;
+    text-align: right;
+    line-height:15px;
+    vertical-align:middle;    
+}
+.rowsText_right2
+{
+    width: 160px;
+    height: 33px;
+    position:absolute;
+    top:18px;
+    left:70px;
+    line-height:15px;
+}
+
+
+
+
+
+
+
+
+

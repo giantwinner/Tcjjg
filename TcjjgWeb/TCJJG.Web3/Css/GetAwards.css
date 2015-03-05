@@ -1,0 +1,300 @@
+﻿body {
+}
+/******实物获奖******/
+.AwardContainer
+{
+     width:780px;
+     position:relative;
+    }
+.divUserMatch_calss
+{
+    width: 681px;
+    height: 130px;
+ margin-left:0px;
+   margin-top:30px;
+}
+.AwardTitle
+{
+        color: #fa8400;
+         width:785px;
+         height:17px;
+         line-height:17px;
+        margin-bottom:15px;
+    }
+
+.CutLine
+{
+    height: 34px;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-top-color: #c0c0c0;
+     margin-top:20px;
+}
+.GetAwardLink
+{
+    color:#fd4201;
+     font-weight:bold;
+    }
+    table.table
+{
+    font-size:12px;
+	border-collapse: collapse;
+	border: #b2b1b1 1px solid;
+}
+
+table.table th
+{
+	border: #b2b1b1 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+table.table td
+{
+    border: #b2b1b1 1px solid;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.AwardsInfo
+{
+    padding: 10px;
+    margin-left: 150px;
+}
+.AwardsInfo-Up
+{
+    position: relative;
+}
+.AwardsImg
+{
+    border: 1px solid #808080;
+    width: 150px;
+    height: 102px;
+}
+.AwardsName
+{
+    position: absolute;
+    left: 185px;
+    top: 5px;
+    line-height: 20px;
+}
+.AwardsPrice
+{
+    line-height: 20px;
+    position: absolute;
+    left: 185px;
+    top: 40px;
+}
+.AwardRemark
+{
+    position: absolute;
+    left: 185px;
+    top: 72px;
+    line-height: 15px;
+    color:Red;
+    width:350px;
+    height:45px;
+}
+.AwardsIntroduce-top
+{
+    height: 3px;
+    background-color: #D8DAE4;
+    width: 100%;
+    margin-top: 20px;
+}
+.AwardsIntroduce
+{
+    height: 27px;
+    background-color: #D8DAE4;
+    width: 100%;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}
+.changeAwards
+{
+    margin-top: 15px;
+    _margin-top: 10px;
+    margin-bottom: 15px;
+    _margin-bottom: 10px;
+}
+.changeAwards-text
+{
+    background-color: #F5F5F7;
+    border: 1px solid #808080;
+    vertical-align: middle;
+    width: 180px;
+}
+.btnChange
+{
+    margin-left: 78px;
+    width: 87px;
+    height: 31px;
+}
+.netPager
+{
+    text-align: center;
+    margin-top: 10px;
+}
+/*zhangsw-2011年9月9日 12:30:47-AwardList31_CMOPAwards.aspx*/
+.AwardsMatch1
+{
+    position: absolute;
+    left: 185px;
+    top: 5px;
+    line-height: 20px;
+}
+.AwardsMatch2
+{
+    position: absolute;
+    left: 185px;
+    top: 25px;
+    line-height: 20px;
+}
+.AwardsMatch3
+{
+    position: absolute;
+    left: 185px;
+    top: 45px;
+    line-height: 20px;
+}
+.AwardsMatch4
+{
+    position: absolute;
+    left: 185px;
+    top: 65px;
+    line-height: 20px;
+}
+.GetAwards
+{
+     width:385px;
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:112px;
+    
+    }
+    .GetAwardUrl
+    {
+         margin-top:42px;
+        }
+  .GetAwards span
+  {
+      margin-left:80px;
+       font-size:16px;
+       height:44px;
+       font-weight:bold;
+       color:#FE0000;
+      }  
+      .GetAwards img
+      {
+           height:40px;
+          }
+/******************/
+
+
+/*****我的物品******/
+.PersonalAwardContainer
+{
+    display:none;
+     width:700px;
+      margin-left:auto;
+      margin-right:auto;    
+}
+.pageBar
+{
+     height:17px;
+     width:41px;
+     float:right;
+      margin-right:24px;
+      clear:both;
+}
+.pageBar img
+{
+  cursor:pointer;   
+ }
+.AwardItemContainer
+{
+    width: 132px;
+    height: 200px;
+    display:inline-block;
+
+    position:relative;
+     margin-bottom:15px;
+}
+.AwardItemContainer
+{
+        *display:inline;
+    }
+.AD_Remark
+{
+    border: 1px solid #474747;
+    line-height:18px;
+    width:250px;
+    font-size: 12px;
+    color: #353535;
+    display:none;
+    text-align:center;
+     vertical-align:middle;
+     position:absolute;
+     top:-21px;
+     left:-59px;
+}
+.AD_ImgUrl
+{
+    position:absolute;
+    top:27px;
+     left:14.5px;
+     width:103px;
+     height:103px;
+
+}
+.AD_ImgUrl img
+{
+     width:103px;
+     height:103px;
+    }
+.AD_Name
+{
+    width:132px;
+    height: 28px;
+    font-size: 12px;
+    color: #353535;
+    position:absolute;
+    top:148px;
+    text-align:center;
+    vertical-align:middle;
+    }
+.AD_Count
+{
+    
+        position:absolute;
+    top:170px;
+        width:132px;
+    height: 28px;
+    font-size: 14px;
+    color: #fc8300;
+         text-align:center;
+         font-family:黑体;
+     vertical-align:middle;
+    }
+    .PersonalAwardLink
+    {
+         width:291px;
+         margin-left:auto;
+         margin-right:auto;
+         margin-bottom:45px;
+        }
+        .AD_Warn
+        {
+             font-size:12px;
+              color:#ff001a;
+              display:block;
+              margin:0 auto;
+              width:422px;
+            }
+/***************/

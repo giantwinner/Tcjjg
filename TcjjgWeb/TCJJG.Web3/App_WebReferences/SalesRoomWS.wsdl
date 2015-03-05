@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.tcjjg.com/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.tcjjg.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.tcjjg.com/webservices/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="GetGoodsPurchaseRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGoodsPurchaseRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGoodsPurchaseRecordResult" type="tns:ArrayOfGoodsPurchaseRecord_selResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfGoodsPurchaseRecord_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GoodsPurchaseRecord_selResult" nillable="true" type="tns:GoodsPurchaseRecord_selResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GoodsPurchaseRecord_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceInfo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalingID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GoodsTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GoodsPurchaseRecordUpdateStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="purchaseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="delFalg" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nickName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="memo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GoodsPurchaseRecordUpdateStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GoodsPurchaseRecordUpdateStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesConfig">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cityID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesConfigResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesConfigResult" type="tns:ArrayOfSalesConfig_selResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesConfig_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesConfig_selResult" nillable="true" type="tns:SalesConfig_selResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesConfig_selResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalesConfigSelProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="typeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesConfigSelProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalesConfigSelProductResult" type="tns:ArrayOfSalesConfig_sel_ProductResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesConfig_sel_ProductResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesConfig_sel_ProductResult" nillable="true" type="tns:SalesConfig_sel_ProductResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesConfig_sel_ProductResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxPrice" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinPrice" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DefaultValidTime" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseCondition" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleCondition" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseGrade" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleGrade" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PricetypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalesExpireVerify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" nillable="true" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nickName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesExpireVerifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalesExpireVerifyResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddSalesInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:SalesInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SalesInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CityID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentAmount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddSalesInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddSalesInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesSearchForDropDownList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cityID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dplType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchAccount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="searchNickName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="salesStatus" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderByKey" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderByDesc" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesSearchForDropDownListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesSearchForDropDownListResult" type="tns:ArrayOfSalesInfo_SalesSearchResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesInfo_SalesSearchResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesInfo_SalesSearchResult" nillable="true" type="tns:SalesInfo_SalesSearchResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesInfo_SalesSearchResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentAmount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesStatus" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PricetypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverDay" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSalesInfoList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="SalesStatus" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesInfoListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesInfoListResult" type="tns:ArrayOfSalesInfo_selResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesInfo_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesInfo_selResult" nillable="true" type="tns:SalesInfo_selResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesInfo_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentAmount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SalesStatusName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PricetypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOldTimeSalesInfoList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOldTimeSalesInfoListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOldTimeSalesInfoListResult" type="tns:ArrayOfSalesInfo_sel_OldTimeResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesInfo_sel_OldTimeResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesInfo_sel_OldTimeResult" nillable="true" type="tns:SalesInfo_sel_OldTimeResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesInfo_sel_OldTimeResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentAmount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SalesStatusName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PricetypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverDay" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSalesInfoByUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="salesID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesInfoByUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesInfoByUserResult" type="tns:ArrayOfSalesInfo_sel_productResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesInfo_sel_productResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesInfo_sel_productResult" nillable="true" type="tns:SalesInfo_sel_productResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesInfo_sel_productResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentAmount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PricetypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSalesPurchaseRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesPurchaseRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesPurchaseRecordResult" type="tns:ArrayOfSalesPurchaseRecord_selResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesPurchaseRecord_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesPurchaseRecord_selResult" nillable="true" type="tns:SalesPurchaseRecord_selResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesPurchaseRecord_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentAmount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PricetypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSalesPurchaseRecordOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalesPurchaseRecordOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalesPurchaseRecordOutResult" type="tns:ArrayOfSalesPurchaseRecord_sel_outResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesPurchaseRecord_sel_outResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesPurchaseRecord_sel_outResult" nillable="true" type="tns:SalesPurchaseRecord_sel_outResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesPurchaseRecord_sel_outResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentAmount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PricetypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalesPurchaseRecordUpdateStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DelFlag" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nickName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="memo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesPurchaseRecordUpdateStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalesPurchaseRecordUpdateStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesStatusUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spr" type="tns:SalesPurchaseRecord" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SalesPurchaseRecord">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalesStatusUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalesStatusUpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesVerify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spr" type="tns:SalesPurchaseRecord" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesVerifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalesVerifyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesVerifyOldTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="salesID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalesVerifyOldTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalesVerifyOldTimeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalingGoodsList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cityID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSalingGoodsListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSalingGoodsListResult" type="tns:ArrayOfSalingGoods_selResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalingGoods_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalingGoods_selResult" nillable="true" type="tns:SalingGoods_selResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalingGoods_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PriceType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalingID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceInfo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DelFlag" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="rowNum" nillable="true" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDetaiSalingGoods">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalingID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetaiSalingGoodsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetaiSalingGoodsResult" type="tns:SalingGoods_sel_productResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SalingGoods_sel_productResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseGrade" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="icon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="typename" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalingID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceInfo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DelFlag" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalingGoodsPurchaseRecordInsert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gpr" type="tns:GoodsPurchaseRecord" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GoodsPurchaseRecord">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PurchaseID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalingID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Memo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalingGoodsPurchaseRecordInsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalingGoodsPurchaseRecordInsertResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalingVerify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cityID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="gpr" type="tns:GoodsPurchaseRecord" />
+            <s:element minOccurs="1" maxOccurs="1" name="typeID" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="typeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalingVerifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SalingVerifyResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="typeID" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="typeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetGoodsPurchaseRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGoodsPurchaseRecord" />
+  </wsdl:message>
+  <wsdl:message name="GetGoodsPurchaseRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGoodsPurchaseRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GoodsPurchaseRecordUpdateStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GoodsPurchaseRecordUpdateStatus" />
+  </wsdl:message>
+  <wsdl:message name="GoodsPurchaseRecordUpdateStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GoodsPurchaseRecordUpdateStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesConfigSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesConfig" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesConfigSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalesConfigSelProductSoapIn">
+    <wsdl:part name="parameters" element="tns:SalesConfigSelProduct" />
+  </wsdl:message>
+  <wsdl:message name="SalesConfigSelProductSoapOut">
+    <wsdl:part name="parameters" element="tns:SalesConfigSelProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalesExpireVerifySoapIn">
+    <wsdl:part name="parameters" element="tns:SalesExpireVerify" />
+  </wsdl:message>
+  <wsdl:message name="SalesExpireVerifySoapOut">
+    <wsdl:part name="parameters" element="tns:SalesExpireVerifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddSalesInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddSalesInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddSalesInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddSalesInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesSearchForDropDownListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesSearchForDropDownList" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesSearchForDropDownListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesSearchForDropDownListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesInfoListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesInfoList" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesInfoListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOldTimeSalesInfoListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOldTimeSalesInfoList" />
+  </wsdl:message>
+  <wsdl:message name="GetOldTimeSalesInfoListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOldTimeSalesInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesInfoByUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesInfoByUser" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesInfoByUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesInfoByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesPurchaseRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesPurchaseRecord" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesPurchaseRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesPurchaseRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesPurchaseRecordOutSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalesPurchaseRecordOut" />
+  </wsdl:message>
+  <wsdl:message name="GetSalesPurchaseRecordOutSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalesPurchaseRecordOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalesPurchaseRecordUpdateStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:SalesPurchaseRecordUpdateStatus" />
+  </wsdl:message>
+  <wsdl:message name="SalesPurchaseRecordUpdateStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:SalesPurchaseRecordUpdateStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalesStatusUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:SalesStatusUpdate" />
+  </wsdl:message>
+  <wsdl:message name="SalesStatusUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:SalesStatusUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalesVerifySoapIn">
+    <wsdl:part name="parameters" element="tns:SalesVerify" />
+  </wsdl:message>
+  <wsdl:message name="SalesVerifySoapOut">
+    <wsdl:part name="parameters" element="tns:SalesVerifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalesVerifyOldTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:SalesVerifyOldTime" />
+  </wsdl:message>
+  <wsdl:message name="SalesVerifyOldTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:SalesVerifyOldTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSalingGoodsListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSalingGoodsList" />
+  </wsdl:message>
+  <wsdl:message name="GetSalingGoodsListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSalingGoodsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetaiSalingGoodsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetaiSalingGoods" />
+  </wsdl:message>
+  <wsdl:message name="GetDetaiSalingGoodsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetaiSalingGoodsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalingGoodsPurchaseRecordInsertSoapIn">
+    <wsdl:part name="parameters" element="tns:SalingGoodsPurchaseRecordInsert" />
+  </wsdl:message>
+  <wsdl:message name="SalingGoodsPurchaseRecordInsertSoapOut">
+    <wsdl:part name="parameters" element="tns:SalingGoodsPurchaseRecordInsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="SalingVerifySoapIn">
+    <wsdl:part name="parameters" element="tns:SalingVerify" />
+  </wsdl:message>
+  <wsdl:message name="SalingVerifySoapOut">
+    <wsdl:part name="parameters" element="tns:SalingVerifyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SalesRoomWSSoap">
+    <wsdl:operation name="GetGoodsPurchaseRecord">
+      <wsdl:input message="tns:GetGoodsPurchaseRecordSoapIn" />
+      <wsdl:output message="tns:GetGoodsPurchaseRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GoodsPurchaseRecordUpdateStatus">
+      <wsdl:input message="tns:GoodsPurchaseRecordUpdateStatusSoapIn" />
+      <wsdl:output message="tns:GoodsPurchaseRecordUpdateStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesConfig">
+      <wsdl:input message="tns:GetSalesConfigSoapIn" />
+      <wsdl:output message="tns:GetSalesConfigSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalesConfigSelProduct">
+      <wsdl:input message="tns:SalesConfigSelProductSoapIn" />
+      <wsdl:output message="tns:SalesConfigSelProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalesExpireVerify">
+      <wsdl:input message="tns:SalesExpireVerifySoapIn" />
+      <wsdl:output message="tns:SalesExpireVerifySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesInfo">
+      <wsdl:input message="tns:AddSalesInfoSoapIn" />
+      <wsdl:output message="tns:AddSalesInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesSearchForDropDownList">
+      <wsdl:input message="tns:GetSalesSearchForDropDownListSoapIn" />
+      <wsdl:output message="tns:GetSalesSearchForDropDownListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoList">
+      <wsdl:input message="tns:GetSalesInfoListSoapIn" />
+      <wsdl:output message="tns:GetSalesInfoListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOldTimeSalesInfoList">
+      <wsdl:input message="tns:GetOldTimeSalesInfoListSoapIn" />
+      <wsdl:output message="tns:GetOldTimeSalesInfoListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoByUser">
+      <wsdl:input message="tns:GetSalesInfoByUserSoapIn" />
+      <wsdl:output message="tns:GetSalesInfoByUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesPurchaseRecord">
+      <wsdl:input message="tns:GetSalesPurchaseRecordSoapIn" />
+      <wsdl:output message="tns:GetSalesPurchaseRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesPurchaseRecordOut">
+      <wsdl:input message="tns:GetSalesPurchaseRecordOutSoapIn" />
+      <wsdl:output message="tns:GetSalesPurchaseRecordOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalesPurchaseRecordUpdateStatus">
+      <wsdl:input message="tns:SalesPurchaseRecordUpdateStatusSoapIn" />
+      <wsdl:output message="tns:SalesPurchaseRecordUpdateStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalesStatusUpdate">
+      <wsdl:input message="tns:SalesStatusUpdateSoapIn" />
+      <wsdl:output message="tns:SalesStatusUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalesVerify">
+      <wsdl:input message="tns:SalesVerifySoapIn" />
+      <wsdl:output message="tns:SalesVerifySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalesVerifyOldTime">
+      <wsdl:input message="tns:SalesVerifyOldTimeSoapIn" />
+      <wsdl:output message="tns:SalesVerifyOldTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSalingGoodsList">
+      <wsdl:input message="tns:GetSalingGoodsListSoapIn" />
+      <wsdl:output message="tns:GetSalingGoodsListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetaiSalingGoods">
+      <wsdl:input message="tns:GetDetaiSalingGoodsSoapIn" />
+      <wsdl:output message="tns:GetDetaiSalingGoodsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalingGoodsPurchaseRecordInsert">
+      <wsdl:input message="tns:SalingGoodsPurchaseRecordInsertSoapIn" />
+      <wsdl:output message="tns:SalingGoodsPurchaseRecordInsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SalingVerify">
+      <wsdl:input message="tns:SalingVerifySoapIn" />
+      <wsdl:output message="tns:SalingVerifySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SalesRoomWSSoap" type="tns:SalesRoomWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGoodsPurchaseRecord">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetGoodsPurchaseRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoodsPurchaseRecordUpdateStatus">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GoodsPurchaseRecordUpdateStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesConfig">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSalesConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesConfigSelProduct">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalesConfigSelProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesExpireVerify">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalesExpireVerify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesInfo">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/AddSalesInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesSearchForDropDownList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSalesSearchForDropDownList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSalesInfoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOldTimeSalesInfoList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetOldTimeSalesInfoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoByUser">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSalesInfoByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesPurchaseRecord">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSalesPurchaseRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesPurchaseRecordOut">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSalesPurchaseRecordOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesPurchaseRecordUpdateStatus">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalesPurchaseRecordUpdateStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesStatusUpdate">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalesStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesVerify">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalesVerify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesVerifyOldTime">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalesVerifyOldTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalingGoodsList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSalingGoodsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetaiSalingGoods">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetDetaiSalingGoods" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalingGoodsPurchaseRecordInsert">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalingGoodsPurchaseRecordInsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalingVerify">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SalingVerify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SalesRoomWSSoap12" type="tns:SalesRoomWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGoodsPurchaseRecord">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetGoodsPurchaseRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoodsPurchaseRecordUpdateStatus">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GoodsPurchaseRecordUpdateStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesConfig">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSalesConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesConfigSelProduct">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalesConfigSelProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesExpireVerify">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalesExpireVerify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesInfo">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/AddSalesInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesSearchForDropDownList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSalesSearchForDropDownList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSalesInfoList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOldTimeSalesInfoList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetOldTimeSalesInfoList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesInfoByUser">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSalesInfoByUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesPurchaseRecord">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSalesPurchaseRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalesPurchaseRecordOut">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSalesPurchaseRecordOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesPurchaseRecordUpdateStatus">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalesPurchaseRecordUpdateStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesStatusUpdate">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalesStatusUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesVerify">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalesVerify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesVerifyOldTime">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalesVerifyOldTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSalingGoodsList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSalingGoodsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetaiSalingGoods">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetDetaiSalingGoods" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalingGoodsPurchaseRecordInsert">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalingGoodsPurchaseRecordInsert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalingVerify">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SalingVerify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SalesRoomWS">
+    <wsdl:port name="SalesRoomWSSoap" binding="tns:SalesRoomWSSoap">
+      <soap:address location="http://localhost:7006/SalesRoomWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SalesRoomWSSoap12" binding="tns:SalesRoomWSSoap12">
+      <soap12:address location="http://localhost:7006/SalesRoomWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+﻿#mall-wrap
+{
+    width: 572px;
+    height: 409px;
+    background-image: url('../Images/mall/mallBg.jpg');
+    background-repeat: no-repeat;
+    margin:0 auto;
+}

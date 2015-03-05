@@ -1,0 +1,6 @@
+D:\Subversion\TcjjgWeb\TCJJG.Web.DB\bin\Debug\TCJJG.Web.DB.dll.config
+D:\Subversion\TcjjgWeb\TCJJG.Web.DB\bin\Debug\TCJJG.Web.DB.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.DB\bin\Debug\TCJJG.Web.DB.pdb
+D:\Subversion\TcjjgWeb\TCJJG.Web.DB\obj\Debug\ResolveAssemblyReference.cache
+D:\Subversion\TcjjgWeb\TCJJG.Web.DB\obj\Debug\TCJJG.Web.DB.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.DB\obj\Debug\TCJJG.Web.DB.pdb

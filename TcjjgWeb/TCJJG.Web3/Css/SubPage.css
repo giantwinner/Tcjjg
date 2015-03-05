@@ -1,0 +1,1806 @@
+﻿body
+{
+}
+
+a
+{
+    color: #555555;
+    text-decoration: none;
+}
+a Img
+{
+    border: 0;
+}
+
+/**二级页面公用样式**************************************/
+
+.subPage_form
+{
+    font-size: 14px;
+    color: #724e03;
+    line-height: 25px;
+}
+.subPage_Layout
+{
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    zoom: 1;
+    color: #555555;
+}
+.subPage_Left
+{
+    width: 214px;
+    float: left;
+}
+.subPage_Right
+{
+    width: 762px;
+    float: left;
+    margin-left: 24px;
+    color:#060606;
+}
+.subPage_Left_Nav
+{
+    width: 212px;
+    background-color: #f6f6f6;
+    border: 1px solid #c2c2c2;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.subPage_Left_Nav_Item
+{
+    background-image: url('../Images/SubPage/subPage_Left_Nav.jpg');
+    background-repeat: no-repeat;
+    width: 114px;
+    height: 36px;
+    margin-left: 25px;
+    line-height: 36px;
+    color: #646363;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    margin-top: 2px;
+    display: block;
+    cursor: pointer;
+    padding-left: 50px;
+}
+.subPage_Left_Nav_Item_Selected
+{
+    background-image: url('../Images/SubPage/subPage_Left_Nav_sel.jpg');
+}
+.subPage_Left_Service
+{
+    width: 214px;
+    height: 148px;
+    background-image: url('../Images/SubPage/imgServices.jpg');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+.AwardLinkToService
+{
+    display: inline-block;
+    width: 214px;
+    height: 148px;
+}
+.subPage_Left_UserInfo
+{
+    width: 212px;
+    height: 226px;
+    border: 1px solid #c2c2c2;
+    margin-top: 30px;
+    position: relative;
+}
+.subPage_Left_UserInfo_Title
+{
+    width: 192px;
+    height: 40px;
+    background-color: #F6F5F1;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #CECECE;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.subPage_Left_UserInfo_Img
+{
+    width: 74px;
+    height: 93px;
+    left: 70px;
+    top: 49px;
+    position: absolute;
+}
+.subPage_Left_UserInfo_YuanBao
+{
+    top: 175px;
+    left: 38px;
+    width: 150px;
+    position: absolute;
+    color:#353535;
+}
+.subPage_Left_UserInfo_Gold
+{
+    top: 195px;
+    left: 38px;
+    width: 150px;
+    position: absolute;
+    color:#353535;
+}
+.subPage_Left_UserInfo_Bonus
+{
+    top: 110px;
+    left: 100px;
+    width: 150px;
+    position: absolute;
+}
+.subPage_Left_UserInfo_NickName
+{
+    top: 155px;
+    position: absolute;
+    left: 38px;
+    color: #353535;   
+}
+.UC_PersonalAward
+{
+    top: 195px;
+    position: absolute;
+    left: 38px;
+}
+.UC_SalesInfo
+{
+    top: 195px;
+    position: absolute;
+    left: 110px;
+}
+    
+/**充值中心**************************************/
+.payCenter_Right_Guid
+{
+    height: 100px;
+    margin-left: 10px;
+}
+.payCenter_Right_Guid_Img
+{
+    vertical-align: middle;
+    margin-right: 40px;
+}
+.payCenter_Right_Content
+{
+}
+.payCenter_Right_Content_BGTop
+{
+    background-image: url('../Images/SubPage/payCenterBGTop.jpg');
+    background-repeat: no-repeat;
+    width: 762px;
+    height: 18px;
+}
+.payCenter_Right_Content_BGBottom
+{
+    background-image: url('../Images/SubPage/payCenterBGBottom.jpg');
+    background-repeat: no-repeat;
+    width: 762px;
+    height: 18px;
+}
+.payCenter_Right_Content_Main
+{
+    width: 762px;
+    background-color: #FFBB00;
+    overflow: hidden;
+    zoom: 1;
+}
+.payCenter_Right_Content_Main_Left
+{
+    float: left;
+    margin-left: 10px;
+    _margin-left: 5px;
+    width: 159px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #FC9C14;
+    border-left-color: #FC9C14;
+    height: 700px;
+}
+.payCenter_Right_Content_Main_Right
+{
+    float: left;
+    background-color: #FFFFFF;
+    width: 581px;
+    height: 700px;
+}
+.payCenter_Right_Content_Main_Nav_Guid
+{
+    width: 105px;
+    height: 37px;
+    background-image: url('../Images/SubPage/payCenterLeftGuid.jpg');
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.payCenter_Right_Content_Main_Nav_Item
+{
+    width: 122px;
+    height: 51px;
+    background-image: url('../Images/SubPage/btnRechargeLink.jpg');
+    background-repeat: no-repeat;
+    margin-left: -11px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 14px;
+    color: #724e03;
+    margin-top: 5px;
+    cursor: pointer;
+    display: block;
+    padding-left:49px;
+}
+.payCenter_Right_Content_Main_Nav_Item_Selected
+{
+    background-image: url('../Images/SubPage/btnRechargeLinkSel.jpg');
+}
+.payCenter_Right_Content_Main_Nav_Item_Hover
+{
+    background-image: url('../Images/SubPage/chargeHover.jpg');
+}
+.payItem_Title
+{
+    background-position: 5px;
+    background-image: url('../Images/SubPage/payItemArrows.jpg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-left: 50px;
+    width: 200px;
+    font-size: 15px;
+    color: #F92905;
+    margin-top: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.payItem_prompt
+{
+    color: #FF0000;
+    margin-left: 100px;
+}
+
+/**点卡充值页面**********************************************************************/
+.pay_Card
+{
+    margin-left: 50px;
+    width: 450px;
+    margin-top: 30px;
+}
+.pay_Card_Text
+{
+    color:#724e03;
+    width: 120px;
+    text-align: right;
+    line-height: 40px;
+    display: inline-block;
+}
+.pay_Card_Text
+{
+    *display: inline;
+}
+.pay_Card_TxtBox
+{
+    height: 20px;
+    width: 250px;
+    display: inline-block;
+}
+.pay_Card_TxtBox
+{ 
+    *display: inline;
+    border: 1px solid #484747; 
+ }
+
+.pay_Card_Vli
+{
+    height: 20px;
+    width: 190px;
+        border: 1px solid #484747; 
+}
+.pay_Card_DIV
+{
+    position: relative;
+    display: inline-block;
+    width: 256px;
+}
+.pay_Card_DIV
+{
+    *display: inline;
+}
+.pay_Card_Vli_Img
+{
+    cursor: pointer;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    *top:4px;
+    left: 11px;
+}
+.pay_Card_Btn
+{
+    margin-left: 123px;
+    margin-top: 20px;
+    width: 260px;
+}
+.payCard_Msg
+{
+    color: #FF0000;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+}
+
+
+/**网银充值样式[ 时间仓促，只在旧版基础上修改了一下，后期需要优化]**************************************/
+.yeepay
+{
+    margin-left: 60px;
+}
+.yeepay_Title
+{
+    background-position: 5px;
+    background-image: url('../Images/SubPage/payItemArrows.jpg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    width: 200px;
+    font-size: 15px;
+    color: #F92905;
+    margin-top: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.pay_body_main2_body_text
+{
+    display: inline;
+    margin-top: 20px;
+}
+.pay_body_main2_body_text_1
+{
+    display: inline;
+    color: #FF0000;
+}
+.pay_body_main2_body_text_2
+{
+    margin-left: 65px;
+    margin-top: -25px;
+}
+.pay_body_main2_body_text_1_1, .pay_body_main2_body_text_1_3
+{
+    display: inline;
+}
+.div_button2
+{
+    margin-left: 68px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/**电话充值样式**************************************************/
+.phoneRecharge
+{
+    margin-left: 50px;
+}
+.phoneRechargeRB
+{
+    margin-top: -25px;
+    margin-left: 65px;
+}
+.payInfo
+{
+    margin-left: 200px;
+}
+.payTitle
+{
+    font-size: 15px;
+    line-height: 50px;
+    color: #FF0000;
+}
+.paySubmit
+{
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+
+/**充值成功页样式**************************************************/
+.payResult_Img
+{
+    background-image: url('../Images/SubPage/payResult_Img.jpg');
+    background-repeat: no-repeat;
+    width: 221px;
+    height: 108px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.payResult_Info
+{
+    width: 180px;
+    margin-left: 200px;
+    color: #Fa0000;
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 50px;
+    background-image: url('../Images/SubPage/payResult_pass.jpg');
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+.payResult_Info2
+{
+    width: 200px;
+    margin-left: 200px;
+    color: #FF0000;
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 50px;
+    background-image: url('../Images/SubPage/payResult_falt.jpg');
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+.payResult_Link
+{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.payResult_Link1
+{
+    background-image: url('../Images/SubPage/payResult_btn1.jpg');
+    background-repeat: no-repeat;
+    width: 157px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+.payResult_Link1
+{
+    *display: inline;
+}
+.payResult_Link2
+{
+    background-image: url('../Images/SubPage/payResult_btn2.jpg');
+    background-repeat: no-repeat;
+    width: 157px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 10px;
+    _margin-left: 5px;
+    cursor: pointer;
+}
+.payResult_Link2
+{
+     *display: inline;
+}
+
+
+/**奖金券消费区样式**************************************************/
+
+.AwardList_Title
+{
+    background-position: 15px;
+    _background-position: 15px 5px;
+    background-image: url('../Images/SubPage/awardItemTitle.jpg');
+    background-repeat: no-repeat;
+    height: 31px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #FF8A00;
+    padding-left: 57px;
+    font-size: 14px;
+    line-height: 35px;
+    color:#9b4409;
+}
+.Award_Item
+{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.Award_Item_ImgBG
+{
+    border: 1px solid #DDDDDD;
+    width: 155px;
+    height: 122px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.Award_Item_ImgBG
+{
+     *display:inline;
+}
+.Award_Item_Img
+{
+    margin-top: 10px;
+    width: 151px;
+    height: 102px;
+    cursor: pointer;
+}
+.Award_Item_Name
+{
+    color: #1e7ec2;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top:15px;
+}
+.Award_Item_Bonus
+{
+    color: #e24602;
+    font-weight:bold;
+    margin-top:10px;
+}
+.Award_Item_Btn
+{
+    margin-top:15px;
+    width: 71px;
+    height: 26px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+.AwardNameUrl
+{
+     display:block;    
+}
+.Award_Item_Btn2
+{
+    margin-top: 15px;
+    background-image: url('../Images/SubPage/UnOpen.jpg');
+    background-repeat: no-repeat;
+    width: 71px;
+    height: 26px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block; 
+}
+.AwardsInfo
+{
+
+    width: 580px;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+.AwardsInfo_Left
+{
+    float: left;
+    width: 220px;
+}
+.AwardsInfo_Right
+{
+    float: left;
+    width: 570px;
+    font-size: 14px;
+    color: #060606;
+}
+.AwardsImg
+{
+    border: 1px solid #999999;
+    width: 150px;
+    height: 102px;
+}
+.AwardsName
+{
+    font-size: 14px;
+    margin-top:10px;
+}
+.AwardsPrice
+{
+    font-size: 14px;
+    margin-top:10px;
+}
+.AwardRemark
+{
+    color: #FF0000;
+    margin-top: 10px;
+    line-height: 25px;
+}
+/*********/
+.UpLoad span
+{
+            
+margin-right:223px;
+}
+.imgPreview
+{
+    border: 1px solid #C6C6C6;
+    width: 82px;
+    height: 82px;
+    float:left;
+    margin-left:165px;
+    margin-bottom:15px;
+}
+.inputFile
+{
+     float:left;
+     margin-left:165px;
+      margin-bottom:15px;
+      width:214px;
+    }
+        .UploadWarning
+        {
+            width:140px;
+            color:Red; 
+            font-size:12px; 
+            float:left; 
+            margin-left:158px;
+            margin-bottom:15px;
+            }
+/*************/
+.changeAwards
+{
+    margin-top: 10px;
+}
+.changeAwards_text
+{
+    border: 1px solid #484747;
+    width: 150px;
+}
+.btnChange
+{
+    margin-left: 77px;
+}
+.awardResult_Info
+{
+    width: 180px;
+    margin-left: 300px;
+    color: #FF0000;
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 50px;
+    background-image: url('../Images/SubPage/payResult_pass.jpg');
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+/**金币商城样式**************************************************/
+.goodsList
+{
+    margin-top: 25px;
+    font-weight: bold;
+    color: #7c7676;
+    padding-left: 10px;
+}
+.goodsListHead
+{
+    width: 750px;
+    background-image: url('../Images/SubPage/goodsListhead.jpg');
+    background-repeat: repeat-x;
+    height: 38px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #A8A8A8;
+    border-left-color: #A8A8A8;
+
+}
+.goddsListHeadItem
+{
+    display: inline-block;
+    width: 50px;
+    height: 38px;
+    line-height: 45px;
+    margin-right: 120px;
+    text-align: center;
+}
+.goddsListHeadItemLast
+{
+    display: inline-block;
+    width: 30px;
+    height: 38px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -62px;
+    *margin-left: -65px;
+}
+.goodsListItem
+{
+    width: 750px;
+    height: 70px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #A8A8A8;
+    border-bottom-color: #A8A8A8;
+    border-left-color: #A8A8A8;
+}
+.goodsListItemImg
+{
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.goodsListItemText
+{
+    width: 170px;
+    *width: 176px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    height: 70px;
+    _height: 30px;
+    _margin-top: -35px;
+}
+.goodsListItemText a
+{
+    color: #7c7676;
+}
+.goodsListItemBtn
+{
+    vertical-align: middle;
+    height: 70px;
+    _height: 30px;
+    _margin-top: -35px;
+    display: inline-block;
+    margin-left: -14px;
+    *margin-left: -9px;
+}
+.tableGoodsInfo
+{
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 13px;
+}
+.tableGoodsInfo_Img
+{
+    margin-top: -40px;
+    *margin-top: 0px;
+}
+.table_left
+{
+    padding-left: 20px;
+}
+.table_right
+{
+    
+}
+
+
+/**拍卖区样式**************************************************/
+.salesList
+{
+}
+.OrderByAmount
+{
+  position:relative;
+  left:335px;
+  bottom:-33px;
+}
+.OrderByPrice
+{
+      position:relative;
+  left:277px;
+  bottom:-33px;
+    }
+.salesListHead
+{
+    width: 750px;
+    background-image: url('../Images/SubPage/goodsListhead.jpg');
+    background-repeat: repeat-x;
+    height: 38px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #A8A8A8;
+    border-left-color: #A8A8A8;
+    font-weight: bold;
+    color: #7c7676;
+    overflow: hidden;
+}
+.salesListHeadItem
+{
+    display: inline-block;
+    width: 66px;
+    height: 38px;
+    line-height: 45px;
+    margin-right: 27px;
+    text-align: center;
+}
+.salesListHeadItemLast
+{
+    display: inline-block;
+   /* width: 50px;*/
+    height: 38px;
+    line-height: 45px;
+    text-align: left;
+}
+
+
+
+.salesListItem
+{
+    font-weight:bold;
+     color:#7c7676;
+   width: 750px;
+    height: 70px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #A8A8A8;
+    border-bottom-color: #A8A8A8;
+    border-left-color: #A8A8A8;
+}
+.salesListItemImg
+{
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.salesListItemText
+{
+    width: 90px;
+    *width: 92px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    height: 70px;
+    _height: 30px;
+    _margin-top: -35px;
+}
+.salesListItemText
+{
+    *display: inline;
+}
+.salesListItemText a
+{
+    color: #7c7676;
+}
+.salesListItemBtn
+{
+    vertical-align: middle;
+    height: 70px;
+    _height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    _bottom: 20px;
+}
+
+
+.salesListTitle
+{
+    margin-top: 10px;
+    position: relative;
+    height: 40px;
+    padding-bottom: -20px;
+}
+.btnSales1
+{
+    cursor: pointer;
+    width: 145px;
+    height: 33px;
+    background-image: url('../Images/SubPage/btnSales1.jpg');
+    display: inline-block;
+}
+.btnSales1
+{
+    *display: inline
+}
+.btnSales2
+{
+    cursor: pointer;
+    width: 139px;
+    height: 33px;
+    background-image: url('../Images/SubPage/btnSales2.jpg');
+    display: inline-block;
+    margin-left: 30px;
+}
+.btnSales2
+{
+    *display: inline
+}
+.sales_Search
+{
+    position: relative;
+    bottom: 25px;
+}
+.salesConfig_left
+{
+    border: 1px solid #999999;
+    float: left;
+    width: 450px;
+    height: 450px;
+    position: relative;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.salesConfig_left_Title
+{
+    position: absolute;
+    background-color: #FFFFFF;
+    top: -10px;
+    left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.salesConfig_left_Sales
+{
+    margin-left: 30px;
+    width: 100px;
+    height: 160px;
+    margin-bottom: 30px;
+}
+.salesConfig_left_SalesName
+{
+    width: 100px;
+    height: 30px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.salesConfig_left_SalesImg
+{
+    width: 100px;
+    height: 100px;
+}
+.salesConfig_left_SalesAmount
+{
+    width: 100px;
+    height: 30px;
+    background-color: #8E8662;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.salesConfig_right
+{
+    border: 1px solid #999999;
+    float: left;
+    width: 250px;
+    height: 450px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-top: 10px;
+    position: relative;
+}
+.Middle-right-bottom
+{
+     font-size:12px;
+     color:#353535;
+    }
+.salesConfig_right_Title
+{
+    position: absolute;
+    background-color: #FFFFFF;
+    top: -10px;
+    left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.salesConfig_right_Image
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    top: 20px;
+}
+.salesConfig_right_Name
+{
+    position: absolute;
+    top: -35px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    left: 0px;
+    _left: -80px;
+    width: 240px;
+}
+.clos_left
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+.clos_left
+{
+    *display: inline;
+}
+.clos_right
+{
+    display: inline-block;
+}
+.clos_right
+{
+    *display: inline;
+}
+.rowsRidio_right
+{
+    margin-left: 10px;
+}
+.salesConfig_bottom
+{
+    padding-top: 20px;
+}
+.salesConfig_bottom_Title
+{
+    font-weight: bold;
+    width: 730px;
+    margin-bottom:8px;
+}
+.salesConfig_bottom_Info
+{
+    float: right;
+}
+
+.noSales
+{
+    color: #FF0000;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.salesConfig_bottom_Item
+{
+    font-weight:bold;
+    text-align: center;
+}
+.salesConfig_bottom_table
+{
+    border-collapse: collapse;
+    border: 1px solid #999999;
+}
+.salesConfig_bottom_table td
+{
+    border: 1px solid #999999;
+}
+
+.salesSearch
+{
+    width: 360px;
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+.salesSearch
+{
+    *display: inline;
+}
+.salesSearch_Item
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+.salesSearch_Item
+{
+    *display: inline;
+}
+.salesSearch_Btn
+{
+    position: absolute;
+    right: 0px;
+    width: 65px;
+    top: 2px;
+}
+
+/**同城竞技馆样式**************************************************/
+.Stadiums_Top
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+.Stadiums_Search
+{
+    width: 350px;
+    float: right;
+    position: relative;
+}
+.Stadiums_Search_Btn
+{
+    position: absolute;
+    top: -5px;
+    right: 0px;
+}
+.Stadiums_Info
+{
+    margin-top: 10px;
+    height: 60px;
+    margin-left: 10px;
+}
+.Stadiums_Info_Title
+{
+    display: inline-block;
+    float: left;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FF0000;
+    text-align: center;
+    line-height: 25px;
+}
+.Stadiums_Info_Content
+{
+    width: 600px;
+    color: #FF0000;
+    float: left;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 25px;
+}
+.pnlArea
+{
+     color:#060606;
+     margin-left:20px;    
+}
+.Stadiums_List
+{
+    width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Stadiums_List_Partner
+{
+    position:relative;
+    
+    width: 150px;
+    height: 250px;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+.Stadiums_List_Partner_Name
+{
+    border: 1px solid #f96702;
+    background-image: url('../Images/SubPage/partnerBG.jpg');
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    height: 20px;
+    width: 140px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+.Stadiums_List_Partner_Img
+{
+    border: 1px solid #FF6600;
+    width: 150px;
+    height: 110px;
+}
+.Stadiums_List_Partner_Address
+{
+    width: 150px;
+    height: 43px;
+    margin-top: 5px;
+    line-height: 20px;
+    background-color: #c0bfbd;
+    cursor:default;
+}
+
+.Stadiums_Pager
+{
+    text-align: right;
+    margin-top: 30px;
+    _margin-top: 10px;
+}
+
+
+/**用户中心样式**************************************************/
+
+.userCenter_Layout
+{
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    zoom: 1;
+    color: #555555;
+    font-size: 13px;
+}
+
+.userCenter_Top
+{
+    border: 1px solid #dadada;
+    width: 997px;
+    height: 32px;
+    background-image: url('../Images/SubPage/ucbk.jpg');
+    background-repeat: repeat-x;
+    position: relative;
+    line-height: 30px;
+}
+.userCenter_Top_Text
+{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.userCenter_Top_Img
+{
+    background-image: url('../Images/SubPage/tcjjg_2012__uc.jpg');
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+}
+.userCenter_Left
+{
+    width: 160px;
+    float: left;
+    height: 732px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #dadada;
+    border-bottom-color: #dadada;
+    border-left-color: #dadada;
+    background-color: #F4F4F4;
+}
+.userCenter_Right
+{
+    width: 836px;
+    _width: 835px;
+    float: left;
+    height: 732px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-right-color: #dadada;
+    border-bottom-color: #dadada;
+    line-height: 25px;
+}
+.userCenter_Left_Nav
+{
+}
+.userCenter_Left_Nav_Title
+{
+    margin-left: 10px;
+    height: 30px;
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+}
+.userCenter_Left_Nav_Item
+{
+    width: 109px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 12px;
+    padding-left: 40px;
+    line-height: 32px;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+}
+.userCenter_Left_Nav_Item_Selected
+{
+    background-repeat: no-repeat;
+    background-image: url('../Images/SubPage/tcjjg_2012-2_bkBar.jpg');
+}
+.userCenter_Left_Nav_Item_Img
+{
+    vertical-align: middle;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+
+.UserCenter_Right_Layout
+{
+    margin-left: 20px;
+    width: 780px;
+    font-size:14px;
+    color:#353535; 
+}
+.UserCenter_Right_Title
+{
+    width: 770px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #dadada;
+    height: 50px;
+    color: #fa8400;
+    font-size: 14px;
+    line-height: 75px;
+    _line-height: 50px;
+    padding-left: 10px;
+}
+.UserInfo_Content
+{
+    width: 780px;
+    position: relative;
+    height: 180px;
+    font-size: 12px;
+}
+.UserInfo_Content_ImgHead
+{
+    width: 73px;
+    height: 94px;
+    top: 20px;
+    left: 10px;
+    position: absolute;
+}
+.UserInfo_Content_Item
+{
+    position: absolute;
+}
+.UserInfo_BtnUpdateImg
+{
+    background-image: url('../Images/SubPage/tcjjg_2012__changetx.jpg');
+    background-repeat: no-repeat;
+    width: 69px;
+    height: 26px;
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    cursor: pointer;
+    
+}
+.IdentifyHeadImgUrl
+{
+    width: 69px;
+    height: 26px;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    cursor: pointer;
+}
+.IdentifyDiv
+{
+    padding: 10px;
+    border: 1px solid #C0C0C0;
+    width: 400px;
+    height: 500px;
+    z-index: 1000;
+    position: relative;
+    top: 130px;
+    left: 280px;
+    display:none;
+}
+.promptInfo
+{
+        padding: 10px;
+    border: 1px solid #C0C0C0;
+    width: 400px;
+    height:auto;
+    z-index: 1000px;
+    position: relative;
+    top: 130px;
+    left: 250px;
+    display:none;
+    text-align:center;
+}
+.CloseBtn
+{
+     cursor:pointer;
+     width:20px;
+     height:20px;
+     float:right;
+    }
+    .BtnBeginIdentify
+{
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    float: right;
+    margin-right: 130px;
+    text-align: center;
+    font-size:16px;
+    line-height:40px;
+}
+.UserInfo_BtnSpread
+{
+    background-image: url('../Images/SubPage/tcjjg_2012__spread.jpg');
+    background-repeat: no-repeat;
+    left: 460px;
+    top: 65px;
+    width: 75px;
+    height: 22px;
+    position: absolute;
+    cursor: pointer;
+}
+.UserInfo_BtnPay
+{
+    background-image: url('../Images/SubPage/tcjjg_2012__pcharge.jpg');
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 22px;
+    left: 460px;
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+.UserInfo_Change
+{
+    background-image: url('../Images/SubPage/dh_03_03.jpg');
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 22px;
+    left: 460px;
+    top: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+.UserInfo_BtnAward
+{
+    background-image: url('../Images/SubPage/tcjjg_2012__pduijaing.jpg');
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 21px;
+    left: 460px;
+    top: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+.UserInfo_Detail
+{
+    width: 780px;
+    font-size: 12px;
+}
+.UserInfo_Detail_Title
+{
+    font-size: 14px;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: #CCCCCC;
+    padding-left:10px;
+}
+.UserInfo_Detail_Content
+{
+    margin-left: 10px;
+    line-height: 35px;
+}
+.btnChangeUserInfo
+{
+    width: 82px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-image: url('../Images/SubPage/tcjjg_2012__pupinfol.jpg');
+}
+    
+
+/**密保页面样式**************************************************/
+.SecurityCenter
+{
+    margin-left: 250px;
+    margin-top: 20px;
+    color: #353535;
+    line-height: 25px;
+}
+.help_textBox
+{
+    border: 1px solid #484747;
+}
+.SecurityCenter_Title
+{
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.SecurityCenter_Prompt
+{
+    font-size: 14px;
+    color: #FF0000;
+}
+.SecurityCenter_Error
+{
+    color: #FF0000;
+}
+.SecurityCenter_Hide
+{
+    display: none;
+}
+.SecurityCenter_BtnOK
+{
+    background-image: url('../Images/SubPage/tcjjg_2012__UpdatePwd.jpg');
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 32px;
+    cursor: pointer;
+}
+.SecurityCenter_BtnUpdate
+{
+    cursor: pointer;
+    background-image: url('../Images/SubPage/tcjjg_2012__UpmibaoBtn.jpg');
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 37px;
+    display: block;
+}
+.btnPosition
+{
+    position: relative;
+    top: 9px;
+}
+.btnPosition2
+{
+    position: relative;
+    top: 9px;
+}
+
+
+.table_Reckoing
+{
+    border-collapse: collapse;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-color: #C0C0C0;
+    border-right-color: #C0C0C0;
+    border-left-color: #C0C0C0;
+}
+.table_Reckoing th
+{
+    border: 1px solid #C0C0C0;
+    width: 72px;
+    border-collapse: collapse;
+    font-weight: normal;
+}
+.table_Reckoing_Th1
+{
+    width: 72px;
+    height: 28px;
+    font-size: 12px;
+    color: #353535;
+}
+.table_Reckoing_Th2
+{
+    width: 216px;
+    height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #353535;
+}
+.table_Reckoing_Th3
+{
+    width: 72px;
+    height: 28px;
+    font-size: 12px;
+    color: #353535;
+}
+.table_Reckoing_Th4
+{
+    width: 150px;
+    height: 28px;
+    font-size: 12px;
+    color: #353535;
+}
+.gridview_Reckoing_Head
+{
+    color: #353535;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-color: #C0C0C0;
+    border-right-color: #C0C0C0;
+    border-left-color: #C0C0C0;
+    line-height: 28px;
+}
+.gridview_Reckoing_Head1
+{
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C0C0C0;
+    height: 28px;
+    width: 320px;
+    display: inline-block;
+    text-align: center;
+}
+.gridview_Reckoing_Head1
+{
+    *display:inline;
+}
+.gridview_Reckoing_Head2
+{
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C0C0C0;
+    height: 28px;
+    width: 313px;
+    _width: 320px;
+    display: inline-block;
+    text-align: center;
+}
+.gridview_Reckoing_Head2
+{
+    *display:inline;
+}
+.gridview_Reckoing_Head3
+{
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    padding-left: 35px;
+    _padding-left: 40px;
+}
+.gridview_Reckoing_Head3
+{
+    *display:inline;
+}
+.gridview_Reckoing
+{
+    border: 1px solid #C0C0C0;
+    color: #353535;
+    font-size: 12px;
+}
+.gridview_Reckoing th
+{
+    border: 1px solid #C0C0C0;
+}
+.gridview_Reckoing td
+{
+    border: 1px solid #C0C0C0;
+    text-align: center;
+}
+.gridview_Reckoing_TD
+{
+    width: 66px;
+    height: 35px;
+}
+
+
+.ReckoningAmply
+{
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #C0C0C0;
+    margin-top: -1px;
+    height: 40px;
+    line-height: 40px;
+}
+.ReckoningAmply_Left
+{
+    display: inline-block;
+    width: 95px;
+    text-align: center;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C0C0C0;
+    font-weight: bold;
+    height: 40px;
+    font-size: 13px;
+}
+.ReckoningAmply_Left
+{
+    *display: inline;
+}
+.ReckoningAmply_Right
+{
+    width: 480px;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.ReckoningAmply_Right
+{
+    *display: inline;
+}
+.Reckoning_Link
+{
+    color: #fd4201;
+    font-weight: bold;
+}
+
+.divUserMessageTitle
+{
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #999999;
+    margin-top: 10px;
+}
+.divUserMessageTitle a, .div_SystemMsgTime a
+{
+    color: #0099FF;
+}
+.divUserMessageTitle a
+{
+     color:#353535;
+    }
+.div_SystemMsgTitle
+{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 40px;
+}
+.div_SystemMsgTime
+{
+    text-align: right;
+    line-height: 40px;
+}
+
+.divUserMessagePage
+{
+    margin-top: 10px;
+    text-align: right;
+}
+.divUserMessageData_B
+{
+    font-weight: bold;
+}
+.pageCurr
+{
+    width: 12px;
+    height: 15px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 15px;
+    text-align: center;
+    margin-right: 5px;
+    color: #FF0000;
+}
+.pageCount
+{
+    width: 12px;
+    height: 15px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 15px;
+    text-align: center;
+    margin-right: 5px;
+    color: #0066FF;
+}
+.pay_promptInfo
+{
+    color: #FF0000;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.UserCenter_GiveRichs
+{
+    line-height: 25px;
+    margin-left: 10px;
+}
+.UserCenter_GiveRichs_Msg
+{
+    position: relative;
+    bottom: 10px;
+}
+.changePwdComplete
+{
+    width: 49;
+    height: 41px;
+    background-image: url('../Images/SubPage/tcjjg_2012__03.jpg');
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.changePwdComplete_Link
+{
+    background-image: url('../Images/SubPage/tcjjg_2012__07.jpg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 157px;
+    height: 42px;
+    display: block;
+}

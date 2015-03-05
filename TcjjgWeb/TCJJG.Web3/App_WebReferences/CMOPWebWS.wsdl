@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.tcjjg.com/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.tcjjg.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.tcjjg.com/webservices/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="AddClaimLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nickName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="awardID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="awardName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="awardCount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="accountType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="claimCredentialTypeName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="awardBonus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="iDCardImgUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="movePhone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recipient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="postNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddClaimLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddClaimLogResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailGoodsInfoByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="goodsID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailGoodsInfoByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetailGoodsInfoByIDResult" type="tns:CMOP_SelectGoodsByGoodsIDResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CMOP_SelectGoodsByGoodsIDResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AwardName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardImg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardInfo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardBonus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardPostType" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardInfo1" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsHot" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCommend" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="sort" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountBonus" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsMatchShow" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClaimCredential" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GetAwardType" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DelTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaimCredentialTypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GetAwardTypeTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardItemID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsShowInCMOP" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsShowInTCJJG" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="State" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAwardList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="awardTypeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageTotal" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="awardTypeName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cityID" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAwardListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAwardListResult" type="tns:ArrayOfFWP_Award_SelByType1Result" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageTotal" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="awardTypeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFWP_Award_SelByType1Result">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FWP_Award_SelByType1Result" nillable="true" type="tns:FWP_Award_SelByType1Result" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FWP_Award_SelByType1Result">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AwardID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardImg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardBonus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="State" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsHot" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClaimCredential" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaimCredentialTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardTypeID" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDetailAwardInfoByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="awardID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailAwardInfoByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetailAwardInfoByIDResult" type="tns:FWP_Award_SelectAwardByIDResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FWP_Award_SelectAwardByIDResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AwardID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardImg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardBonus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardPostType" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsHot" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClaimCredential" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaimCredentialTypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GetAwardTypeTypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardTypeID" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardTypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateClaimLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nickName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="awardID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="awardCount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="claimStatusID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="resID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="matchName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="barAwardDes" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pro1" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="pro2" nillable="true" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="pro1UserName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="claimPro1" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="claimPro1UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iDCardImgUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="movePhone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recipient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="postNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="getAwardBar" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="opeType" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="logID" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_TypeID" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_Amount" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="c_TypeID" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="c_Amount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateClaimLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateClaimLogResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="opeType" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="logID" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_TypeID" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_Amount" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="c_TypeID" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="c_Amount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchClaimLogList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="awardTypeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageTotal" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchClaimLogListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMatchClaimLogListResult" type="tns:ArrayOfFWP_ClaimLog_MatchSelResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageTotal" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFWP_ClaimLog_MatchSelResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FWP_ClaimLog_MatchSelResult" nillable="true" type="tns:FWP_ClaimLog_MatchSelResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FWP_ClaimLog_MatchSelResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ClaimLogID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaimStatusName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="MatchName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AwardBonus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBonus" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaimPro1UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaimCredentialTypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetNewsListByType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="typeBase" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="newsTypeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageTotal" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="newsTypeID1" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="newsTypeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsListByTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewsListByTypeResult" type="tns:ArrayOfFWP_News_ByTypeResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageTotal" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="newsTypeID1" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="newsTypeName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFWP_News_ByTypeResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FWP_News_ByTypeResult" nillable="true" type="tns:FWP_News_ByTypeResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FWP_News_ByTypeResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NewsID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsImg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Brevity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="newsTypeID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetNewsContentByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="newsID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="last" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="next" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsContentByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewsContentByIDResult" type="tns:FWP_News_SelectContentResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="last" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="next" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FWP_News_SelectContentResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NewsID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NewsCounter" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Brevity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewsImg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="newsTypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SendMessageConfigSel">
+        <s:complexType />
+      </s:element>
+      <s:element name="SendMessageConfigSelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendMessageConfigSelResult" type="tns:SendMessageConfig" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SendMessageConfig">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Uid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Psw" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RegCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ope" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SendMessageLogValidate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movePhone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="requestIP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMessageLogValidateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMessageLogValidateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadUserHeadCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadUserHeadCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadUserHeadCheckResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAppealAccountInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="realName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idCardNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idCardPicture" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="appealTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAppealAccountInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddAppealAccountInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCardIDUpLoadCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iP" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="createTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCardIDUpLoadCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckCardIDUpLoadCountResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompetitionCenterDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iD" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompetitionCenterDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompetitionCenterDetailResult" type="tns:ArrayOfProc_CompetitionCenter_GetDetailByIDResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_CompetitionCenter_GetDetailByIDResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_CompetitionCenter_GetDetailByIDResult" nillable="true" type="tns:proc_CompetitionCenter_GetDetailByIDResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_CompetitionCenter_GetDetailByIDResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="IndexImgUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MoreListImgUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sort" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LinkToDetail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailedContent" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCompetitionCenterList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCompetitionCenterListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompetitionCenterListResult" type="tns:ArrayOfProc_CompetitionCenter_SelectInfoResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_CompetitionCenter_SelectInfoResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_CompetitionCenter_SelectInfoResult" nillable="true" type="tns:proc_CompetitionCenter_SelectInfoResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_CompetitionCenter_SelectInfoResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="IndexImgUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MoreListImgUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sort" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LinkToDetail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailedContent" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCompetitionReportList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCompetitionReportListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompetitionReportListResult" type="tns:ArrayOfProc_CompetitionReport_SelectCompetitionReportResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_CompetitionReport_SelectCompetitionReportResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_CompetitionReport_SelectCompetitionReportResult" nillable="true" type="tns:proc_CompetitionReport_SelectCompetitionReportResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_CompetitionReport_SelectCompetitionReportResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CompetitionID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompetitionImgUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompetitionTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompetitionContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompetitionLinkToUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompetitionSort" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetFAQInfoList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFAQInfoListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFAQInfoListResult" type="tns:ArrayOfProc_FAQ_SelectInfoListResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_FAQ_SelectInfoListResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_FAQ_SelectInfoListResult" nillable="true" type="tns:proc_FAQ_SelectInfoListResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_FAQ_SelectInfoListResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FAQID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FAQTitle" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FAQPosition" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FAQSort" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetFloorillaInfoList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cityID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFloorillaInfoListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFloorillaInfoListResult" type="tns:ArrayOfProc_Floorilla_SelectFloorillaInfoResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Floorilla_SelectFloorillaInfoResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Floorilla_SelectFloorillaInfoResult" nillable="true" type="tns:proc_Floorilla_SelectFloorillaInfoResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Floorilla_SelectFloorillaInfoResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FloorillaName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FloorillaQQNum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sort" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHelpInfoContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="helpID" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHelpInfoContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHelpInfoContentResult" type="tns:ArrayOfProc_HelpCenter_GetDetail_HelpInfoResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_HelpCenter_GetDetail_HelpInfoResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_HelpCenter_GetDetail_HelpInfoResult" nillable="true" type="tns:proc_HelpCenter_GetDetail_HelpInfoResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_HelpCenter_GetDetail_HelpInfoResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="HelpName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HelpType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HelpSort" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HelpContent" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHelpInfoByType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="helpType" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="temp" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHelpInfoByTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHelpInfoByTypeResult" type="tns:ArrayOfProc_HelpCenter_GetHelpInfoByHelpTypeResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="temp" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_HelpCenter_GetHelpInfoByHelpTypeResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_HelpCenter_GetHelpInfoByHelpTypeResult" nillable="true" type="tns:proc_HelpCenter_GetHelpInfoByHelpTypeResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_HelpCenter_GetHelpInfoByHelpTypeResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HelpID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HelpName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HelpType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HelpSort" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="num" nillable="true" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EditWebVisitCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="visitWeb" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="visitDateTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditWebVisitCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EditWebVisitCountResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndexADImg">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetIndexADImgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIndexADImgResult" type="tns:ArrayOfYu_IndexAD_Sel_ImgResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfYu_IndexAD_Sel_ImgResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Yu_IndexAD_Sel_ImgResult" nillable="true" type="tns:Yu_IndexAD_Sel_ImgResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Yu_IndexAD_Sel_ImgResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImageName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LinkURL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OpeType" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddClaimLogSoapIn">
+    <wsdl:part name="parameters" element="tns:AddClaimLog" />
+  </wsdl:message>
+  <wsdl:message name="AddClaimLogSoapOut">
+    <wsdl:part name="parameters" element="tns:AddClaimLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailGoodsInfoByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetailGoodsInfoByID" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailGoodsInfoByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetailGoodsInfoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAwardListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAwardList" />
+  </wsdl:message>
+  <wsdl:message name="GetAwardListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAwardListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailAwardInfoByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetailAwardInfoByID" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailAwardInfoByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetailAwardInfoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateClaimLogSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateClaimLog" />
+  </wsdl:message>
+  <wsdl:message name="CreateClaimLogSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateClaimLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMatchClaimLogListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatchClaimLogList" />
+  </wsdl:message>
+  <wsdl:message name="GetMatchClaimLogListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatchClaimLogListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsListByTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewsListByType" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsListByTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewsListByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsContentByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewsContentByID" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsContentByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewsContentByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageConfigSelSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMessageConfigSel" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageConfigSelSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMessageConfigSelResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageLogValidateSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMessageLogValidate" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageLogValidateSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMessageLogValidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadUserHeadCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadUserHeadCheck" />
+  </wsdl:message>
+  <wsdl:message name="UploadUserHeadCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadUserHeadCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAppealAccountInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAppealAccountInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddAppealAccountInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAppealAccountInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckCardIDUpLoadCountSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckCardIDUpLoadCount" />
+  </wsdl:message>
+  <wsdl:message name="CheckCardIDUpLoadCountSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckCardIDUpLoadCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompetitionCenterDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompetitionCenterDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetCompetitionCenterDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompetitionCenterDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompetitionCenterListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompetitionCenterList" />
+  </wsdl:message>
+  <wsdl:message name="GetCompetitionCenterListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompetitionCenterListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompetitionReportListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompetitionReportList" />
+  </wsdl:message>
+  <wsdl:message name="GetCompetitionReportListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompetitionReportListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFAQInfoListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFAQInfoList" />
+  </wsdl:message>
+  <wsdl:message name="GetFAQInfoListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFAQInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFloorillaInfoListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFloorillaInfoList" />
+  </wsdl:message>
+  <wsdl:message name="GetFloorillaInfoListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFloorillaInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHelpInfoContentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHelpInfoContent" />
+  </wsdl:message>
+  <wsdl:message name="GetHelpInfoContentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHelpInfoContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHelpInfoByTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHelpInfoByType" />
+  </wsdl:message>
+  <wsdl:message name="GetHelpInfoByTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHelpInfoByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditWebVisitCountSoapIn">
+    <wsdl:part name="parameters" element="tns:EditWebVisitCount" />
+  </wsdl:message>
+  <wsdl:message name="EditWebVisitCountSoapOut">
+    <wsdl:part name="parameters" element="tns:EditWebVisitCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIndexADImgSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIndexADImg" />
+  </wsdl:message>
+  <wsdl:message name="GetIndexADImgSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIndexADImgResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CMOPWebWSSoap">
+    <wsdl:operation name="AddClaimLog">
+      <wsdl:input message="tns:AddClaimLogSoapIn" />
+      <wsdl:output message="tns:AddClaimLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailGoodsInfoByID">
+      <wsdl:input message="tns:GetDetailGoodsInfoByIDSoapIn" />
+      <wsdl:output message="tns:GetDetailGoodsInfoByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAwardList">
+      <wsdl:input message="tns:GetAwardListSoapIn" />
+      <wsdl:output message="tns:GetAwardListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailAwardInfoByID">
+      <wsdl:input message="tns:GetDetailAwardInfoByIDSoapIn" />
+      <wsdl:output message="tns:GetDetailAwardInfoByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateClaimLog">
+      <wsdl:input message="tns:CreateClaimLogSoapIn" />
+      <wsdl:output message="tns:CreateClaimLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchClaimLogList">
+      <wsdl:input message="tns:GetMatchClaimLogListSoapIn" />
+      <wsdl:output message="tns:GetMatchClaimLogListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsListByType">
+      <wsdl:input message="tns:GetNewsListByTypeSoapIn" />
+      <wsdl:output message="tns:GetNewsListByTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsContentByID">
+      <wsdl:input message="tns:GetNewsContentByIDSoapIn" />
+      <wsdl:output message="tns:GetNewsContentByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessageConfigSel">
+      <wsdl:input message="tns:SendMessageConfigSelSoapIn" />
+      <wsdl:output message="tns:SendMessageConfigSelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessageLogValidate">
+      <wsdl:input message="tns:SendMessageLogValidateSoapIn" />
+      <wsdl:output message="tns:SendMessageLogValidateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadUserHeadCheck">
+      <wsdl:input message="tns:UploadUserHeadCheckSoapIn" />
+      <wsdl:output message="tns:UploadUserHeadCheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAppealAccountInfo">
+      <wsdl:input message="tns:AddAppealAccountInfoSoapIn" />
+      <wsdl:output message="tns:AddAppealAccountInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCardIDUpLoadCount">
+      <wsdl:input message="tns:CheckCardIDUpLoadCountSoapIn" />
+      <wsdl:output message="tns:CheckCardIDUpLoadCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionCenterDetail">
+      <wsdl:input message="tns:GetCompetitionCenterDetailSoapIn" />
+      <wsdl:output message="tns:GetCompetitionCenterDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionCenterList">
+      <wsdl:input message="tns:GetCompetitionCenterListSoapIn" />
+      <wsdl:output message="tns:GetCompetitionCenterListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionReportList">
+      <wsdl:input message="tns:GetCompetitionReportListSoapIn" />
+      <wsdl:output message="tns:GetCompetitionReportListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFAQInfoList">
+      <wsdl:input message="tns:GetFAQInfoListSoapIn" />
+      <wsdl:output message="tns:GetFAQInfoListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFloorillaInfoList">
+      <wsdl:input message="tns:GetFloorillaInfoListSoapIn" />
+      <wsdl:output message="tns:GetFloorillaInfoListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpInfoContent">
+      <wsdl:input message="tns:GetHelpInfoContentSoapIn" />
+      <wsdl:output message="tns:GetHelpInfoContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpInfoByType">
+      <wsdl:input message="tns:GetHelpInfoByTypeSoapIn" />
+      <wsdl:output message="tns:GetHelpInfoByTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditWebVisitCount">
+      <wsdl:input message="tns:EditWebVisitCountSoapIn" />
+      <wsdl:output message="tns:EditWebVisitCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexADImg">
+      <wsdl:input message="tns:GetIndexADImgSoapIn" />
+      <wsdl:output message="tns:GetIndexADImgSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CMOPWebWSSoap" type="tns:CMOPWebWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddClaimLog">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/AddClaimLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailGoodsInfoByID">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetDetailGoodsInfoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAwardList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetAwardList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailAwardInfoByID">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetDetailAwardInfoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateClaimLog">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/CreateClaimLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchClaimLogList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetMatchClaimLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsListByType">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetNewsListByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsContentByID">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetNewsContentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessageConfigSel">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SendMessageConfigSel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessageLogValidate">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/SendMessageLogValidate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadUserHeadCheck">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/UploadUserHeadCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAppealAccountInfo">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/AddAppealAccountInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCardIDUpLoadCount">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/CheckCardIDUpLoadCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionCenterDetail">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetCompetitionCenterDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionCenterList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetCompetitionCenterList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionReportList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetCompetitionReportList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFAQInfoList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetFAQInfoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFloorillaInfoList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetFloorillaInfoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpInfoContent">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetHelpInfoContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpInfoByType">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetHelpInfoByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditWebVisitCount">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/EditWebVisitCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexADImg">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetIndexADImg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CMOPWebWSSoap12" type="tns:CMOPWebWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddClaimLog">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/AddClaimLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailGoodsInfoByID">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetDetailGoodsInfoByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAwardList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetAwardList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailAwardInfoByID">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetDetailAwardInfoByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateClaimLog">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/CreateClaimLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchClaimLogList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetMatchClaimLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsListByType">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetNewsListByType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsContentByID">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetNewsContentByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessageConfigSel">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SendMessageConfigSel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessageLogValidate">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/SendMessageLogValidate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadUserHeadCheck">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/UploadUserHeadCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAppealAccountInfo">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/AddAppealAccountInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCardIDUpLoadCount">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/CheckCardIDUpLoadCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionCenterDetail">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetCompetitionCenterDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionCenterList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetCompetitionCenterList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitionReportList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetCompetitionReportList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFAQInfoList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetFAQInfoList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFloorillaInfoList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetFloorillaInfoList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpInfoContent">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetHelpInfoContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpInfoByType">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetHelpInfoByType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditWebVisitCount">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/EditWebVisitCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexADImg">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetIndexADImg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CMOPWebWS">
+    <wsdl:port name="CMOPWebWSSoap" binding="tns:CMOPWebWSSoap">
+      <soap:address location="http://localhost:7006/CMOPWebWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CMOPWebWSSoap12" binding="tns:CMOPWebWSSoap12">
+      <soap12:address location="http://localhost:7006/CMOPWebWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

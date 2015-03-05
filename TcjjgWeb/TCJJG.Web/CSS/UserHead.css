@@ -1,0 +1,378 @@
+﻿/***reg statr change user head*****/
+
+.head-tap-default
+{
+    height: 37px;
+    width: 117px;
+    text-align: center;
+    line-height: 37px;
+    font-weight: bold;
+    color: #2E76AE;
+    background-image: url('../Images/UserCenter/head-tap-bg-1.jpg');
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    float: left;
+    cursor:default;
+}
+.head-tap-select
+{
+    height: 37px;
+    width: 117px;
+    text-align: center;
+    line-height: 37px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-image: url('../Images/UserCenter/head-tap-bg-2.jpg');
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    float: left;
+    cursor:default;
+}
+
+#vip-wrap
+{
+    display: none;
+    width: 683px;
+    position: absolute;
+    top: 36px;
+    height: 450px;
+}
+/**********************/
+.div_RegMain25_head_2
+{
+    position: absolute;
+    top: 47px;
+    left: 28px;
+    height: 240px;
+    width: 436px;
+}
+.pageList
+{
+    width: 436;
+    height: 240px;
+    display: none;
+}
+.div_RegMain25_head_2_a
+{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    height: 94px;
+    width: 436px;
+}
+.div_RegMain25_head_2_1
+{
+    position: relative;
+    height: 93px;
+    width: 85px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+.div_RegMain25_head_2_b
+{
+    position: absolute;
+    top: 105px;
+    left: 5px;
+    height: 13px;
+    width: 436px;
+}
+.div_RegMain25_head_2_2
+{
+    position: relative;
+    height: 13px;
+    width: 85px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+.div_RegMain25_head_2_c
+{
+    position: absolute;
+    top: 125px;
+    left: 5px;
+    height: 94px;
+    width: 436px;
+}
+.div_RegMain25_head_2_d
+{
+    position: absolute;
+    top: 221px;
+    left: 5px;
+    height: 13px;
+    width: 436px;
+}
+.div_RegMain25_head_2_e
+{
+    position: absolute;
+    top: 243px;
+    left: 0px;
+    height: 20px;
+    width: 433px;
+    z-index: 1;
+}
+.div_RegMain25_head_2_e_cut
+{
+    position: absolute;
+    top: 255px;
+    right: 9px;
+    height: 20px;
+    width: 200px;
+    z-index: 1;
+}
+/**/
+.div_RegMain25_head_3
+{
+    position: absolute;
+    top: 47px;
+    left: 28px;
+    height: 240px;
+    width: 436px;
+    vertical-align: middle;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+/***regend change user head*****/
+/*******user amply***************/
+
+.div_RegMain25_head_3_amp
+{
+    position: absolute;
+    top: 47px;
+    left: 176px;
+    height: 240px;
+    width: 500px;
+    z-index: 0;
+}
+.urds_1
+{
+    position: relative;
+    top: 0px;
+    height: 20px;
+}
+.urds_2
+{
+    position: relative;
+    top: 0px;
+    height: 20px;
+}
+.urds_2_s1
+{
+    position: relative;
+    top: 0px;
+    height: 20px;
+    width: 260px;
+    display: inline-block;
+}
+.urds_2_s2
+{
+    position: relative;
+    top: -6px;
+    height: 20px;
+    width: 130px;
+    display: inline-block;
+}
+/**/
+/*******user k head start**********/
+
+html
+{
+    filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+/**/
+#content
+{
+    cursor: pointer;
+    position: relative;
+    width: 470px;
+    height: 220px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+#drop
+{
+    border: 1px solid #3366FF;
+    width: 63px;
+    height: 63px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+    overflow: hidden;
+}
+#drop_img
+{
+    cursor: pointer;
+    position: absolute;
+}
+#father
+{
+    border: 1px solid red;
+    width: 50px;
+    height: 10px;
+    position: relative;
+}
+#bar
+{
+    width: 211px;
+    height: 18px;
+    background-image: url("/Images/uploadHead/track.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+/**/
+/****************web2**/
+#ctl00_ContentPlaceHolder2_content
+{
+    cursor: pointer;
+    position: relative;
+    width: 470px;
+    height: 220px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+#ctl00_ContentPlaceHolder2_drop
+{
+    border: 1px solid #3366FF;
+    width: 74px;
+    height: 93px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+    overflow: hidden;
+}
+#ctl00_ContentPlaceHolder2_drop_img
+{
+    cursor: pointer;
+    position: absolute;
+}
+#ctl00_ContentPlaceHolder2_father
+{
+    border: 1px solid red;
+    width: 50px;
+    height: 10px;
+    position: relative;
+}
+#ctl00_ContentPlaceHolder2_bar
+{
+    width: 211px;
+    height: 18px;
+    background-image: url("/Images/uploadHead/track.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*********************************web3**/
+#ctl00_ContentPlaceHolder1_content
+{
+    cursor: pointer;
+    position: relative;
+    width: 470px;
+    height: 220px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+#ctl00_ContentPlaceHolder1_drop
+{
+    border: 1px solid #3366FF;
+    width: 74px;
+    height: 93px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+    overflow: hidden;
+}
+#ctl00_ContentPlaceHolder1_drop_img
+{
+    cursor: pointer;
+    position: absolute;
+}
+#ctl00_ContentPlaceHolder1_father
+{
+    border: 1px solid red;
+    width: 50px;
+    height: 10px;
+    position: relative;
+}
+#ctl00_ContentPlaceHolder1_bar
+{
+    width: 211px;
+    height: 18px;
+    background-image: url("/Images/uploadHead/track.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*********************************web3**/
+/*----*/
+.child
+{
+    width: 11px;
+    height: 16px;
+    background-image: url("/Images/uploadHead/grip11.gif");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    position: absolute;
+    left: 100px;
+    cursor: pointer;
+}
+.smallbig
+{
+    cursor: pointer;
+}
+/**/
+.Currentimages
+{
+}
+.div_HeadImageCut_class
+{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    width: 472px;
+    height: 279px;
+}
+/*******user k head end**********/
+
+/*************/
+
+.headItem
+{
+    height: 80px;
+    width: 80px;
+    float: left;
+    text-align: center;
+}
+.headImg
+{
+    width: 63px;
+    height: 63px;
+    margin-bottom: 10px;
+}
+.pageBar
+{
+    height: 20px;
+    width: 60px;
+ position:absolute;
+  left:343px;
+  bottom:20px;
+}
+
+.previous, .next
+{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline;
+    margin-left: 5px;
+}
+
+
+
+

@@ -1,0 +1,12 @@
+.wm_top {
+	HEIGHT: 66px
+}
+.wm_foot {
+	HEIGHT: 66px
+}
+.wm_top {
+	MIN-WIDTH: 1002px; WIDTH: 100%
+}
+.wm_foot {
+	MIN-WIDTH: 1002px; WIDTH: 100%
+}

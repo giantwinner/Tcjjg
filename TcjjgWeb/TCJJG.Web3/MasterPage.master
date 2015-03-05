@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>同城斗地主竞技赛-中国扑克竞技赛（CMOP）</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <link href="Css/MasterPage.css" rel="stylesheet" type="text/css" />
+    <script src="/Js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="D_Container">
+        <div class="D_Head">
+            <div class="D_Head_Inner">
+                <div class="D_Img_Logo">
+                    <img src="../Images/MasterPage/tcjjg_2012_2.jpg" alt="" /></div>
+                <div class="D_Img_Mid">
+                    <img src="../Images/MasterPage/tcjjg_2012_3.jpg" alt="" /></div>
+                <div class="D_Head_Right">
+                    <div class="D_Head_Right_Top">
+                        <a href="../UserCenter/UserLogin.aspx" id="M_Link_Login">登录 | </a><a href="../UserCenter/UserReg.aspx"
+                            id="M_Link_Register">注册</a><a href="../UserCenter" id="M_Link_UserName" style="display: none;
+                                width: 150px; position: absolute; left: -132px; _left: -154px; text-align: right;">
+                            </a><span class="splitLine" style="position: absolute; right: 227px; _right: 245px;
+                                visibility: hidden;">| </span><a href="../UserCenter/UserSeleMessage.aspx" id="M_Link_Msg"
+                                    style="display: none; position: absolute; left: 29px; _left: 11px;">消息<span class="msgCount"></span>
+                                </a><span class="splitLine" style="position: absolute; right: 171px; _right: 187px;
+                                    visibility: hidden;">| </span><span style="visibility: hidden;">a</span><a href="../UserCenter/userLogout.aspx"
+                                        id="M_Link_Logout" style="display: none">退出 </a><span>| </span><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.tcjjg.com');"
+                                            href="#">设为首页</a><span> | </span><a href="http://download.tcjjg.com/同城竞技馆快捷方式.exe"
+                                                target="_blank">添加桌面图标</a>
+                    </div>
+                    <div class="D_Head_Right_Bottom">
+                        <div class="D_Head_Right_Bottom_X">
+                            <a href="http://e.weibo.com/u/2386490671" target="_blank">
+                                <img src="../Images/MasterPage/tcjjg_2012_4.jpg" alt="" />&nbsp;新浪微博</a>
+                        </div>
+                        <div class="D_Head_Right_Bottom_T">
+                            <a href="http://t.qq.com/zhongyou6823" target="_blank">
+                                <img src="../Images/MasterPage/tcjjg_2012_5.jpg" alt="" />&nbsp;腾讯微博</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="D_Nav">
+                <ul>
+                    <li><a id="A_Index" href="../Default.aspx">首&nbsp;页</a></li><li class="NavSpace">
+                    </li>
+                    <li class="NavSpace1"></li>
+                    <li><a href="../HallPage/HallPageFL.aspx">比赛大厅</a></li><li class="NavSpace"></li>
+                    <li class="NavSpace1"></li>
+                    <li><a id="A_User" href="../UserCenter/">用户中心</a></li><li class="NavSpace"></li>
+                    <li class="NavSpace1"></li>
+                    <li><a id="A_PayCenter" href="../PayCenter/PayCenter.aspx">充值中心</a></li><li class="NavSpace">
+                    </li>
+                    <li class="NavSpace1"></li>
+                    <li><a id="A_AwardCenter" href="../AwardCenter/GoodsList.aspx">兑换中心</a></li><li class="NavSpace">
+                    </li>
+                    <li class="NavSpace1"></li>
+                    <li><a id="A_CustomerServiceCenter" href="../CustomerService/CustomerServiceCenter.aspx">
+                        客服中心</a></li><li class="NavSpace"></li>
+                    <li class="NavSpace1"></li>
+                    <li><a href="/UserCenter/tcjjgbbs.aspx" target="_blank">玩家论坛</a></li><li class="NavSpace">
+                    </li>
+                    <li class="NavSpace1"></li>
+                    <li><a id="A_About" href="../About/AboutIndex.aspx">关于中游</a></li>
+                </ul>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="D_Footer">
+            <div class="D_Footer_Bar">
+            </div>
+            <div class="D_Footer_Nav">
+                <span><a href="/">首页</a></span> | <a href="../About/AboutIndex.aspx">关于我们</a> |
+                <a href="../About/TermOfService.aspx">服务条款</a> | <a href="../About/ContactUS.aspx">联系方式</a>
+                | <a href="../About/HireInfo.aspx">招贤纳士</a> | <a href="../CustomerService/jiazhang/j1.html"
+                    target="_blank">家长监护</a> | <a href="http://www.cmop.cn/" target="_blank">CMOP官网</a>
+            </div>
+            <div class="D_Footer_Copyright">
+                Copyright&nbsp;2008-2012&nbsp;中游竞技文化股份有限公司&nbsp;版权所有&nbsp;琼ICP证B2-20120009号&nbsp;琼ICP备11002650号<br />
+                <span class="D_Footer_Copyright_cnzz">
+                    <script src="http://s132.cnzz.com/stat.php?id=1443449&web_id=1443449&show=pic" language="JavaScript"
+                        type="text/javascript" charset="gb2312"></script>
+                </span>&nbsp;海南省公安厅备案46000002000001号&nbsp;琼网文[2012]0134-001号&nbsp;通用域名：<a href="/">www.tcddz.com</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function ShowLoginOK(userName, msgCount) {
+            //母版页
+            $(".splitLine").css("visibility", "visible");
+            $("#M_Link_UserName").text(userName);
+            if (msgCount > 0) {
+                // $("#M_Link_Msg").text("消息(" + msgCount + ")");
+                $(".msgCount").text("(" + msgCount + ")");
+
+                setInterval(function () {
+                    $(".msgCount").fadeIn(100).fadeOut(500);
+                }, 1000)
+            } else {
+                $(".msgCount").text("(0)");
+            }
+            $("#M_Link_UserName").show();
+            $("#M_Link_Msg").show();
+            $("#M_Link_Logout").show();
+            $("#M_Link_Login").hide();
+            $("#M_Link_Register").hide();
+
+
+        }
+    </script>
+    </form>
+</body>
+</html>

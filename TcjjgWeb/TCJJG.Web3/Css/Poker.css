@@ -1,0 +1,56 @@
+﻿body
+{
+    font-size: 14px;
+    color: #555555;
+}
+
+.Poker
+{
+    width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.WelcomeInfo
+{
+    height: 50px;
+    width: 680px;
+    background-color: #dddddd;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+.UserName
+{
+    color: #0066FF;
+}
+.TextBox
+{
+    width: 300px;
+    border: 1px solid #808080;
+    height: 22px;
+    line-height: 22px;
+}
+.Btn
+{
+    width: 102px;
+    height: 32px;
+}
+.IdentityInfo
+{
+    color: #FF0000;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: #CCCCCC;
+    height: 40px;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Error
+{
+    margin-right: auto;
+    margin-left: auto;
+    color: #808080;
+    width: 200px;
+    font-size: 15px;
+}

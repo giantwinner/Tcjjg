@@ -1,0 +1,523 @@
+﻿body
+{
+    margin: 0px;
+    padding: 0px;
+}
+/**********客服中心自定义控件***********/
+.D_CS_Container
+{
+    width: 233px;
+    float: left;
+}
+.ContentCenter
+{
+    display: block;
+    width: 184px;
+    height: 37px;
+    background-image: url('../Images/CustomerService/tcjjg_2012__ucbg2.jpg');
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    line-height: 37px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #646363;
+}
+
+.D_CS_ContainerTop
+{
+    border: 1px solid #BCBCBC;
+    height: 123px;
+    background-color: rgb(246,246,246);
+}
+
+.D_CS_ContainerTop_Inner
+{
+    height: 117px;
+    width: 184px;
+    margin-left: 24.5px;
+}
+.CSSpace
+{
+    display: block;
+    height: 22px;
+}
+.D_CS_ContainerBottom
+{
+    border-style: none solid solid solid;
+    height: 380px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #BCBCBC;
+    border-bottom-color: #BCBCBC;
+    border-left-color: #BCBCBC;
+}
+.D_CS_Title
+{
+    height: 28px;
+    background-image: url('../Images/CustomerService/indexquestionbg.jpg');
+    background-repeat: repeat-x;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.D_CS_Title span
+{
+    height: 12px;
+    width: 24.5px;
+    display: inline-block;
+}
+.D_CS_Title a
+{
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(6,6,6);
+    float: right;
+    font-weight: normal;
+    margin-right: 10px;
+    _margin-top: -28px;
+    *margin-top: -28px;
+}
+.QuestionContainer
+{
+    width: 175px;
+    margin-left: 24.5px;
+    margin-top: 10px;
+}
+.Question
+{
+    display: block;
+    font-size: 12px;
+    color: rgb(6,6,6);
+    height: 26px;
+    width: 175px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #E2E2E2;
+    line-height: 26px;
+}
+
+/*******************/
+/*********首页************/
+.D_IndexContainer
+{
+    margin: 0 auto;
+    width: 985px;
+    _width: 1029px;
+}
+.D_IndexRightContainer
+{
+    width: 716px;
+    margin-left: 30px;
+    float: left;
+}
+.clearF
+{
+    clear: both;
+}
+.DownImgList
+{
+    height: 216px;
+    width: 716px;
+    margin-top: 97px;
+}
+.DownImgList a
+{
+    display: block;
+    float: left;
+}
+.ImgListSpace
+{
+    height: 216px;
+    width: 114px;
+    float: left;
+}
+
+
+/********************/
+/**********帮助中心*************/
+.D_Help_UCContainer
+{
+    border: 1px solid #BCBCBC;
+    height: 273px;
+    width: 233px;
+    float: left;
+    background-color: rgb(246,246,246);
+}
+/******新手指南*******/
+.help_right_link, .help_right_link:hover, .help_right_link:visited, .help_right_link:active
+{
+    color: #0000FF;
+    text-decoration: underline;
+}
+.help_right_image
+{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**********/
+/******游戏说明*******/
+
+.help_right_text
+{
+    text-indent: 2em;
+}
+.help_right_text2
+{
+    padding-left: 2em;
+}
+.help_right_title_small
+{
+    font-weight: bold;
+}
+.help_right_table
+{
+    width: 665px;
+    border-collapse: collapse;
+}
+.help_right_table th
+{
+ font-weight:normal;
+    text-align: center;
+    height: 40px;
+}
+.help_right_table td, .help_right_table th
+{
+    border: 1px solid #F2BE0D;
+}
+.td1
+{
+    width: 100px;
+    text-align: center;
+}
+.td2
+{
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.td3
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/******************/
+/**常见问题**/
+
+.help_position
+{
+    width: 762px;
+    min-height: 756px;
+    _height: 756px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #DDDDDD;
+    border-bottom-color: #DDDDDD;
+    border-left-color: #DDDDDD;
+}
+.help_nav
+{
+    margin: 0 auto;
+    height: 36px;
+    line-height: 36px;
+    width: 762px;
+    background-image: url('../Images/CustomerService/problemNavBg.jpg');
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+.help_nav_item
+{
+    margin-top: 8px;
+    width: 120px;
+    height: 28px;
+    margin-left: 7px;
+    _margin-left: 7px;
+    line-height: 28px;
+    color: rgb(113,113,113);
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-color: #DDDDDD;
+    border-right-color: #DDDDDD;
+    border-left-color: #DDDDDD;
+}
+.help_nav_more
+{
+    font-size: 16px;
+    cursor: pointer;
+    float:right;
+    margin-right:22px;
+}
+.help_nav_item_sel
+{
+    color: rgb(6,6,6);
+    background-color: rgb(246,246,246);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #DDDDDD;
+    border-right-color: #DDDDDD;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #DDDDDD;
+    border-bottom-style: none;
+}
+.help_content
+{
+    display: none;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #535353;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 675px;
+    margin: 0 auto;
+}
+.help_content strong, .help_content b
+{
+    color: rgb(6,6,6);
+}
+.help_right_goods
+{
+    width: 220px;
+    height: 150px;
+    text-align: center;
+    float: left;
+}
+.help_right_goods_image
+{
+    cursor: pointer;
+}
+.help_right_goods_text
+{
+    text-align: center;
+    font-size: 15px;
+    display: none;
+    width: 650px;
+    float: left;
+}
+/****/
+/********账号申诉************/
+.Appeal_Container
+{
+    margin-left: 30px;
+    float: left;
+    width: 720px;
+    height: 540px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #bcbcbc;
+    border-bottom-color: #bcbcbc;
+    border-left-color: #bcbcbc;
+}
+
+.Appeal_Title
+{
+    height: 36px;
+    line-height: 36px;
+    background-image: url('../Images/CustomerService/problemNavBg.jpg');
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+.Appeal_Title_Content
+{
+    text-align: center;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-color: #CBCBCB;
+    border-right-color: #CBCBCB;
+    border-left-color: #CBCBCB;
+    background-color: #F6F6F6;
+    width: 88px;
+    margin-left: 24px;
+}
+.Appeal_Content
+{
+    width: 380px;
+    height: 330px;
+    margin-left: 158px;
+    margin-top:22px;
+    font-size: 14px;
+    text-align: right;
+}
+.Appeal_Text
+{
+    border: 1px solid #484747;
+    width: 212px;
+}
+.ImgBtnSubmit
+{
+    margin-bottom: -13px;
+    margin-right:114px;
+    width:103px;
+    height:38px;
+}
+
+  .lblUploadMessage
+  {
+       float:left;
+      
+      }
+.UpLoad span
+{
+            
+margin-right:223px;
+}
+.imgPreview
+{
+    border: 1px solid #C6C6C6;
+    width: 82px;
+    height: 82px;
+    float:left;
+    margin-left:165px;
+    margin-bottom:15px;
+}
+.inputFile
+{
+     float:left;
+     margin-left:165px;
+      margin-bottom:15px;
+      width:214px;
+    }
+    .btnUpload,.lblUploadMessage
+    {
+         float:left;
+          margin-left:165px;
+        }
+        .UploadWarning
+        {
+            width:140px;
+            color:Red; 
+            font-size:12px; 
+            float:left; 
+            margin-left:158px;
+            margin-bottom:15px;
+            }
+    .lblUploadMessage
+    {
+                 float:left;
+          margin-left:165px;
+          margin-top:20px;
+          font-size:14px;
+          color:Red;
+        } 
+.ValiCode
+{   
+    clear:left;
+    width: 233px;
+    height: 22px;
+    margin-top:10px;
+    margin-bottom:60px;
+    margin-left:30px;
+     _margin-right:56px;
+     *margin-right:56px;
+ } 
+     .txtCode
+     {
+             border: 1px solid #484747;
+             width:40px;
+         }
+ .imgCode
+{
+    width: 46px;
+    height: 20px;
+}
+/***************/
+/****玩家交流群***/
+.Floorilla_Container
+{
+    margin-left: 30px;
+    float: left;
+    width: 660px;
+}
+.CityName
+{
+    color: rgb(244,111,6);
+    font-weight: bold;
+    font-size: 14px;
+}
+.Floorilla_Content
+{
+    width:500px;
+     margin:0 auto;
+     margin-top:50px;
+    }
+/*.help_QQArea
+{
+    width: 680px;
+    height: 28px;
+    background-color: #F1F1F1;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+}
+.help_QQNum
+{
+    margin-left: 8px;
+    height: 40px;
+    line-height: 45px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #BCBCBC;
+    position: relative;
+}
+.help_QQNum_Last
+{
+    margin-left: 8px;
+    height: 50px;
+    line-height: 40px;
+    position: relative;
+}
+.help_QQNum2
+{
+    position: absolute;
+    left: 180px;
+    width: 200px;
+    top: 0px;
+}*/
+.FloorillaDetail
+{
+      float:left;
+     font-size:12px;
+     width:300px;
+      color:#474747;
+      display:inline-block;
+       line-height:40px;
+    }
+    .FloorillaDetail2
+    {
+        float:left;
+             font-size:12px;
+     width:140px;
+      color:#474747;
+      display:inline-block;
+       line-height:40px;
+        }
+/***********

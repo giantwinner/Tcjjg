@@ -1,0 +1,5 @@
+D:\Subversion\TcjjgWeb\TCJJG.Web.UserCenter\bin\Debug\TCJJG.Web.UserCenter.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.UserCenter\bin\Debug\TCJJG.Web.UserCenter.pdb
+D:\Subversion\TcjjgWeb\TCJJG.Web.UserCenter\obj\Debug\ResolveAssemblyReference.cache
+D:\Subversion\TcjjgWeb\TCJJG.Web.UserCenter\obj\Debug\TCJJG.Web.UserCenter.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.UserCenter\obj\Debug\TCJJG.Web.UserCenter.pdb

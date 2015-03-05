@@ -1,0 +1,227 @@
+﻿#input-wrap
+{
+    width: 478px;
+    height: 280px;
+    position: absolute;
+    left: 28px;
+    top: 125px;
+    z-index: 1000;
+    color: #BBEBFF;
+}
+.tap-reg, .tap-login
+{
+    width: 128px;
+    height: 30px;
+    background-image: url('../Images/SPVisit/spvisit-tap.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    top: -5px;
+    line-height: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tap-reg
+{
+    left: 10px;
+}
+.tap-login
+{
+    left: 138px;
+}
+.text
+{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 60px;
+}
+.text-username
+{
+    top: 50px;
+}
+.text-pwd
+{
+    top: 102px;
+}
+.text-vali
+{
+    top: 154px;
+}
+.text-nick
+{
+    top: 154px;
+}
+.text-area
+{
+    top: 206px;
+}
+.textbox
+{
+    border-style: none;
+    background-color: transparent;
+    line-height: 30px;
+    background-image: url('../Images/SPVisit/spvisit-textbox.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 243px;
+    position: absolute;
+    left: 160px;
+    color: #BBEBFF;
+}
+
+.textbox2
+{
+    border-style: none;
+    background-color: transparent;
+    line-height: 30px;
+    background-image: url('../Images/SPVisit/spvisit-vli.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 187px;
+    position: absolute;
+    left: 160px;
+    color: #BBEBFF;
+}
+.textbox-username
+{
+    top: 45px;
+}
+.textbox-pwd
+{
+    top: 97px;
+}
+.textbox-vali
+{
+    top: 149px;
+}
+.txtCode
+{
+    position: absolute;
+    right: 74px;
+    top: 149px;
+    height:30px;
+    width:50px;
+}
+.textbox-nick
+{
+    top: 149px;
+}
+.ddl
+{
+    position: absolute;
+    top: 206px;
+    width: 120px;
+}
+.ddl-province
+{
+    left: 160px;
+}
+
+.ddl-city
+{
+    right: 70px;
+}
+.regbtn
+{
+    position: absolute;
+    left: 150px;
+    top: 275px;
+}
+.txtPrompt-un
+{
+    font-size: 12px;
+    position: absolute;
+    left: 160px;
+    top: 79px;
+    display: none;
+}
+.txtPrompt-pwd
+{
+    font-size: 12px;
+    position: absolute;
+    left: 160px;
+    top: 130px;
+    display: none;
+}
+.txtPrompt-nn
+{
+    font-size: 12px;
+    position: absolute;
+    left: 160px;
+    top: 185px;
+    width: 380px;
+    display: none;
+}
+.msg
+{
+    font-size: 12px;
+    color: Red;
+    position: absolute;
+    left: 160px;
+    top: 330px;
+}
+.LoginBtn
+{
+    cursor: pointer;
+    position: absolute;
+    top: 192px;
+    left: 152px;
+}
+.loginmsg
+{
+    font-size: 12px;
+    color: Red;
+    position: absolute;
+    left: 160px;
+    top: 252px;
+}
+
+.swf
+{
+    display: block;
+    width: 1003px;
+    height: 600px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.check1
+{
+    position: absolute;
+    top: 232px;
+    left: 60px;
+}
+.check2
+{
+    position: absolute;
+    top: 257px;
+    left: 60px;
+}
+.cktext1
+{
+    position: absolute;
+    top: 235px;
+    left: 79px;
+}
+.cktext2
+{
+    position: absolute;
+    top: 260px;
+    left: 79px;
+}
+.ck1
+{
+    color: #5FC0F7;
+    position: absolute;
+    top: 235px;
+    left: 166px;
+}
+.ck2
+{
+    color: #5FC0F7;
+    position: absolute;
+    top: 260px;
+    left: 166px;
+}

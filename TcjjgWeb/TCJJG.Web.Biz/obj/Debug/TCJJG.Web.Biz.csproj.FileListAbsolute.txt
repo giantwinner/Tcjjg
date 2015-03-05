@@ -1,0 +1,12 @@
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.Biz.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.Biz.pdb
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.DB.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.Model.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.UserCenter.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.DB.pdb
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.Model.pdb
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\TCJJG.Web.UserCenter.pdb
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\obj\Debug\ResolveAssemblyReference.cache
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\obj\Debug\TCJJG.Web.Biz.dll
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\obj\Debug\TCJJG.Web.Biz.pdb
+D:\Subversion\TcjjgWeb\TCJJG.Web.Biz\bin\Debug\FFJJG.Server.Utils.dll

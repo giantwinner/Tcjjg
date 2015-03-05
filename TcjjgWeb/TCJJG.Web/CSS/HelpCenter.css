@@ -1,0 +1,218 @@
+﻿.hc-kf-wrap
+{
+    width: 1000px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+.hc-kf-mv
+{
+    position: absolute;
+    left: 42px;
+    bottom: -5px;
+    z-index: 2;
+}
+.hc-kf-info
+{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+.kfQQ
+{
+    display: block;
+    width: 223px;
+    height: 47px;
+    position: absolute;
+    top: 38px;
+    right: 50px;
+    background-color: transparent;
+}
+.hc-gameintro-wrap
+{
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    text-align: center;
+}
+.hc-gameintro-item
+{
+    width: 122px;
+    float: left;
+    margin-left: 12px;
+}
+.intr-item
+{
+    width: 239px;
+    float: left;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.intr-item a
+{
+    width: 61px;
+    height: 22px;
+    margin: 0 auto;
+}
+.intr-item a img
+{
+    margin-top: 5px;
+}
+
+/******新手指南*******/
+.help_right_link, .help_right_link:hover, .help_right_link:visited, .help_right_link:active
+{
+    color: #0000FF;
+    text-decoration: underline;
+}
+.help_right_image
+{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**********/
+/******游戏说明*******/
+
+.help_right_text
+{
+    text-indent: 2em;
+}
+.help_right_text2
+{
+    padding-left: 2em;
+}
+.help_right_title_small
+{
+    font-weight: bold;
+}
+.help_right_table
+{
+    width: 665px;
+    border-collapse: collapse;
+}
+.help_right_table th
+{
+    font-weight: normal;
+    text-align: center;
+    height: 40px;
+}
+.help_right_table td, .help_right_table th
+{
+    border: 1px solid #F2BE0D;
+}
+.td1
+{
+    width: 100px;
+    text-align: center;
+}
+.td2
+{
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.td3
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/******************/
+/**常见问题**/
+
+.help_position
+{
+    width: 762px;
+}
+.help_nav
+{
+    margin: 0 auto;
+    height: 36px;
+    line-height: 36px;
+    width: 762px;
+    overflow: hidden;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #1f5892;
+}
+.help_nav_item
+{
+    position: relative;
+    z-index: 2;
+    margin-top: 8px;
+    width: 120px;
+    height: 28px;
+    margin-left: 7px;
+    _margin-left: 7px;
+    line-height: 28px;
+    color: #666464;
+    font-size: 12px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    background-color: #cce3fa;
+    font-weight: bold;
+}
+.help_nav_more
+{
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 22px;
+}
+.help_nav_item_sel
+{
+    color: #303030;
+    background-color: #98c0e9;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #1f5892;
+    border-right-color: #1f5892;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #1f5892;
+}
+.help_content
+{
+
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #3d3d3d;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 675px;
+    margin: 0 auto;
+}
+.help_content strong, .help_content b
+{
+    color: #3d3d3d;
+    font-size:14px;
+}
+.help_right_goods
+{
+    width: 220px;
+    height: 150px;
+    text-align: center;
+    float: left;
+}
+.help_right_goods_image
+{
+    cursor: pointer;
+}
+.help_right_goods_text
+{
+    text-align: center;
+    font-size: 15px;
+    display: none;
+    width: 650px;
+    float: left;
+}
+/****/
+

@@ -1,0 +1,227 @@
+﻿.step-arrow
+{
+    margin-right: 9px;
+    margin-left: 9px;
+}
+.pay-step-wrap
+{
+    position: absolute;
+    right: 27px;
+    height: 89px;
+    line-height: 89px;
+    top: 41px;
+}
+.step-arrow
+{
+    position: relative;
+    bottom: 2px;
+}
+.pay-type-wrap
+{
+  margin-left:50px;
+  font-size:12px;
+  margin-top:15px;
+  line-height:5px;
+}
+.pay-type-text
+{
+     font-weight:bold;
+    }
+.pay-type-wrap input[type=radio]
+{
+     position:relative;
+     top:2px;
+    }
+    .paysplitline
+{
+    margin-bottom: 18px;
+}
+/**点卡充值页面**********************************************************************/
+.pay_Card
+{
+    margin-left: 50px;
+    width: 450px;
+    font-size: 12px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    color: #303030;
+}
+.pay_Card_Text
+{
+    width: 120px;
+    text-align: right;
+    line-height: 40px;
+    display: inline-block;
+}
+.pay_Card_Text
+{
+    *display: inline;
+}
+.pay_Card_TxtBox
+{
+    height: 20px;
+    width: 230px;
+    display: inline-block;
+}
+.pay_Card_TxtBox
+{ 
+    *display: inline;
+    border: 1px solid #999999; 
+ }
+
+.pay_Card_Vli
+{
+    height: 20px;
+    width: 160px;
+        border: 1px solid #999999; 
+}
+.pay_Card_DIV
+{
+    position: relative;
+    display: inline-block;
+    width: 256px;
+}
+.pay_Card_DIV
+{
+    *display: inline;
+}
+.pay_Card_Vli_Img
+{
+    cursor: pointer;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    *top:4px;
+    left: 11px;
+}
+.pay_Card_Btn
+{
+    margin-left: 123px;
+    margin-top: 20px;
+    width: 260px;
+}
+.payCard_Msg
+{
+    color: #FF0000;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+}
+.payItem_prompt
+{
+    color: #FF0000;
+    margin-left: 123px;
+    line-height:21px;
+}
+
+/**网银充值样式[ 时间仓促，只在旧版基础上修改了一下，后期需要优化]**************************************/
+.yeepay
+{
+    font-size:12px;
+    margin-left: 60px;
+}
+
+.yeepay_Title
+{
+    background-position: 5px;
+    background-image: url('../Images/SubPage/payItemArrows.jpg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    width: 200px;
+    font-size: 15px;
+    color: #F92905;
+    margin-top: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.pay_body_main2_body_text
+{
+    display: inline;
+    margin-top: 20px;
+}
+.pay_body_main2_body_text_1
+{
+    display: inline;
+    color: #FF0000;
+}
+.pay_body_main2_body_text_2
+{
+    margin-left: 65px;
+}
+.pay_body_main2_body_text_1_1, .pay_body_main2_body_text_1_3
+{
+    display: inline;
+}
+.div_button2
+{
+    margin-left: 68px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/**电话充值样式**************************************************/
+.phoneRecharge
+{
+    margin-left: 50px;
+}
+.phoneRechargeRB
+{
+    margin-left: 65px;
+}
+.payInfo
+{
+    margin-left: 200px;
+}
+.payTitle
+{
+    font-size: 15px;
+    line-height: 50px;
+    color: #FF0000;
+}
+.paySubmit
+{
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+}
+/**********************/
+.subPage_form
+{
+    font-size: 12px;
+    color: #303030;
+    line-height: 25px;
+}
+.btnLinkToHall
+{
+    color: #FFFFFF;
+    background-image: url('../Images/PayCenter/btnToHall.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 105px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display:inline-block;
+    position:relative;
+    top:1.5px;
+}
+.btnLinkToHall:hover
+{
+    background-image: url('../Images/PayCenter/btnToHall2.png');
+    background-repeat: no-repeat;
+}
+.chargeResultImg
+{
+      height:30px;
+      margin-bottom:28px;
+    }
+    .charge-wrap
+    {
+ width:190px;
+ margin:0 auto;
+        }

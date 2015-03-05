@@ -1,0 +1,274 @@
+﻿body
+{
+}
+.D_SpreadContainer
+{
+    width: 978px;
+    margin: 0 auto;
+}
+.ClearF
+{
+    clear: both;
+}
+/*******自定义控件**********/
+.D_Help_UCContainer
+{
+    border: 1px solid #BCBCBC;
+    height: 233px;
+    width: 233px;
+    float: left;
+    background-color: rgb(246,246,246);
+}
+.ContentCenter
+{
+    display: block;
+    width: 184px;
+    height: 37px;
+    background-image: url('../Images/CustomerService/tcjjg_2012__ucbg2.jpg');
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    line-height: 37px;
+    font-family: "黑体";
+    font-size: 16px;
+    color: rgb(56,56,56);
+}
+#CustomerServiceCenter
+{
+    background-image: url('../Images/CustomerService/tcjjg_2012__ucbg.jpg');
+}
+.D_CS_ContainerTop_Inner
+{
+    height: 117px;
+    width: 184px;
+    margin-left: 24.5px;
+}
+.CSSpace
+{
+    display: block;
+    height: 22px;
+}
+/*****************/
+
+.Bigbody
+{
+    width: 695px;
+    height: 100%;
+    font-size: 12px;
+    margin-left: 20px;
+    color: #353535;
+    float: right;
+}
+/* 已登录 */
+.loginOut
+{
+    width: 100%;
+    height: 155px;
+    margin-bottom: 10px;
+}
+.top1
+{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+    border: 1px #DDDDDD solid;
+}
+.CopyUrl
+{
+    display: inline-block;
+    width: 90px;
+    height: 37px;
+    background-image: url('../Images/Spread/CopyUrl.jpg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.top1_top
+{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #060606;
+    font-weight: bold;
+    padding-left: 10px;
+    border-bottom: 1px #C4D4E1 solid;
+    background-image: url('../Images/Spread/bgThin1.jpg');
+    background-repeat: repeat-x;
+}
+.top1_top a, .top1_top a:hover, .top1_top a:active
+{
+    color: Red;
+    text-decoration: underline;
+}
+.top1_buttom
+{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    padding-top: 5px;
+}
+.top1_buttom a, .top1_buttom a:hover, .top1_buttom a:active
+{
+    color: #fff;
+    text-decoration: none;
+}
+.top1_buttom2
+{
+    width: 213px;
+    height: 35px;
+    padding: 8px 0px 0px 13px;
+    float: left;
+}
+.top1_buttom3
+{
+    width: 203px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    background-image: url('../Images/Spread/bgWid.jpg');
+    background-repeat: no-repeat;
+}
+
+/* 没登录 */
+.top2
+{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+.top2_top
+{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+.top2_top a, .top2_top a:hover, .top2_top a:active
+{
+    color: Red;
+    text-decoration: underline;
+}
+.top2_buttom
+{
+    width: 100%;
+    height: 55px;
+    padding-top: 5px;
+}
+.top2_buttom a, .top2_buttom a:hover, .top2_buttom a:active
+{
+    color: #fff;
+    text-decoration: none;
+}
+.colorBor
+{
+    width: 100%;
+    height: 30px;
+    border: 1px #E3E3E3 solid;
+    background-image: url('../Images/Spread/bgThin2.jpg');
+    background-repeat: repeat-x;
+}
+
+.middle_left
+{
+    float: left;
+    width: 340px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.SpredLogin
+{
+    display: block;
+    width: 89px;
+    height: 32px;
+    background-image: url('../Images/Spread/spredLogin.jpg');
+    background-repeat: no-repeat;
+}
+.middle_right
+{
+    float: left;
+    width: 330px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+}
+.middle_right a, .middle_right a:hover, .middle_right a:active
+{
+    color: #000;
+    text-decoration: none;
+}
+.nocolorBor
+{
+    width: 100%;
+    height: 40px;
+}
+
+.middle2_left
+{
+    float: left;
+    width: 340px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.middle2_right
+{
+    float: left;
+    width: 340px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    text-align: right;
+}
+.middle2_right a, .middle2_right a:hover, .middle2_right a:active
+{
+    color: #Fa0000;
+    text-decoration: underline;
+}
+.buttom_text
+{
+    width: 100%;
+    height: 165px;
+    line-height: 25px;
+}
+.buttom_text p
+{
+}
+
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+
+.ui-tabs-nav
+{
+    /*导航容器定义*/
+}
+.ui-tabs-nav li
+{
+    /*默认标签样式*/
+}
+.ui-tabs-nav li.ui-tabs-selected
+{
+    /*激活的标签样式*/
+}
+.ui-tabs-panel
+{
+    /*默认的显示区域样式*/
+}
+.ui-tabs-hide
+{
+    display: none;
+}
+
+
+
+
+
+

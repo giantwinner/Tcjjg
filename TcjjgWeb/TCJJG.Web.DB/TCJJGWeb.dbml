@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TCJJGWeb" Class="TCJJGWebDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=devserver-pc;Initial Catalog=TCJJGWeb;Persist Security Info=True;User ID=sa" SettingsObjectName="TCJJG.Web.DB.Properties.Settings" SettingsPropertyName="TCJJGWebConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.proc_CompetitionCenter_GetDetailByID" Method="proc_CompetitionCenter_GetDetailByID">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_CompetitionCenter_GetDetailByIDResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IndexImgUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="MoreListImgUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="Sort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LinkToDetail" Type="System.String" DbType="NVarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="DetailedContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_CompetitionCenter_SelectInfo" Method="proc_CompetitionCenter_SelectInfo">
+    <ElementType Name="proc_CompetitionCenter_SelectInfoResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IndexImgUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="MoreListImgUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="Sort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LinkToDetail" Type="System.String" DbType="NVarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="DetailedContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_CompetitionReport_SelectCompetitionReport" Method="proc_CompetitionReport_SelectCompetitionReport">
+    <ElementType Name="proc_CompetitionReport_SelectCompetitionReportResult">
+      <Column Name="CompetitionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CompetitionImgUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="CompetitionTitle" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="CompetitionContent" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="CompetitionLinkToUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="CompetitionSort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_HelpCenter_GetDetail_HelpInfo" Method="proc_HelpCenter_GetDetail_HelpInfo">
+    <Parameter Name="HelpID" Parameter="helpID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_HelpCenter_GetDetail_HelpInfoResult">
+      <Column Name="HelpName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="HelpType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HelpSort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HelpContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_HelpCenter_GetHelpInfoByHelpType" Method="proc_HelpCenter_GetHelpInfoByHelpType">
+    <Parameter Name="HelpType" Parameter="helpType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pageIndex" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pageSize" Type="System.Int32" DbType="Int" />
+    <Parameter Name="rowCount" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="proc_HelpCenter_GetHelpInfoByHelpTypeResult">
+      <Column Name="HelpID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HelpName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="HelpType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HelpSort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="num" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_FAQ_SelectInfoList" Method="proc_FAQ_SelectInfoList">
+    <ElementType Name="proc_FAQ_SelectInfoListResult">
+      <Column Name="FAQID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FAQTitle" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="FAQPosition" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FAQSort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_MaintenancePage_SelectPageInfo" Method="proc_MaintenancePage_SelectPageInfo">
+    <ElementType Name="proc_MaintenancePage_SelectPageInfoResult">
+      <Column Name="Contents" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="IsApply" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Yu_IndexAD_Sel_Img" Method="Yu_IndexAD_Sel_Img">
+    <ElementType Name="Yu_IndexAD_Sel_ImgResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="LinkURL" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OpeType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_IndexPage_GetPageAllContent" Method="proc_IndexPage_GetPageAllContent">
+    <ElementType Name="proc_IndexPage_GetPageAllContentResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PositionType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TextContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.FWP_News_ByType" Method="FWP_News_ByType">
+    <Parameter Name="typeBase" Type="System.Int32" DbType="Int" />
+    <Parameter Name="newsTypeID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pageIndex" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pageCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pageTotal" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="newsTypeID1" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="newsTypeName" Type="System.String" DbType="NVarChar(32)" Direction="InOut" />
+    <ElementType Name="FWP_News_ByTypeResult">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsTitle" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="NewsImg" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Brevity" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NewsDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="newsTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Praise" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Batch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.FWP_News_SelectContent" Method="FWP_News_SelectContent">
+    <Parameter Name="NewsID" Parameter="newsID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Last" Parameter="last" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Next" Parameter="next" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="FWP_News_SelectContentResult">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsTitle" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="NewsContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NewsDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NewsCounter" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Brevity" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NewsImg" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="newsTypeName" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="Praise" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Batch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_FWT_News_Comment" Method="proc_FWT_News_Comment">
+    <Parameter Name="NewsID" Parameter="newsID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IP" Parameter="iP" Type="System.String" DbType="NVarChar(32)" />
+    <Parameter Name="CommentType" Parameter="commentType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NewCount" Parameter="newCount" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

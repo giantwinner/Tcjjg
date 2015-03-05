@@ -1,0 +1,156 @@
+﻿body
+{
+}
+.Bigbody
+{
+    width: 794px;
+    height: 569px;
+    font-size: 12px;
+    color: #3d3d3d;
+    float: left;
+    background-color: #FFFFFF;
+    margin-bottom:38px;
+    position:relative;
+}
+.body
+{
+    width: 774px;
+     margin-left:20px;
+    }
+.D_SpreadContainer
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+.ClearF
+{
+    clear: both;
+}
+/*******自定义控件**********/
+.D_Help_UCContainer
+{
+    border: 1px solid #BCBCBC;
+    height: 233px;
+    width: 233px;
+    float: left;
+    background-color: rgb(246,246,246);
+}
+.ContentCenter
+{
+    display: block;
+    width: 184px;
+    height: 37px;
+    background-image: url('../Images/CustomerService/tcjjg_2012__ucbg2.jpg');
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    line-height: 37px;
+    font-family: "黑体";
+    font-size: 16px;
+    color: rgb(56,56,56);
+}
+#CustomerServiceCenter
+{
+    background-image: url('../Images/CustomerService/tcjjg_2012__ucbg.jpg');
+}
+.D_CS_ContainerTop_Inner
+{
+    height: 117px;
+    width: 184px;
+    margin-left: 24.5px;
+}
+.CSSpace
+{
+    display: block;
+    height: 22px;
+}
+/*****************/
+
+
+/*******推广帮助*******/
+.text
+{
+    border: 1px solid #B0B3B8;
+}
+.middle1
+{
+    width: 100%;
+}
+.middle1_title
+{
+    width: 625px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #e6e6e6;
+    font-weight:bold;
+}
+.middle1_but
+{
+    width: 637px;
+    height: 110px;
+    padding-left: 14px;
+    line-height: 20px;
+}
+.middle1_buttom
+{
+    width: 637px;
+    height: 30px;
+    line-height: 30px;
+    margin-top:5px;
+}
+.middle1_buttom_s1
+{
+    width: 90px;
+    height: 36px;
+    float: left;
+}
+.middle1_buttom_s2
+{
+    width: 445px;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    margin-top: 6px;
+}
+
+.middle2
+{
+    width: 100%;
+    height: 320px;
+    margin-bottom: 10px;
+}
+
+.p_bgcolor
+{
+    width: 600px;
+}
+
+
+.pageBar1
+{
+     width:170px;
+     height:22px;
+     line-height:22px;
+      position:absolute;
+      left:312px;
+      bottom:12px;
+}
+.pageCount
+{
+    display:inline-block;
+     width:64px;
+     height:22px;
+     vertical-align:middle;
+     text-align:center;
+}
+.pageBar1 div
+{
+  float:left;
+}
+.pageItem
+{
+    display:none;
+     width:784px;
+     height:528px;
+}

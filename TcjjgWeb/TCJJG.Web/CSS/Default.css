@@ -1,0 +1,957 @@
+﻿
+/****2013-10-18******/
+.default
+{
+    font-family: 微软雅黑;
+}
+#d-top
+{
+    width: 943px;
+    height: 374px;
+    margin: 0 auto;
+    margin-top:20px;
+    position: relative;
+}
+.border-top
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#top-mid
+{
+    height: 352px;
+    width: 943px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    background-image: url('../Images/Default/border-mid.png');
+    background-repeat: repeat-y;
+}
+.border-bottom
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#d-middle
+{
+        height: 68px;
+    width: 943px;
+        margin: 0 auto;
+    margin-top:20px;
+    position: relative;
+    }
+#middle-mid
+{
+    height: 46px;
+    width: 943px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    background-image: url('../Images/Default/border-mid.png');
+    background-repeat: repeat-y;
+}
+.kflogo
+{
+   position:absolute;
+   left:22px;
+   bottom:0px; 
+   z-index:2;   
+}
+.kfphone
+{
+       position:absolute;
+   left:220px;
+   bottom:17px;  
+      z-index:2;   
+    }
+    .kfQQ
+    {
+              position:absolute;
+   right:46px;
+   bottom:9px;  
+      z-index:2;    
+        }
+        
+#d-bottom
+{
+    height: 438px;
+    width: 943px;
+    margin: 0 auto;
+    margin-top:20px;
+    position: relative;
+    margin-bottom:50px;
+ }
+.bottom-right-top
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.bottom-right-bottom
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.bottom-right-mid
+{
+        height: 396px;
+    width: 395px;
+    position: absolute;
+    right: 0;
+    top: 21px;
+    background-image: url('../Images/Default/border-r-mid.png');
+    background-repeat: repeat-y;
+}
+.bottom-right-mid img
+{
+     margin-left:28px;
+    }
+.game
+{
+    width: 61px;
+    height: 22px;
+    position: absolute;
+    left: 246px;
+    background-image: url('../Images/Default/intr-btn.png');
+    background-repeat: no-repeat;
+}
+.intr
+{
+    width: 61px;
+    height: 22px;
+    position: absolute;
+    right: 20px;
+    background-image: url('../Images/Default/hc-mach-introduce.png');
+    background-repeat: no-repeat;
+    }
+.game1,.intr1
+{
+     top:44px;  
+}
+.game2,.intr2
+{
+     top:146px;  
+}
+.game3,.intr3
+{
+     top:248px;  
+     *top:256px;
+}
+.game4,.intr4
+{
+     top:342px;
+      *top:350px;  
+}
+.game4
+{
+        background-image: url('../Images/Default/intr-btn-false.png');
+    background-repeat: no-repeat;
+    }
+    .intr4
+{
+        background-image: url('../Images/Default/intr-match-false.png');
+    background-repeat: no-repeat;
+    }
+    
+.bottom-left-mid
+{
+    height: 416px;
+    width: 528px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    background-image: url('../Images/Default/border-l-mid.png');
+    background-repeat: repeat-y;
+}
+.newslogo
+{
+   position: absolute;
+    left:11px;
+    top:0px;    
+}
+.newsMore
+{
+    position: absolute;
+    left: 95px;
+    top: 2px;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #00adf0;
+}
+.newsaddress
+{
+    position: absolute;
+    left: 195px;
+    top: 5px;
+    font-size: 14px;
+    color: #9daba9;    
+}
+.newsTitle1
+{
+        position: absolute;
+    left: 95px;
+    top: 36px;
+    font-size: 14px;
+    color: #0cff00;
+ }
+ .newsDate1
+ {
+    position: absolute;
+    left: 350px;
+    top: 36px;
+    font-size: 14px;
+    color: #9daba9;    
+ }
+ .newsBrevity1
+ {
+    position: absolute;
+    left: 11px;
+    top: 90px;
+    font-size: 14px;
+    color: #c9f5f7; 
+ }
+ .newsDetail
+ {
+         position: absolute;
+    right: 20px;
+    top: 258px;
+     text-decoration:underline;
+      color:#00adf0;
+       font-size:14px;    
+ }
+ .hr
+{
+    width: 497px;
+    height: 1px;
+    position: absolute;
+    right: 20px;
+    top: 280px;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: #c9f5f7;
+}
+.Commentbg1
+{
+    position: absolute;
+    left: 11px;
+    bottom:68px;
+  }
+ .Commentbg2
+{
+    position: absolute;
+    left: 11px;
+    bottom:11px;
+  }
+  .zan1
+  {
+    position: absolute;
+    left: 22px;
+    bottom:74px;
+    z-index:3;
+      }
+   .zan2
+{
+    position: absolute;
+    left: 22px;
+    bottom:17px;
+     z-index:3;
+  }
+  .zanNum1
+  {
+        position: absolute;
+    left: 48px;
+    bottom:74px;
+    z-index:3;    
+    color:#FFFFFF;
+  }
+    .zanNum2
+  {
+        position: absolute;
+        color:#FFFFFF;
+    left: 48px;
+    bottom:17px;
+    z-index:3;    
+  }
+.newsTitle2
+{
+        position: absolute;
+    left: 95px;
+    bottom: 90px;
+    font-size: 14px;
+    color: #00adf0;
+ }
+ .newsDate2
+ {
+    position: absolute;
+    left: 95px;
+    bottom: 70px;
+    font-size: 14px;
+    color: #9daba9;    
+ }
+ .newsTitle3
+{
+        position: absolute;
+    left: 95px;
+    bottom: 32px;
+    font-size: 14px;
+    color: #00adf0;
+ }
+ .newsDate3
+ {
+    position: absolute;
+    left: 95px;
+    bottom: 12px;
+    font-size: 14px;
+    color: #9daba9;    
+ }
+  
+  
+/************/
+
+#divfreeTry
+{
+    width: 942px;
+    height: 360px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.versionlog
+{
+    font-size:12px;
+    width: 265px;
+    height: 374px;
+    position: absolute;
+    left: 664px;
+    top: -11px;
+    background-image: url('../Images/Default/versionlog.jpg');
+    background-repeat: no-repeat;
+}
+.versionTitle
+{
+     font-size:18px;
+     color:#00adf0;
+      position:absolute;
+      right:68px;
+      top:22px;
+    }
+    .v-wrap
+    {
+         width:256px;
+         position:absolute;
+         top:90px;
+         left:6px;
+          
+     }
+    .versionNum
+    {
+         color:#00b329;
+         position: absolute;
+          right:20px;
+          top:-30px;
+        }
+        .versionItem-wrap
+        {
+            position:absolute;
+            top:80px;
+             height:250px;
+             left:12px;
+            }
+        .versionItem
+        {
+         color:white;
+         margin-top:7px;
+         margin-bottom:7px;
+         height:36px;
+           width:230px;
+            margin-left:10px;
+            }
+            .versionMore
+            {
+                width:80px;
+                text-align:right;
+                height:14px;
+                font-size:14px;
+         color:#82FEFE;
+             position:absolute;
+               right:18px;
+               bottom:18px;
+                }
+.clickEnter
+{
+    width: 219px;
+    height: 95px;
+    position: absolute;
+    left: 65px;
+    bottom: 85px;
+}
+
+.enterHallBtn
+{
+    display: block;
+    width: 120px;
+    height: 45px;
+    position: absolute;
+    left: 282px;
+    top: 200px;
+    cursor: pointer;
+}
+.adreg, .adlogin
+{
+    display: block;
+    position: absolute;
+    width: 206px;
+    height: 70px;
+    line-height: 60px;
+    color: White;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url('../Images/Default/adbtn3.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+ .adtryplay
+ {
+         display: block;
+    position: absolute;
+    width: 206px;
+    height: 70px;
+    line-height: 60px;
+    color: White;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url('../Images/Default/adbtn1.png');
+    background-repeat: no-repeat;
+    cursor: pointer;}
+.adreg:hover, .adlogin:hover
+{
+    background-image: url('../Images/Default/adbtn4.png');
+    background-repeat: no-repeat;
+}
+.adtryplay:hover
+{
+        background-image: url('../Images/Default/adbtn2.png');
+    background-repeat: no-repeat;
+}
+.adreg
+{
+    left: 230px;
+    bottom: 0;
+}
+.adlogin
+{
+    left: 450px;
+    bottom: 0;
+}
+.adtryplay
+{
+   left: 11px;
+   bottom: 0;
+}
+.btnleft
+{
+   position:absolute;
+   left: 11px;
+   bottom: 18px; 
+   display:none;
+}
+.affiche
+{
+    width: 535px;
+    position: absolute;
+    top: 33px;
+    left: 5px;
+    font-family: 宋体;
+    font-size: 14px;
+    color: #CAF5FF;
+    line-height: 28px;
+}
+.indexToAffiche
+{
+    color: #CAF5FF;
+    text-decoration: underline;
+}
+#ad
+{
+    width: 1000px;
+    height: 242px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.ad-l, .ad-r
+{
+    width: 16px;
+    float: left;
+}
+
+.ad-m
+{
+    width: 968px;
+    float: left;
+    height: 242px;
+    background-image: url('../Images/Default/ad-border-m.png');
+    background-repeat: repeat-x;
+    position: relative;
+}
+.ad-m a
+{
+    display: block;
+    width: 145px;
+    height: 88px;
+    line-height: 43px;
+    text-align: center;
+}
+.ad-m a img
+{
+    margin: 0 0;
+}
+.step1
+{
+    position: absolute;
+    left: 7px;
+    top: 31px;
+}
+.step2
+{
+    position: absolute;
+    left: 156px;
+    top: 31px;
+}
+.step3
+{
+    position: absolute;
+    left: 7px;
+    top: 124px;
+}
+.step4
+{
+    position: absolute;
+    left: 156px;
+    top: 124px;
+}
+.ad-m img
+{
+    margin-left: 20px;
+    margin-top: 21.5px;
+}
+.introduce-line
+{
+    width: 1000px;
+    background-image: url('../Images/Default/introduce-topline.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 2px;
+    z-index: 2;
+}
+#introduce
+{
+    width: 942px;
+    height: 155px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+.intr-l, .intr-r
+{
+    width: 942px;
+    height: 11px;
+}
+.intr-l
+{
+    position: absolute;
+    top: 0px;
+}
+.intr-r
+{
+    position: absolute;
+    top: 144px;
+    *top:141px;
+}
+
+.intr-m
+{
+    position: absolute;
+    top: 11px;
+    height: 133px;
+    width: 942px;
+    background-image: url('../Images/Default/intr-border-m.jpg');
+    background-repeat: repeat-y;
+}
+.intr-item
+{
+    margin-top: -5px;
+    width: 210px;
+    height: 133px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+}
+.rightTop
+{
+    position: absolute;
+    top: -4px;
+    right: -20px;
+}
+.intr-game-name
+{
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #00adf0;
+    margin-top: -20px;
+    margin-bottom: 3px;
+}
+.intr-item a
+{
+    width: 61px;
+    height: 22px;
+    margin: 0 auto;
+}
+.intr-item a img
+{
+    margin-top: 0px;
+}
+
+#bottom
+{
+    width: 942px;
+    height: 194px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position:relative;
+}
+.bottom-l
+{
+    width: 11px;
+    float: left;
+}
+.bottom-r
+{
+     position:absolute;
+     top:183px;
+     *top:182px;
+    }
+.bottom-m
+{
+    width: 942px;
+    height: 174px;
+    background-image: url('../Images/Default/intr-border-m.jpg');
+    background-repeat: repeat-y;
+    position: absolute;
+    top:11px;
+}
+#news
+{
+    height: 297px;
+    width: 343px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.news-l, .news-r
+{
+    width: 8px;
+    float: left;
+}
+.news-m
+{
+    width: 327px;
+    height: 297px;
+    float: left;
+    background-image: url('../Images/Default/News-border-m.png');
+    background-repeat: repeat-x;
+}
+.news-top-text
+{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+.news-more
+{
+    font-size: 12px;
+    position: absolute;
+    right: 12px;
+    top: 18px;
+}
+.news-more a
+{
+    color: #2cc3fe;
+}
+.news-line
+{
+    margin-left: 4px;
+    margin-top: 40px;
+}
+.news-inner-wrap
+{
+    width: 323px;
+    height: 240px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.news-item
+{
+    height: 40px;
+    position: relative;
+    font-size: 12px;
+}
+.new-type-sys, .new-type-match
+{
+    display: block;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    width: 40px;
+    color: #FFFFFF;
+}
+.new-type-sys
+{
+    background-color: #FF0000;
+}
+.new-type-match
+{
+    background-color: #33CC33;
+}
+.new-link
+{
+    color: #2EE2FF;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    text-decoration: underline;
+}
+.new-content
+{
+    position: absolute;
+    left: 44px;
+    top: 2px;
+    width: 279px;
+    line-height: 18px;
+    color: #ABE6F8;
+}
+.divTransImg
+{
+    height: 270px;
+    width: 638px;
+    position: absolute;
+    top: 0px;
+    left: 11px;
+}
+.adpagelast, .adpagenext
+{
+    display: block;
+    width: 44px;
+    height: 73px;
+    cursor: pointer;
+    position: absolute;
+    top: 96px;
+    z-index: 50;
+    display: none;
+}
+.adpagelast
+{
+    left: 15px;
+}
+.adpagenext
+{
+    right: 15px;
+}
+.switchbar
+{
+    padding: 0px 3px 0px 3px;
+    z-index: 11px;
+    position: absolute;
+    line-height: 10px;
+    display: block;
+    color: White;
+    font-size: 35px;
+    background-color: #172541;
+    opacity: 0.8;
+    border-radius: 4px;
+    left: 14px;
+    top: 14px;
+}
+.switchbar li
+{
+    float: left;
+    padding: 6px 3px 6px 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.divTransImg img
+{
+   height: 270px;
+    width: 638px;
+    display: none;
+}
+#cooperate
+{
+    height: 53px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+.cooperate-l, .cooperate-r
+{
+    width: 8px;
+    float: left;
+}
+.cooperate-m
+{
+    width: 984px;
+    height: 53px;
+    line-height: 53px;
+    float: left;
+    background-image: url('../Images/Default/cooperate-m.png');
+    background-repeat: repeat-x;
+}
+.cooperate-text
+{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #7bbdfd;
+    width: 114px;
+    position: absolute;
+    left: 7px;
+}
+.cooperate-split
+{
+    width: 2px;
+    height: 39px;
+    position: absolute;
+    left: 120px;
+    top: 3px;
+}
+.cooperate-wrap
+{
+    position: absolute;
+    top: 0;
+    left: 124px;
+    height: 32px;
+}
+.cooperate-wrap a
+{
+    display: block;
+    float: left;
+    margin-left: 14px;
+    margin-top: 11px;
+}
+
+/**********/
+#divTransImg-wrap
+{
+    width: 942px;
+    height: 288px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.divTransImg-l, .divTransImg-r
+{
+    width: 11px;
+    float: left;
+}
+
+.divTransImg-m
+{
+    position: relative;
+   height: 270px;
+    width: 638px;
+    float: left;
+    background-image: url('../Images/Default/divTransImg-m.png');
+    background-repeat: repeat-x;
+}
+.thisWeek-wrap
+{
+    width: 424px;
+    height: 157px;
+    position: absolute;
+    left: 10px;
+    top: 8.5px;
+}
+.nextWeek-wrap
+{
+    width: 455px;
+    height: 171px;
+    position: absolute;
+    right: 11px;
+    top: 1.5px;
+}
+.nextweek-l, .nextweek-r
+{
+    width: 11px;
+    float: left;
+}
+.nextweek-m
+{
+    width: 433px;
+    height: 171px;
+    float: left;
+    background-image: url('../Images/Default/nextweek-m.jpg');
+    background-repeat: repeat-x;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nextweek-bigtitle
+{
+    font-size: 16px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+.nextweek-s-title
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #00adf0;
+    height: 34px;
+    line-height: 34px;
+}
+.nextweek-content
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 22px;
+}
+.big-title
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #00adf0;
+}
+.s-title
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #4d8f39;
+}
+.this-date
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #74a9a8;
+}
+.this-content a
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #00adf0;
+}
+.this-item
+{
+    height: 36px;
+    line-height: 18px;
+    margin-top: 10px;
+}

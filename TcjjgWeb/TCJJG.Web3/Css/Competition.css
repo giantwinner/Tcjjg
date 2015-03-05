@@ -1,0 +1,44 @@
+﻿body
+{
+}
+
+.D_Competition_Container
+{
+    width: 930px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.liTop
+{
+     display:none;    
+}
+
+.liTop a, .liTop img
+{
+    margin-left: 20px;
+    margin-right: 20px;
+        _margin-left: 10px;
+    _margin-right: 10px;
+    display: inline-block;
+    width: 256px;
+    height: 145px;
+    margin-bottom: 50px;
+}
+
+.pager_pre
+{
+    position: absolute;
+    left: -80px;
+    top: 148px;
+    cursor: pointer;
+}
+.pager_next
+{
+    position: absolute;
+    right: -56px;
+    top: 148px;
+    cursor: pointer;
+}

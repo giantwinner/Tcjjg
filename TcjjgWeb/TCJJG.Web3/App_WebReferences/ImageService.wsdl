@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://image.tcjjg.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://image.tcjjg.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://image.tcjjg.com/">
+      <s:element name="AddImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="imgPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileExtension" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgFileBytes" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgSaveFilePath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddImageResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgSaveFilePath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteHeadImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteHeadImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteHeadImageResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddHeadBigImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="imgHeadNameAndPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgHeadBytes" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="savePath" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="imgHeight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="imgWidth" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddHeadBigImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddHeadBigImageResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="savePath" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="imgHeight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="imgWidth" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CutHeadBigImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSavedPath" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pPartStartPointX" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pPartStartPointY" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pPartWidth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pPartHeight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOrigStartPointX" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOrigStartPointY" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="imageWidth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="imageHeight" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CutHeadBigImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddImageSoapIn">
+    <wsdl:part name="parameters" element="tns:AddImage" />
+  </wsdl:message>
+  <wsdl:message name="AddImageSoapOut">
+    <wsdl:part name="parameters" element="tns:AddImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteHeadImageSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteHeadImage" />
+  </wsdl:message>
+  <wsdl:message name="DeleteHeadImageSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteHeadImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddHeadBigImageSoapIn">
+    <wsdl:part name="parameters" element="tns:AddHeadBigImage" />
+  </wsdl:message>
+  <wsdl:message name="AddHeadBigImageSoapOut">
+    <wsdl:part name="parameters" element="tns:AddHeadBigImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="CutHeadBigImageSoapIn">
+    <wsdl:part name="parameters" element="tns:CutHeadBigImage" />
+  </wsdl:message>
+  <wsdl:message name="CutHeadBigImageSoapOut">
+    <wsdl:part name="parameters" element="tns:CutHeadBigImageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ImageServiceSoap">
+    <wsdl:operation name="AddImage">
+      <wsdl:input message="tns:AddImageSoapIn" />
+      <wsdl:output message="tns:AddImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHeadImage">
+      <wsdl:input message="tns:DeleteHeadImageSoapIn" />
+      <wsdl:output message="tns:DeleteHeadImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddHeadBigImage">
+      <wsdl:input message="tns:AddHeadBigImageSoapIn" />
+      <wsdl:output message="tns:AddHeadBigImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CutHeadBigImage">
+      <wsdl:input message="tns:CutHeadBigImageSoapIn" />
+      <wsdl:output message="tns:CutHeadBigImageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ImageServiceSoap" type="tns:ImageServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddImage">
+      <soap:operation soapAction="http://image.tcjjg.com/AddImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHeadImage">
+      <soap:operation soapAction="http://image.tcjjg.com/DeleteHeadImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHeadBigImage">
+      <soap:operation soapAction="http://image.tcjjg.com/AddHeadBigImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CutHeadBigImage">
+      <soap:operation soapAction="http://image.tcjjg.com/CutHeadBigImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ImageServiceSoap12" type="tns:ImageServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddImage">
+      <soap12:operation soapAction="http://image.tcjjg.com/AddImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHeadImage">
+      <soap12:operation soapAction="http://image.tcjjg.com/DeleteHeadImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHeadBigImage">
+      <soap12:operation soapAction="http://image.tcjjg.com/AddHeadBigImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CutHeadBigImage">
+      <soap12:operation soapAction="http://image.tcjjg.com/CutHeadBigImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImageService">
+    <wsdl:port name="ImageServiceSoap" binding="tns:ImageServiceSoap">
+      <soap:address location="http://localhost:7001/ImageService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ImageServiceSoap12" binding="tns:ImageServiceSoap12">
+      <soap12:address location="http://localhost:7001/ImageService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

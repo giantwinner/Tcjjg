@@ -1,0 +1,267 @@
+﻿body
+{
+}
+.D_SpreadContainer
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+.ClearF
+{
+    clear: both;
+}
+/*******自定义控件**********/
+.D_Help_UCContainer
+{
+    border: 1px solid #BCBCBC;
+    height: 233px;
+    width: 233px;
+    float: left;
+    background-color: rgb(246,246,246);
+}
+.ContentCenter
+{
+    display: block;
+    width: 184px;
+    height: 37px;
+    background-image: url('../Images/CustomerService/tcjjg_2012__ucbg2.jpg');
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    line-height: 37px;
+    font-family: "黑体";
+    font-size: 16px;
+    color: rgb(56,56,56);
+}
+#CustomerServiceCenter
+{
+    background-image: url('../Images/CustomerService/tcjjg_2012__ucbg.jpg');
+}
+.D_CS_ContainerTop_Inner
+{
+    height: 117px;
+    width: 184px;
+    margin-left: 24.5px;
+}
+.CSSpace
+{
+    display: block;
+    height: 22px;
+}
+/*****************/
+
+.Bigbody
+{
+    width: 794px;
+    height: 569px;
+    font-size: 12px;
+    color: #3d3d3d;
+    float: left;
+    background-color: #FFFFFF;
+        margin-bottom:38px;
+}
+.body
+{
+    width: 774px;
+     margin-left:20px;
+    }
+/* 已登录 */
+.loginOut
+{
+    width: 100%;
+    height: 155px;
+    margin-bottom: 10px;
+}
+.top1
+{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+
+}
+.CopyUrl
+{
+    display: inline-block;
+    width: 90px;
+    height: 37px;
+    background-image: url('../Images/Spread/CopyUrl.jpg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.top1_top
+{
+    height: 30px;
+    line-height: 30px;
+    color: #060606;
+    font-weight: bold;
+}
+
+.top1_buttom
+{
+    width: 723px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #E6E6E6;
+}
+.top1_buttom a, .top1_buttom a:hover, .top1_buttom a:active
+{
+    color: #fff;
+    text-decoration: none;
+}
+.top1_buttom2
+{
+    float: left;
+     margin-left:42px;
+}
+.top1_buttom3
+{
+    width: 203px;
+    padding-left:10px;
+
+}
+.text1
+{
+    border: 1px solid #B0B4B6;
+}
+
+/* 没登录 */
+.top2
+{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+.top2_top
+{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+.top2_top a, .top2_top a:hover, .top2_top a:active
+{
+    color: Red;
+    text-decoration: underline;
+}
+.top2_buttom
+{
+    width: 100%;
+    height: 55px;
+    padding-top: 5px;
+}
+.top2_buttom a, .top2_buttom a:hover, .top2_buttom a:active
+{
+    color: #fff;
+    text-decoration: none;
+}
+.colorBor
+{
+    width: 723px;
+    height: 30px;
+    background-color: #e6e6e6;
+    font-weight:bold;
+}
+
+.middle_left
+{
+    float: left;
+    width: 340px;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 10px;
+}
+.SpredLogin
+{
+    display: block;
+    width: 89px;
+    height: 32px;
+    background-image: url('/Images/Spread/spredLogin.jpg');
+    background-repeat: no-repeat;
+}
+.middle_right
+{
+    float: left;
+    width: 330px;
+    line-height: 30px;
+    height: 30px;
+}
+.middle_right a, .middle_right a:hover, .middle_right a:active
+{
+    color: blue;
+    text-decoration: none;
+}
+.nocolorBor
+{
+    width: 100%;
+    height: 30px;
+}
+
+.middle2_left
+{
+    float: left;
+    width: 340px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.middle2_right
+{
+    float: left;
+    width: 340px;
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+}
+.middle2_right a, .middle2_right a:hover, .middle2_right a:active
+{
+    color: #Fa0000;
+    text-decoration: underline;
+}
+.buttom_text
+{
+    width: 100%;
+    height: 165px;
+    line-height: 25px;
+    margin-top:10px;
+}
+.buttom_text p
+{
+}
+
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+/*     选项卡          */
+
+.ui-tabs-nav
+{
+    /*导航容器定义*/
+}
+.ui-tabs-nav li
+{
+    /*默认标签样式*/
+}
+.ui-tabs-nav li.ui-tabs-selected
+{
+    /*激活的标签样式*/
+}
+.ui-tabs-panel
+{
+    /*默认的显示区域样式*/
+}
+.ui-tabs-hide
+{
+    display: none;
+}
+
+
+
+
+
+

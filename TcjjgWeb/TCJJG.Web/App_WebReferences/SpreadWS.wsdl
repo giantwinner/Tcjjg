@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.tcjjg.com/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.tcjjg.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.tcjjg.com/webservices/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="GetSpreadAwardConfigList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpreadAwardConfigListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSpreadAwardConfigListResult" type="tns:ArrayOfProc_Award_GetAwardConfigListResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Award_GetAwardConfigListResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Award_GetAwardConfigListResult" nillable="true" type="tns:proc_Award_GetAwardConfigListResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Award_GetAwardConfigListResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TAmount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="rank" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardDes" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TAmount2" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Rank2" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AwardDes2" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRankByReqPoint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="reqPoint" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRankByReqPointResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRankByReqPointResult" type="tns:proc_RankInfo_GetRankByReqPointResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="proc_RankInfo_GetRankByReqPointResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Rank" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSpreadResults">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpreadResultsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSpreadResultsResult" type="tns:ArrayOfProc_Results_sel_CountResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Results_sel_CountResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Results_sel_CountResult" nillable="true" type="tns:proc_Results_sel_CountResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Results_sel_CountResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Column1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Lev" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Lev1" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDetailSpreadResults">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailSpreadResultsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetailSpreadResultsResult" type="tns:ArrayOfProc_Results_sel_InfoResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Results_sel_InfoResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Results_sel_InfoResult" nillable="true" type="tns:proc_Results_sel_InfoResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Results_sel_InfoResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Total_NoExpCard" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="lev" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentRank" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BarName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RegTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastLogOnTime" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserSpreadRewardInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userInfo" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="createTime1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createTime2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserSpreadRewardInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserSpreadRewardInfoResult" type="tns:ArrayOfProc_Reward_selResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Reward_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Reward_selResult" nillable="true" type="tns:proc_Reward_selResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Reward_selResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ChildLevel" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSpreadRewardCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userInfo" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpreadRewardCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSpreadRewardCountResult" type="tns:ArrayOfProc_Reward_sel_CountResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Reward_sel_CountResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Reward_sel_CountResult" nillable="true" type="tns:proc_Reward_sel_CountResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Reward_sel_CountResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="states" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="VerifySpreadReward">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userInfo" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifySpreadRewardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifySpreadRewardResult" type="tns:ArrayOfProc_Reward_VerifyResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Reward_VerifyResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Reward_VerifyResult" nillable="true" type="tns:proc_Reward_VerifyResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Reward_VerifyResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserSpreadNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserSpreadNumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserSpreadNumResult" type="tns:proc_SpreadBasic_SpreadNum_SelResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="proc_SpreadBasic_SpreadNum_SelResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SpreadNumber" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AutoGetSpreadSumAward">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="addCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutoGetSpreadSumAwardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AutoGetSpreadSumAwardResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="addCount" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Spread_Reg_UserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spreadNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="LastLogOnTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="BarName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Spread_Reg_UserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Spread_Reg_UserInfoResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Spread_UserInfo_Reg_Verify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spreadNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Spread_UserInfo_Reg_VerifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Spread_UserInfo_Reg_VerifyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpreadUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userInfo" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpreadUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSpreadUserInfoResult" type="tns:ArrayOfProc_userInfo_U_selResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_userInfo_U_selResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_userInfo_U_selResult" nillable="true" type="tns:proc_userInfo_U_selResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_userInfo_U_selResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SpreadNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SpreadURL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SpreadCountLevel1" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SpreadCountLevel2" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAwardConfigList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAwardConfigListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAwardConfigListResult" type="tns:ArrayOfProc_AwardConfig_GetListResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_AwardConfig_GetListResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_AwardConfig_GetListResult" nillable="true" type="tns:proc_AwardConfig_GetListResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_AwardConfig_GetListResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Rank" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChildLevel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRewardList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRewardListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRewardListResult" type="tns:ArrayOfProc_Reward_GetRewardListResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_Reward_GetRewardListResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_Reward_GetRewardListResult" nillable="true" type="tns:proc_Reward_GetRewardListResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_Reward_GetRewardListResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID1" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="VisitRegBySpread">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="spreadNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="createTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VisitRegBySpreadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VisitRegBySpreadResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextDayLoginUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextDayLoginUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetNextDayLoginUsersResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPartnerIDMapping">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="channelNum" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="partnerUserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="partnerParam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="memo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPartnerIDMappingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddPartnerIDMappingResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoForAdPartner">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="channelNum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoForAdPartnerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoForAdPartnerResult" type="tns:proc_GetUserInfoForAdPartnerResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="proc_GetUserInfoForAdPartnerResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Rank" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsNextDayVisit" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MatchCount" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecommendConfigSel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="popping" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="typeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecommendConfigSelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecommendConfigSelResult" type="tns:ArrayOfProc_RecommendConfig_SelResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProc_RecommendConfig_SelResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="proc_RecommendConfig_SelResult" nillable="true" type="tns:proc_RecommendConfig_SelResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="proc_RecommendConfig_SelResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RecommendID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecommendName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecommendURL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecommendImg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LogID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecommendLogAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="recommendID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="appid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chooseItem" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecommendLogAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RecommendLogAddResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSpreadAwardConfigListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpreadAwardConfigList" />
+  </wsdl:message>
+  <wsdl:message name="GetSpreadAwardConfigListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpreadAwardConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRankByReqPointSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRankByReqPoint" />
+  </wsdl:message>
+  <wsdl:message name="GetRankByReqPointSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRankByReqPointResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpreadResultsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpreadResults" />
+  </wsdl:message>
+  <wsdl:message name="GetSpreadResultsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpreadResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailSpreadResultsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetailSpreadResults" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailSpreadResultsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetailSpreadResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSpreadRewardInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserSpreadRewardInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSpreadRewardInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserSpreadRewardInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpreadRewardCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpreadRewardCount" />
+  </wsdl:message>
+  <wsdl:message name="GetSpreadRewardCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpreadRewardCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifySpreadRewardSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifySpreadReward" />
+  </wsdl:message>
+  <wsdl:message name="VerifySpreadRewardSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifySpreadRewardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSpreadNumSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserSpreadNum" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSpreadNumSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserSpreadNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="AutoGetSpreadSumAwardSoapIn">
+    <wsdl:part name="parameters" element="tns:AutoGetSpreadSumAward" />
+  </wsdl:message>
+  <wsdl:message name="AutoGetSpreadSumAwardSoapOut">
+    <wsdl:part name="parameters" element="tns:AutoGetSpreadSumAwardResponse" />
+  </wsdl:message>
+  <wsdl:message name="Spread_Reg_UserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:Spread_Reg_UserInfo" />
+  </wsdl:message>
+  <wsdl:message name="Spread_Reg_UserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:Spread_Reg_UserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Spread_UserInfo_Reg_VerifySoapIn">
+    <wsdl:part name="parameters" element="tns:Spread_UserInfo_Reg_Verify" />
+  </wsdl:message>
+  <wsdl:message name="Spread_UserInfo_Reg_VerifySoapOut">
+    <wsdl:part name="parameters" element="tns:Spread_UserInfo_Reg_VerifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpreadUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpreadUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetSpreadUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpreadUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAwardConfigListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAwardConfigList" />
+  </wsdl:message>
+  <wsdl:message name="GetAwardConfigListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAwardConfigListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRewardListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRewardList" />
+  </wsdl:message>
+  <wsdl:message name="GetRewardListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRewardListResponse" />
+  </wsdl:message>
+  <wsdl:message name="VisitRegBySpreadSoapIn">
+    <wsdl:part name="parameters" element="tns:VisitRegBySpread" />
+  </wsdl:message>
+  <wsdl:message name="VisitRegBySpreadSoapOut">
+    <wsdl:part name="parameters" element="tns:VisitRegBySpreadResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNextDayLoginUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNextDayLoginUsers" />
+  </wsdl:message>
+  <wsdl:message name="GetNextDayLoginUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNextDayLoginUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddPartnerIDMappingSoapIn">
+    <wsdl:part name="parameters" element="tns:AddPartnerIDMapping" />
+  </wsdl:message>
+  <wsdl:message name="AddPartnerIDMappingSoapOut">
+    <wsdl:part name="parameters" element="tns:AddPartnerIDMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoForAdPartnerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfoForAdPartner" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoForAdPartnerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoForAdPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecommendConfigSelSoapIn">
+    <wsdl:part name="parameters" element="tns:RecommendConfigSel" />
+  </wsdl:message>
+  <wsdl:message name="RecommendConfigSelSoapOut">
+    <wsdl:part name="parameters" element="tns:RecommendConfigSelResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecommendLogAddSoapIn">
+    <wsdl:part name="parameters" element="tns:RecommendLogAdd" />
+  </wsdl:message>
+  <wsdl:message name="RecommendLogAddSoapOut">
+    <wsdl:part name="parameters" element="tns:RecommendLogAddResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SpreadWSSoap">
+    <wsdl:operation name="GetSpreadAwardConfigList">
+      <wsdl:input message="tns:GetSpreadAwardConfigListSoapIn" />
+      <wsdl:output message="tns:GetSpreadAwardConfigListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRankByReqPoint">
+      <wsdl:input message="tns:GetRankByReqPointSoapIn" />
+      <wsdl:output message="tns:GetRankByReqPointSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadResults">
+      <wsdl:input message="tns:GetSpreadResultsSoapIn" />
+      <wsdl:output message="tns:GetSpreadResultsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailSpreadResults">
+      <wsdl:input message="tns:GetDetailSpreadResultsSoapIn" />
+      <wsdl:output message="tns:GetDetailSpreadResultsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSpreadRewardInfo">
+      <wsdl:input message="tns:GetUserSpreadRewardInfoSoapIn" />
+      <wsdl:output message="tns:GetUserSpreadRewardInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadRewardCount">
+      <wsdl:input message="tns:GetSpreadRewardCountSoapIn" />
+      <wsdl:output message="tns:GetSpreadRewardCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifySpreadReward">
+      <wsdl:input message="tns:VerifySpreadRewardSoapIn" />
+      <wsdl:output message="tns:VerifySpreadRewardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSpreadNum">
+      <wsdl:input message="tns:GetUserSpreadNumSoapIn" />
+      <wsdl:output message="tns:GetUserSpreadNumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoGetSpreadSumAward">
+      <wsdl:input message="tns:AutoGetSpreadSumAwardSoapIn" />
+      <wsdl:output message="tns:AutoGetSpreadSumAwardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Spread_Reg_UserInfo">
+      <wsdl:input message="tns:Spread_Reg_UserInfoSoapIn" />
+      <wsdl:output message="tns:Spread_Reg_UserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Spread_UserInfo_Reg_Verify">
+      <wsdl:input message="tns:Spread_UserInfo_Reg_VerifySoapIn" />
+      <wsdl:output message="tns:Spread_UserInfo_Reg_VerifySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadUserInfo">
+      <wsdl:input message="tns:GetSpreadUserInfoSoapIn" />
+      <wsdl:output message="tns:GetSpreadUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAwardConfigList">
+      <wsdl:input message="tns:GetAwardConfigListSoapIn" />
+      <wsdl:output message="tns:GetAwardConfigListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRewardList">
+      <wsdl:input message="tns:GetRewardListSoapIn" />
+      <wsdl:output message="tns:GetRewardListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VisitRegBySpread">
+      <wsdl:input message="tns:VisitRegBySpreadSoapIn" />
+      <wsdl:output message="tns:VisitRegBySpreadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextDayLoginUsers">
+      <wsdl:input message="tns:GetNextDayLoginUsersSoapIn" />
+      <wsdl:output message="tns:GetNextDayLoginUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartnerIDMapping">
+      <wsdl:input message="tns:AddPartnerIDMappingSoapIn" />
+      <wsdl:output message="tns:AddPartnerIDMappingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoForAdPartner">
+      <wsdl:input message="tns:GetUserInfoForAdPartnerSoapIn" />
+      <wsdl:output message="tns:GetUserInfoForAdPartnerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecommendConfigSel">
+      <wsdl:input message="tns:RecommendConfigSelSoapIn" />
+      <wsdl:output message="tns:RecommendConfigSelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecommendLogAdd">
+      <wsdl:input message="tns:RecommendLogAddSoapIn" />
+      <wsdl:output message="tns:RecommendLogAddSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SpreadWSSoap" type="tns:SpreadWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSpreadAwardConfigList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadAwardConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankByReqPoint">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetRankByReqPoint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadResults">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailSpreadResults">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetDetailSpreadResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSpreadRewardInfo">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetUserSpreadRewardInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadRewardCount">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadRewardCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifySpreadReward">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/VerifySpreadReward" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSpreadNum">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetUserSpreadNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoGetSpreadSumAward">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/AutoGetSpreadSumAward" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Spread_Reg_UserInfo">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/Spread_Reg_UserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Spread_UserInfo_Reg_Verify">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/Spread_UserInfo_Reg_Verify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadUserInfo">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAwardConfigList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetAwardConfigList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRewardList">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetRewardList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VisitRegBySpread">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/VisitRegBySpread" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextDayLoginUsers">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetNextDayLoginUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartnerIDMapping">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/AddPartnerIDMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoForAdPartner">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/GetUserInfoForAdPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecommendConfigSel">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/RecommendConfigSel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecommendLogAdd">
+      <soap:operation soapAction="http://www.tcjjg.com/webservices/RecommendLogAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SpreadWSSoap12" type="tns:SpreadWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSpreadAwardConfigList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadAwardConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankByReqPoint">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetRankByReqPoint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadResults">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailSpreadResults">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetDetailSpreadResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSpreadRewardInfo">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetUserSpreadRewardInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadRewardCount">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadRewardCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifySpreadReward">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/VerifySpreadReward" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSpreadNum">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetUserSpreadNum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoGetSpreadSumAward">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/AutoGetSpreadSumAward" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Spread_Reg_UserInfo">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/Spread_Reg_UserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Spread_UserInfo_Reg_Verify">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/Spread_UserInfo_Reg_Verify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpreadUserInfo">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetSpreadUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAwardConfigList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetAwardConfigList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRewardList">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetRewardList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VisitRegBySpread">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/VisitRegBySpread" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextDayLoginUsers">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetNextDayLoginUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartnerIDMapping">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/AddPartnerIDMapping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoForAdPartner">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/GetUserInfoForAdPartner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecommendConfigSel">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/RecommendConfigSel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecommendLogAdd">
+      <soap12:operation soapAction="http://www.tcjjg.com/webservices/RecommendLogAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SpreadWS">
+    <wsdl:port name="SpreadWSSoap" binding="tns:SpreadWSSoap">
+      <soap:address location="http://localhost:7006/SpreadWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SpreadWSSoap12" binding="tns:SpreadWSSoap12">
+      <soap12:address location="http://localhost:7006/SpreadWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,656 @@
+﻿body
+{
+}
+.D_UserInfoContainer
+{
+    width: 778px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 12px;
+}
+.D_RightInner
+{
+    position: absolute;
+    left: 140px;
+    top: 40px;
+    font-size: 14px;
+}
+.D_RightInner2
+{
+    position: absolute;
+    left: 140px;
+    top: 343px;
+    font-size: 14px;
+}
+.D_Title
+{
+    font-size: 14px;
+    height: 26px;
+    color: rgb(255,132,0);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #DADADA;
+}
+.D_Title2
+{
+    margin-top: 25px;
+    font-size: 14px;
+    height: 26px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #DADADA;
+}
+.lblAll
+{
+    width: 145px;
+    height: 12px;
+}
+.D_Content
+{
+    margin-top: 18px;
+}
+.D_BaseHead
+{
+    width: 85px;
+    height: 86px;
+    float: left;
+}
+.userInfoBtn
+{
+    float: right;
+}
+.D_DetialInfo1
+{
+    float: left;
+    margin-left: 46px;
+}
+.D_DetialInfo1 span
+{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.D_DetialInfo2
+{
+    float: right;
+    margin-right: 190px;
+    position: relative;
+}
+.D_DetialInfo2Link1
+{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.D_Space
+{
+    height: 15px;
+    clear: both;
+}
+.D_InfoLeft
+{
+    float: left;
+}
+.D_InfoRight
+{
+    float: right;
+    margin-right: 502px;
+}
+
+/***修改资料***/
+.D_UpInfoContent
+{
+    width: 778px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 53px;
+    color: rgb(51,51,51);
+}
+/**修改头像**/
+/**修改密码**/
+.D_UpPwdContent
+{
+    width: 778px;
+    margin-top: 53px;
+    color: rgb(51,51,51);
+}
+.InnderTitile
+{
+    font-weight: bold;
+    color: rgb(51,51,51);
+    text-align: center;
+}
+
+.TxtUpdatePwd
+{
+    margin-bottom: 35px;
+    display: block;
+    width: 415px;
+    margin-left: 205px;
+}
+.error
+{
+    width: 107px;
+    color: #FF0000;
+    font-size: 12px;
+}
+.help_content
+{
+    display: none;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.D_UpPwdOK
+{
+    margin-left: 346px;
+}
+.BtnUpPwdOK
+{
+    cursor: pointer;
+    width: 102px;
+    height: 32px;
+    background-image: url('../Images/UserCenter/tcjjg_2012__UpdatePwd.jpg');
+    background-repeat: no-repeat;
+}
+
+/***密码保护***/
+.setupQuestion
+{
+    line-height: 40px;
+    margin-left: 240px;
+    font-size: 14px;
+    color: rgb(51,51,51);
+}
+.help_textBox
+{
+    border: 1px solid #cdb572;
+    height: 22px;
+    width: 165px;
+    line-height: 20px;
+}
+.help_textBox
+{
+    border: 1px solid #666666;
+    font-size: 12px;
+    height: 22px;
+    width: 173px;
+    line-height: 20px;
+}
+.btnNext, .btnUpdateCryptoguard
+{
+    width: 90px;
+    height: 37px;
+    cursor: pointer;
+}
+.btnNext
+{
+    background-repeat: no-repeat;
+    background-image: url('../Images/UserCenter/tcjjg_2012__Btnnext.jpg');
+}
+.btnReturnIndex
+{
+    width: 158px;
+    height: 43px;
+    background-image: url('../Images/UserCenter/tcjjg_2012__returnIndex.jpg');
+    background-repeat: no-repeat;
+}
+.btnUpdateCryptoguard
+{
+    background-image: url('../Images/UserCenter/tcjjg_2012__UpmibaoBtn.jpg');
+    background-repeat: no-repeat;
+}
+
+/***财富赠送***/
+.userCenter2page2
+{
+    position: relative;
+    min-height: 860px;
+    _height: 860px;
+    font-size: 14px;
+    color: rgb(51,51,51);
+}
+.div_UserReckoning_Main
+{
+    position: relative;
+    width: 697px;
+    height: 640px;
+}
+.div_UserReckoning_Main1_1
+{
+    position: relative;
+    width: 465px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.div_UserReckoning_Main2
+{
+    width: 697px;
+    height: 410px;
+    margin: 0 auto;
+}
+.div_UserReckoning_Main212
+{
+    position: relative;
+    top: 0px;
+    left: 20px;
+    width: 658px;
+    height: 385px;
+    margin: 0 auto;
+}
+.usergivegood_1
+{
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: #DADADA;
+    height: 280px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.usergivegood_2
+{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.d_line_Hg
+{
+    position: relative;
+    line-height: 33px;
+    height: 33px;
+    vertical-align: middle;
+}
+.text1
+{
+    border: 1px solid #DFDFDF;
+    height: 20px;
+    width: 160px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+.d_line_btn
+{
+    position: relative;
+    top: 15px;
+    padding-left: 70px;
+}
+.alm_0_1
+{
+    line-height: 20px;
+}
+.div_button2
+{
+    width: 87px;
+    height: 32px;
+    display: inline-block;
+    border: 0px;
+    cursor: pointer;
+}
+.div_button2
+{
+    background-image: url('../Images/UserCenter/tcjjg_2012__ucSelect.jpg');
+    background-repeat: no-repeat;
+}
+.div_buttonGiveOK
+{
+    width: 89px;
+    height: 31px;
+    background-image: url('../Images/UserCenter/tcjjg_2012__suresend.jpg');
+    background-repeat: no-repeat;
+}
+/*兑奖记录*/
+table.table
+{
+    border-collapse: collapse;
+    border: #74593f 1px solid;
+    padding: 3px;
+}
+
+table.table th
+{
+    border: #74593f 1px solid;
+    padding: 3px;
+}
+
+table.table td
+{
+    border: #74593f 1px solid;
+    padding: 3px;
+    line-height: 17px;
+}
+.trTitle
+{
+    font-weight: bold;
+    background-color: #e4d18c;
+}
+.awardLogMai
+{
+    width: 480px;
+    margin-left: 124px;
+    margin-top: 35px;
+}
+/**/
+.peck_ts_ma
+{
+    border-style: none solid solid solid;
+    border-width: 1px;
+    border-color: #74593f;
+    position: relative;
+}
+.peck_ts_ma_page
+{
+    line-height: 30px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+table.peck_ts_ma td
+{
+    padding: 3px;
+    height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    border-style: none solid solid solid;
+    border-width: 1px;
+    border-color: #74593f;
+}
+table.peck_ts_ma td a
+{
+    color: #000099;
+    text-decoration: underline;
+}
+table.peck_ts_ma th
+{
+    padding: 3px;
+    height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    border-style: solid solid solid solid;
+    border-width: 1px;
+    border-color: #74593f;
+    background-color: #FF9933;
+}
+.peck_ts1
+{
+    width: 57px;
+}
+.peck_ts2
+{
+    width: 57px;
+}
+.peck_ts3
+{
+    width: 80px;
+}
+/* zhaoyu 2011年7月25日17:25:11 修正了列表被文字挤压变形的错误    */
+.peck_ts_insertRow
+{
+    background-color: #E4D18C;
+}
+/* zhaoyu 2011年7月25日17:25:11 修正了列表被文字挤压变形的错误    */
+.peck_ts4
+{
+    width: 52px;
+}
+.peck_ts5
+{
+    width: 68px;
+}
+
+.peck_ts6
+{
+    width: 140px;
+}
+/**/
+/***头像修改**/
+.divUserAmplyInfo_main2_c1_line
+{
+    border: 1px solid #74593f;
+    position: relative;
+    top: 8px;
+    left: 0px;
+    height: 385px;
+    width: 681px;
+    z-index: 0;
+}
+
+/***账单查询***/
+.div_ReckoningAmply_Main
+{
+    width: 400px;
+    height: 490px;
+    margin: 0 auto;
+}
+/***短消息***/
+.newsTitle
+{
+    position: relative;
+    height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.newsTitle_2_Line
+{
+    position: relative;
+    height: 1px;
+    line-height: 1px;
+    width: 95%;
+    margin: auto;
+    border-top-style: dotted;
+    border-width: 1px;
+}
+.divNewsTitle2
+{
+    text-align: right;
+    padding-right: 15px;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.divNewsContent
+{
+    position: relative;
+    left: 17px;
+    width: 95%;
+    height: 100%;
+}
+/**********密码找回**********/
+.D_FindPwdStep1
+{
+    border: 1px solid #DDDDDD;
+    width: 781px;
+    height: 144px;
+    color: Red;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../Images/UserCenter/FindpwdIndex1.jpg');
+    position: relative;
+}
+.FindPwdTitle
+{
+    position: relative;
+    top: -10px;
+    left: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+.FindNext
+{
+    width: 158px;
+    height: 44px;
+    cursor: pointer;
+    background-image: url('../Images/UserCenter/FindpwdIndex2.jpg');
+    background-repeat: no-repeat;
+}
+.FindPwdContent1, .FindPwdContent2
+{
+    width: 215px;
+    font-size: 14px;
+    color: rgb(6,6,6);
+    margin: 0 auto;
+}
+.txtUserName
+{
+    border: 1px solid #DFDFDF;
+    width: 162px;
+    height: 25px;
+}
+.Answer
+{
+    border: 1px solid #DFDFDF;
+    width: 154px;
+    height: 23px;
+}
+.FindOK
+{
+    width: 158px;
+    height: 42px;
+    cursor: pointer;
+    background-image: url('../Images/UserCenter/FindPwdOK.jpg');
+    background-repeat: no-repeat;
+}
+.FindPwdContent2
+{
+    height: 535px;
+}
+.D_FindPwdStep2
+{
+    border: 1px solid #DDDDDD;
+    color: rgb(6,6,6);
+    width: 781px;
+    margin: 0 auto;
+}
+.ReturnIndex
+{
+    width: 158px;
+    height: 43px;
+    background-image: url('../Images/UserCenter/tcjjg_2012__returnIndex.jpg');
+    background-repeat: no-repeat;
+}
+.FindPwdError
+{
+    color: Red;
+}
+.D_FindPwdStep3
+{
+    width: 781px;
+    border: 1px solid #DDDDDD;
+    margin: 0 auto;
+}
+/********************/
+
+
+/***********头像验证************/
+.FirstStep
+{
+    width: 460px;
+    height: auto;
+    margin: 0 auto;
+}
+.FirstStep-Left, .FirstStep-Right
+{
+    width: 160px;
+    float: left;
+    margin-left: 30px;
+    padding: 10px;
+}
+.FirstStep-Left
+{
+}
+.FirstStep-RedText
+{
+    color: Red;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.IDCardBtn
+{
+    display:block;
+       width: 158px;
+    border: 1px solid #000000;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.IDCardBtn2
+{
+    border-style: none dotted dotted dotted;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    border-left-color: #000000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+.SecondStep-IDCard
+{
+}
+.UpLoad
+{
+    width: 500px;
+    margin: 0 auto;
+}
+.imgPreview
+{
+    border: 1px solid #C6C6C6;
+    width: 82px;
+    height: 82px;
+    float: left;
+    margin-left: 165px;
+    margin-bottom: 15px;
+}
+.inputFile
+{
+    float: left;
+    margin-left: 165px;
+    margin-bottom: 15px;
+    width: 214px;
+}
+.btnUpload, .lblUploadMessage, .btnSubmit
+{
+    float: left;
+    margin-left: 165px;
+    margin-top:10px;
+    clear:left;
+}
+
+.UploadWarning
+{
+    width: 140px;
+    display: block;
+    color: Red;
+    font-size: 12px;
+    float: left;
+    margin-left: 165px;
+    margin-bottom: 15px;
+}
+.lblUploadMessage
+{
+    float: left;
+    margin-left: 165px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: Red;
+}
+.SecondStep-Video
+{
+    width: 330px;
+    margin: 0 auto;
+}
+.lblMsg
+{
+    float: left;
+    margin-top: 20px;
+    font-size: 14px;
+    color: Red;
+}
+/**********************/
+
+
+

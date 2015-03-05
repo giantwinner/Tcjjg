@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCJJG.Web.DB", "TCJJG.Web.DB\TCJJG.Web.DB.csproj", "{A970F5EC-0DE2-4D99-AC15-A2501E4212C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCJJG.Web.Model", "TCJJG.Web.Model\TCJJG.Web.Model.csproj", "{BD3810CD-E76E-4797-B8B5-0E819E3FC824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCJJG.Web.UserCenter", "TCJJG.Web.UserCenter\TCJJG.Web.UserCenter.csproj", "{A19AF0D2-14AD-402A-A989-2B61A96EB4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCJJG.Web.Biz", "TCJJG.Web.Biz\TCJJG.Web.Biz.csproj", "{A7B2D93F-E882-4A58-87A9-3F8E9983FB7C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TCJJG.Web", "TCJJG.Web\", "{AD3C1DA6-390F-4457-8D9D-6A93E3B52E33}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{A7B2D93F-E882-4A58-87A9-3F8E9983FB7C}|TCJJG.Web.Biz.dll;{A970F5EC-0DE2-4D99-AC15-A2501E4212C9}|TCJJG.Web.DB.dll;{BD3810CD-E76E-4797-B8B5-0E819E3FC824}|TCJJG.Web.Model.dll;{A19AF0D2-14AD-402A-A989-2B61A96EB4DC}|TCJJG.Web.UserCenter.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TCJJG.Web"
+		Debug.AspNetCompiler.PhysicalPath = "TCJJG.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TCJJG.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TCJJG.Web"
+		Release.AspNetCompiler.PhysicalPath = "TCJJG.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TCJJG.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A970F5EC-0DE2-4D99-AC15-A2501E4212C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A970F5EC-0DE2-4D99-AC15-A2501E4212C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A970F5EC-0DE2-4D99-AC15-A2501E4212C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A970F5EC-0DE2-4D99-AC15-A2501E4212C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3810CD-E76E-4797-B8B5-0E819E3FC824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3810CD-E76E-4797-B8B5-0E819E3FC824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3810CD-E76E-4797-B8B5-0E819E3FC824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3810CD-E76E-4797-B8B5-0E819E3FC824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19AF0D2-14AD-402A-A989-2B61A96EB4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19AF0D2-14AD-402A-A989-2B61A96EB4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19AF0D2-14AD-402A-A989-2B61A96EB4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19AF0D2-14AD-402A-A989-2B61A96EB4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B2D93F-E882-4A58-87A9-3F8E9983FB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B2D93F-E882-4A58-87A9-3F8E9983FB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B2D93F-E882-4A58-87A9-3F8E9983FB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B2D93F-E882-4A58-87A9-3F8E9983FB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3C1DA6-390F-4457-8D9D-6A93E3B52E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3C1DA6-390F-4457-8D9D-6A93E3B52E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3C1DA6-390F-4457-8D9D-6A93E3B52E33}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3C1DA6-390F-4457-8D9D-6A93E3B52E33}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
